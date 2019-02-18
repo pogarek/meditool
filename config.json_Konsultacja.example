@@ -1,0 +1,21 @@
+{
+    "username" : "mol_username",
+    "password": "mol_password",
+    "pushOverUserId" : "take it from pushover.net dashboard",
+    "pushOverAppTokenId": "register app on pushover dashboard",
+    "DoNotSendPushForSlotsAboveDays" : 4,
+    "CheckIntervalMinutes" : 5,
+    "ConsultationSearchData": {
+             "regionId": 204,
+            "bookingTypeId": 2,
+            "specializationId": 9, 
+            "clinicId": -1,
+            "languageId": -1,
+            "doctorId": -1,
+            "searchSince": "2019-02-19T03:00:00.000Z",
+            "searchForNextSince": null,
+            "periodOfTheDay": 0,
+            "isSetBecauseOfPcc": false,
+            "isSetBecausePromoteSpecialization": false  
+    }
+}
