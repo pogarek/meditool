@@ -79,11 +79,16 @@ namespace meditool
             handler.AutomaticDecompression = System.Net.DecompressionMethods.GZip;
             h = new HttpClient(handler);
             h.Timeout = TimeSpan.FromSeconds(120);
+            
+            //zaczynamy .
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, "https://mol.medicover.pl/Users/Account/LogOn?ReturnUrl=%2F");
             request = AddHeadersLogin(request);
             HttpResponseMessage response = h.SendAsync(request).Result;
+            
+            //przekierowało nas do formularza z logowaniem
             string result = response.Content.ReadAsStringAsync().Result;
             var lines = Regex.Split(result, @"\n").ToList();
+            //szukanie i parsowanie formularza by wyciągnąć dane, do kolejnego etapu
             string idsrvline = lines.Where(l => l.IndexOf("idsrv.xsrf") >= 0).FirstOrDefault();
             if (idsrvline != null)
             {
@@ -93,6 +98,8 @@ namespace meditool
                 string[] tmp2 = Regex.Split(tmp1[1], "</script>");
                 dynamic test = (JsonConvert.DeserializeObject<dynamic>(tmp2[0]));
                 string xsrf = test.antiForgery.value;
+                
+                //mamy token/hash , dodajemy użytkownika, hasło by wysłać dalej
                 string RequestBody = String.Format(@"idsrv.xsrf={0}&username={1}&password={2}", xsrf, username, password);
                 request = new HttpRequestMessage(HttpMethod.Post, request.RequestUri.AbsoluteUri);
                 LoginUrl = request.RequestUri.AbsoluteUri;
@@ -104,7 +111,9 @@ namespace meditool
                 MediaType.CharSet = "utf-8";
                 request.Content.Headers.ContentType = MediaType;
                 response = h.SendAsync(request).Result;
-                result = response.Content.ReadAsStringAsync().Result;
+
+                //formularz logowania wysłany , w odpowiedzi szukamy danych do kolejnego etapu
+                result = response.Content.ReadAsStringAsync().Result;     
                 lines = Regex.Split(result, @"\n").ToList();
                 string tmpline = lines.Where(l => l.IndexOf(@"name=""code""") >= 0).FirstOrDefault();
                 tmp1 = Regex.Split(tmpline, @"value=""");
@@ -126,6 +135,8 @@ namespace meditool
                 tmp1 = Regex.Split(tmpline, @"value=""");
                 tmp2 = Regex.Split(tmp1[1], @"""");
                 string session_state = tmp2[0];
+                
+                //budujemy treść do wysłania dalej, na podstawie danych zebranych wyżej
                 RequestBody = String.Format(@"code={0}&id_token={1}&scope={2}&state={3}&session_state={4}", code, id_token, scope, state, session_state);
                 request = new HttpRequestMessage(HttpMethod.Post, "https://mol.medicover.pl/Medicover.OpenIdConnectAuthentication/Account/OAuthSignIn");
                 request = AddHeadersLogin(request);
@@ -137,6 +148,8 @@ namespace meditool
                 request.Content.Headers.ContentType = MediaType;
                 response = h.SendAsync(request).Result;
                 result = response.Content.ReadAsStringAsync().Result;
+
+                //powinnismy być zalogowani, pobierzmy witrynę główną jeszcze raz. 
                 RefreshMain();
             }
 
