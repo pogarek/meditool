@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.IO;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace meditool
 {
@@ -72,7 +73,7 @@ namespace meditool
             {
                 if (searchResults.items.Count > 0)
                 {
-                    OutText = string.Format("{3}: Kiedy: {0}  Gdzie: {1} Kto: {2}, {4}", searchResults.items[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults.items[0].clinicName, searchResults.items[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults.items[0].specializationName);
+                    OutText = string.Format("{3}: Kiedy: {0}, {5}  Gdzie:  {1}   Kto: {2}, {4}", searchResults.items[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults.items[0].clinicName, searchResults.items[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults.items[0].specializationName,DateTimeFormatInfo.CurrentInfo.GetDayName(searchResults.items[0].appointmentDate.DayOfWeek));
                     Console.WriteLine(OutText);
                     if (searchResults.items[0].appointmentDate != LastResult.appointmentDate)
                     {
