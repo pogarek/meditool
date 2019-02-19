@@ -73,7 +73,7 @@ namespace meditool
             {
                 if (searchResults.items.Count > 0)
                 {
-                    OutText = string.Format("{3}: Kiedy: {0}, {5}  Gdzie:  {1}   Kto: {2}, {4}", searchResults.items[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults.items[0].clinicName, searchResults.items[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults.items[0].specializationName,DateTimeFormatInfo.CurrentInfo.GetDayName(searchResults.items[0].appointmentDate.DayOfWeek));
+                    OutText = string.Format("{3}: Kiedy: {0}, {5}  Gdzie:  {1}   Kto: {2}, {4}", searchResults.items[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults.items[0].clinicName, searchResults.items[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults.items[0].specializationName, DateTimeFormatInfo.CurrentInfo.GetDayName(searchResults.items[0].appointmentDate.DayOfWeek));
                     Console.WriteLine(OutText);
                     if (searchResults.items[0].appointmentDate != LastResult.appointmentDate)
                     {
@@ -81,19 +81,24 @@ namespace meditool
                         var dt = LastResult.appointmentDate - DateTime.Now;
                         if (dt.Days <= config.DoNotSendPushForSlotsAboveDays)
                         {
-                            PushOverSender.SendPushMessage(config.pushOverUserId, config.pushOverAppTokenId, "Medicover Hunt", OutText);
-                            Console.WriteLine("==> Push wysłany");
+                            if (config.UsePushOver)
+                            {
+                                PushOverSender.SendPushMessage(config.pushOverUserId, config.pushOverAppTokenId, "Medicover Hunt", OutText);
+                                Console.WriteLine("==> Push wysłany");
+                            }
                         }
                         else
                         {
                             Console.WriteLine(String.Format("==> Wizyta jest za więcej niz {0} dni. Nie wysyłam powiadomienia", config.DoNotSendPushForSlotsAboveDays.ToString()));
                         }
                     }
-                } else {
-                    Console.WriteLine(String.Format("{0}: Brak wizyt spełniających zadane kryteria",DateTime.Now.ToShortTimeString()));
+                }
+                else
+                {
+                    Console.WriteLine(String.Format("{0}: Brak wizyt spełniających zadane kryteria", DateTime.Now.ToShortTimeString()));
                 }
             }
-            
+
             //string sss = "";
         }
 

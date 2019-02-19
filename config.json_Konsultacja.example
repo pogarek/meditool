@@ -1,6 +1,7 @@
 {
     "username" : "mol_username",
     "password": "mol_password",
+    "UsePushOver" : true,
     "pushOverUserId" : "take it from pushover.net dashboard",
     "pushOverAppTokenId": "register app on pushover dashboard",
     "DoNotSendPushForSlotsAboveDays" : 4,
