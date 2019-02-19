@@ -49,7 +49,6 @@ namespace meditool
 
         private static void Run(string[] args)
         {
-            //Console.WriteLine(String.Format("{0}: Szukam",DateTime.Now.ToShortTimeString()));
             s = new meditool.MySession();
             string OutText = "";
             s.Login(config.UserName, config.Password);
@@ -82,11 +81,11 @@ namespace meditool
                         if (dt.Days <= config.DoNotSendPushForSlotsAboveDays)
                         {
                             PushOverSender.SendPushMessage(config.pushOverUserId, config.pushOverAppTokenId, "Medicover Hunt", OutText);
-                            Console.WriteLine("Push wysłany");
+                            Console.WriteLine("==> Push wysłany");
                         }
                         else
                         {
-                            Console.WriteLine(String.Format("Wizyta jest za więcej niz {0} dni. Nie wysyłam powiadomienia", config.DoNotSendPushForSlotsAboveDays.ToString()));
+                            Console.WriteLine(String.Format("==> Wizyta jest za więcej niz {0} dni. Nie wysyłam powiadomienia", config.DoNotSendPushForSlotsAboveDays.ToString()));
                         }
                     }
                 } else {
