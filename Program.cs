@@ -47,7 +47,7 @@ namespace meditool
 
         }
 
-        private static async Task Run(string[] args)
+        private static void Run(string[] args)
         {
             //Console.WriteLine(String.Format("{0}: Szukam",DateTime.Now.ToShortTimeString()));
             s = new meditool.MySession();
@@ -59,7 +59,7 @@ namespace meditool
             {
                 var JClass = config.ConsultationSearchData;
                 JClass.searchSince = JClass.searchSince.AddHours(3);
-                searchResults= SearchForConsultation(JClass);
+                searchResults = SearchForConsultation(JClass);
                 DataOk = true;
             }
             if (config.ExamindationSearchData != null)
@@ -69,31 +69,43 @@ namespace meditool
                 JClass.searchSince = JClass.searchSince.AddHours(3);
                 searchResults = SearchForExamination(JClass);
             }
-            if (DataOk) {
-                OutText = string.Format("{3}: Kiedy: {0}  Gdzie: {1} Kto: {2}, {4}", searchResults.items[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults.items[0].clinicName, searchResults.items[0].doctorName,DateTime.Now.ToShortTimeString(),searchResults.items[0].specializationName);
-                if (searchResults.items[0].appointmentDate != LastResult.appointmentDate) {
-                    LastResult = searchResults.items[0];
-                    var dt = LastResult.appointmentDate - DateTime.Now;
-                    if (dt.Days <=config.DoNotSendPushForSlotsAboveDays) {
-                        PushOverSender.SendPushMessage(config.pushOverUserId,config.pushOverAppTokenId,"Medicover Hunt",OutText);
-                        Console.WriteLine("Push wysłany");
-                    } else {
-                        Console.WriteLine(String.Format("Wizyta jest za więcej niz {0} dni. Nie wysyłam powiadomienia",config.DoNotSendPushForSlotsAboveDays.ToString()));                    }
+            if (DataOk)
+            {
+                if (searchResults.items.Count > 0)
+                {
+                    OutText = string.Format("{3}: Kiedy: {0}  Gdzie: {1} Kto: {2}, {4}", searchResults.items[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults.items[0].clinicName, searchResults.items[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults.items[0].specializationName);
+                    if (searchResults.items[0].appointmentDate != LastResult.appointmentDate)
+                    {
+                        LastResult = searchResults.items[0];
+                        var dt = LastResult.appointmentDate - DateTime.Now;
+                        if (dt.Days <= config.DoNotSendPushForSlotsAboveDays)
+                        {
+                            PushOverSender.SendPushMessage(config.pushOverUserId, config.pushOverAppTokenId, "Medicover Hunt", OutText);
+                            Console.WriteLine("Push wysłany");
+                        }
+                        else
+                        {
+                            Console.WriteLine(String.Format("Wizyta jest za więcej niz {0} dni. Nie wysyłam powiadomienia", config.DoNotSendPushForSlotsAboveDays.ToString()));
+                        }
+                    }
+                } else {
+                    Console.WriteLine("Brak wizyt spełniających zadane kryteria");
                 }
-            }               
+            }
             Console.WriteLine(OutText);
-            string sss = "";
+            //string sss = "";
         }
 
         static void Main(string[] args)
         {
-            
+
             config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + args[0]));
-            
-            do {
-                Run(args).GetAwaiter().GetResult();
-                System.Threading.Thread.Sleep(config.CheckIntervalMinutes*60*1000);
-            } while (1==1);
+
+            do
+            {
+                Run(args);
+                System.Threading.Thread.Sleep(config.CheckIntervalMinutes * 60 * 1000);
+            } while (1 == 1);
         }
 
     }
