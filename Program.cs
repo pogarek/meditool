@@ -55,12 +55,14 @@ namespace meditool
             s.Login(config.UserName, config.Password);
             bool DataOk = false;
             ConsultationsFound searchResults = new ConsultationsFound();
+            DateTime StartDate  = DateTime.Now;
             if (config.ConsultationSearchData != null)
             {
                 var JClass = config.ConsultationSearchData;
                 JClass.searchSince = JClass.searchSince.AddHours(3);
                 searchResults = SearchForConsultation(JClass);
                 DataOk = true;
+                StartDate = config.ConsultationSearchData.searchSince;
             }
             if (config.ExamindationSearchData != null)
             {
@@ -68,6 +70,7 @@ namespace meditool
                 var JClass = config.ExamindationSearchData;
                 JClass.searchSince = JClass.searchSince.AddHours(3);
                 searchResults = SearchForExamination(JClass);
+                StartDate = config.ExamindationSearchData.searchSince;
             }
             if (DataOk)
             {
@@ -78,7 +81,7 @@ namespace meditool
                     if (searchResults.items[0].appointmentDate != LastResult.appointmentDate)
                     {
                         LastResult = searchResults.items[0];
-                        var dt = LastResult.appointmentDate - DateTime.Now;
+                        var dt = LastResult.appointmentDate - StartDate;
                         if (dt.Days <= config.DoNotSendPushForSlotsAboveDays)
                         {
                             if (config.UsePushOver)
@@ -89,7 +92,7 @@ namespace meditool
                         }
                         else
                         {
-                            Console.WriteLine(String.Format("==> Wizyta jest za więcej niz {0} dni. Nie wysyłam powiadomienia", config.DoNotSendPushForSlotsAboveDays.ToString()));
+                            Console.WriteLine(String.Format("==> Wizyta jest za więcej niz {0} dni od {1}. Nie wysyłam powiadomienia", config.DoNotSendPushForSlotsAboveDays.ToString(),StartDate.ToShortDateString()));
                         }
                     }
                 }
