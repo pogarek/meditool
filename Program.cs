@@ -92,7 +92,7 @@ namespace meditool
                         }
                         else
                         {
-                            Console.WriteLine(String.Format("==> Wizyta jest za więcej niz {0} dni od {1}. Nie wysyłam powiadomienia", config.DoNotSendPushForSlotsAboveDays.ToString(),StartDate.ToShortDateString()));
+                            Console.WriteLine(String.Format("==> Wizyta jest za więcej niz {0} dni od {1}. Nie wysyłam powiadomienia", config.DoNotSendPushForSlotsAboveDays.ToString(),StartDate.ToString("yyyy-MM-dd")));
                         }
                     }
                 }
