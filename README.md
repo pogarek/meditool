@@ -40,6 +40,7 @@ dotnet run <plik_config.json>
 }
 ```
 Wydaje mi się, iż wszystko jest jasne :-) Zwróc uwagę czy plik konfiguracyjny zawiera sekcję *ExamindationSearchData* dla badań i *ConsultationSearchData* dla wizyt u lekarza. 
+
 Uwagi:
 * UsePushOver można ustawić na False i powiadomienia nie będą używane . Zalecam to na testy aplikacji i włączenie powiadomień, jeśli Ci się spodoba
 * DoNotSendPushForSlotsAboveDays to okres dni , począwszy od searchSince, powyżej których apka uznaje iż nie trzeba informowac o wolnym terminie w formie powiadomienia
