@@ -1,0 +1,18 @@
+{
+    "username" : "mol_username",
+    "password": "mol_password",
+    "UsePushOver" : true,
+    "pushOverUserId" : "take it from pushover.net dashboard",
+    "pushOverAppTokenId": "register app on pushover dashboard",
+    "DoNotSendPushForSlotsAboveDays" : 4,
+    "CheckIntervalMinutes" : 5,
+    "PfmSearchData": {
+        "regionId": 204,
+        "MeetingString": "INTERNIST_COLD_WITHOUT_SURVEY",
+        "surveyName": null,
+        "surveyresponse" : null,
+        "clinic": null,
+        "doctor": null,
+        "date": "2019-02-28T02:00:00.000Z"
+        }
+

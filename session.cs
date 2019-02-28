@@ -43,13 +43,13 @@ namespace meditool
             return request;
         }
         
-        public string SendRequest (string url, string referer) {
-            HttpRequestMessage request = new HttpRequestMessage( HttpMethod.Get, url);
+        public string SendRequest (string url, string referer, HttpMethod method) {
+            HttpRequestMessage request = new HttpRequestMessage( method, url);
             request = AddHeadersLogin(request);
             request.Headers.Add("Referer",referer);
             var response = h.SendAsync(request).Result; 
             string result = response.Content.ReadAsStringAsync().Result;
-            return "";
+            return result;
         }
         public string SendRequestJson(string RequestBody, string url, string referer)
         {

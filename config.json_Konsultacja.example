@@ -7,7 +7,7 @@
     "DoNotSendPushForSlotsAboveDays" : 4,
     "CheckIntervalMinutes" : 5,
     "ConsultationSearchData": {
-             "regionId": 204,
+            "regionId": 204,
             "bookingTypeId": 2,
             "specializationId": 9, 
             "clinicId": -1,
