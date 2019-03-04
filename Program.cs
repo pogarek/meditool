@@ -161,7 +161,7 @@ namespace meditool
                 searchResults = PfmSearch(JClass);
                 StartDate = config.PfmSearchData.date; 
             }
-            Console.Title = String.Format("{0}: {1}  + {2} dni",args[0],StartDate.ToShortDateString(),config.DoNotSendPushForSlotsAboveDays.ToString());
+            Console.Title = String.Format("{0}: {1}  + {2} dni",args[0],StartDate.ToString("yyyy-MM-dd"),config.DoNotSendPushForSlotsAboveDays.ToString());
 
             if (DataOk)
             {
