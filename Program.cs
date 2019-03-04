@@ -82,12 +82,17 @@ namespace meditool
             AppointmentData2 p3 = JsonConvert.DeserializeObject<AppointmentData2>(c);
             //c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/clinics?region={0}&specialties={1}&vendors={2}", sk1.region, String.Join(", ", p3.specialties.ToArray()), String.Join(", ", p3.vendors.ToArray())), "https://mol.medicover.pl", HttpMethod.Get);
             c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/clinics"), "https://mol.medicover.pl", HttpMethod.Get);
-
             List<PfmDictionaryItem> clinics = (JsonConvert.DeserializeObject<List<PfmDictionaryItem>>(c));
+
             //c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/doctors?region={0}&specialties={1}&vendors={2}", sk1.region,String.Join(", ", p3.specialties.ToArray()),String.Join(", ", p3.vendors.ToArray())), "https://mol.medicover.pl", HttpMethod.Get);
             c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/doctors"), "https://mol.medicover.pl", HttpMethod.Get);
-
             List<PfmDictionaryItem> doctors = (JsonConvert.DeserializeObject<List<PfmDictionaryItem>>(c));
+/*             jsonoutput = JsonConvert.SerializeObject(doctors, Formatting.Indented,
+                        new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+
+            File.WriteAllText("doctors.json", jsonoutput); */
+
+
             c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/specialty"), "https://mol.medicover.pl", HttpMethod.Get);
             List<PfmDictionaryItem> specializations = (JsonConvert.DeserializeObject<List<PfmDictionaryItem>>(c));
             PfmSearch2 sk2 = new PfmSearch2();
@@ -119,7 +124,7 @@ namespace meditool
                 cf.specializationName = specializations.Where(cf3 => cf3.code == entry.specialty).FirstOrDefault().label;
                 csf.items.Add(cf);
             }
-            csf.items = csf.items.OrderBy(w=> w.appointmentDate).ToList();
+            csf.items = csf.items.OrderBy(w => w.appointmentDate).ToList();
             return csf;
         }
         private static void Run(string[] args)
@@ -154,8 +159,9 @@ namespace meditool
                 var JClass = config.PfmSearchData;
                 JClass.date = JClass.date.AddHours(3);
                 searchResults = PfmSearch(JClass);
-                StartDate = config.PfmSearchData.date;;
+                StartDate = config.PfmSearchData.date; 
             }
+            Console.Title = String.Format("{0}: {1}  + {2} dni",args[0],StartDate.ToShortDateString(),config.DoNotSendPushForSlotsAboveDays.ToString());
 
             if (DataOk)
             {
