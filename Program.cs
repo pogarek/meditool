@@ -136,7 +136,8 @@ namespace meditool
 
             bool DataOk = false;
             ConsultationsFound searchResults = new ConsultationsFound();
-            DateTime StartDate = DateTime.Now;
+            DateTime StartDate = DateTimeOffset.Now.Date;
+            
             if (config.ConsultationSearchData != null)
             {
                 var JClass = config.ConsultationSearchData;
