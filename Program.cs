@@ -140,7 +140,8 @@ namespace meditool
             
             if (config.ConsultationSearchData != null)
             {
-                var JClass = config.ConsultationSearchData;
+                SearchVisit_Konsultacja JClass = new SearchVisit_Konsultacja();
+                JClass = config.ConsultationSearchData;
                 JClass.searchSince = JClass.searchSince.AddHours(3);
                 searchResults = SearchForConsultation(JClass);
                 DataOk = true;
@@ -149,7 +150,8 @@ namespace meditool
             if (config.ExamindationSearchData != null)
             {
                 DataOk = true;
-                var JClass = config.ExamindationSearchData;
+                SearchVisit_Badanie JClass = new SearchVisit_Badanie();
+                JClass = config.ExamindationSearchData;
                 JClass.searchSince = JClass.searchSince.AddHours(3);
                 searchResults = SearchForExamination(JClass);
                 StartDate = config.ExamindationSearchData.searchSince;
@@ -157,13 +159,14 @@ namespace meditool
             if (config.PfmSearchData != null)
             {
                 DataOk = true;
-                var JClass = config.PfmSearchData;
+                PfmSearch JClass = new PfmSearch(); 
+                JClass = config.PfmSearchData;
                 JClass.date = JClass.date.AddHours(3);
                 searchResults = PfmSearch(JClass);
                 StartDate = config.PfmSearchData.date; 
             }
             Console.Title = String.Format("{0}: {1}  + {2} dni",args[0],StartDate.ToString("yyyy-MM-dd"),config.DoNotSendPushForSlotsAboveDays.ToString());
-
+            //Console.WriteLine(String.Format("StartDate: {0}",StartDate.ToString()));    
             if (DataOk)
             {
                 if (searchResults.items.Count > 0)
@@ -200,10 +203,11 @@ namespace meditool
         static void Main(string[] args)
         {
 
-            config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + args[0]));
-
+            
             do
             {
+                config = new Config();
+                config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + args[0]));
                 Run(args);
                 System.Threading.Thread.Sleep(config.CheckIntervalMinutes * 60 * 1000);
             } while (1 == 1);
