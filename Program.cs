@@ -69,7 +69,9 @@ namespace meditool
             PfmSearch1 sk1 = new PfmSearch1();
             sk1.caseId = pfmSession.id;
             sk1.region = JClass.regionId.ToString();
-            sk1.date = DateTime.Now;
+            sk1.date = JClass.date;
+            sk1.clinic = JClass.clinic;
+            sk1.doctor = JClass.doctor;
             string jsonoutput = JsonConvert.SerializeObject(sk1, Formatting.Indented,
                                     new JsonSerializerSettings
                                     {
