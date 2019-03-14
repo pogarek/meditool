@@ -14,7 +14,7 @@ namespace meditool
         public string pushOverUserId;
         public string pushOverAppTokenId;
         public SearchVisit_Konsultacja ConsultationSearchData;
-        public SearchVisit_Badanie ExamindationSearchData;
+        public SearchVisit_Badanie ExaminationSearchData;
         public PfmSearch PfmSearchData;
     }
     public class SearchVisit_Konsultacja

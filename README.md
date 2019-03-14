@@ -8,7 +8,7 @@ dotnet restore
 
 ## Używanie
 1. Zerknij na przykładowe pliki i zrób plik konfiguracyjny na swój użytek
-2. Plik dla konsultacji szuka internisty a dla badania szuka USG jamy brzusznej. Po inne ID danej wizyty zobacz w przeglądarce w Developer tools lub w Fiddler'ze
+2. Plik dla konsultacji szuka internisty, a dla badania szuka USG jamy brzusznej. Pliki przykładowe PFM szukają szczepienia oraz MedicoverExpress.  Po inne ID danej wizyty (oraz id lekarzy, klinik itp) zerking do  Developer tools w przeglądarce lub w Fiddler'ze. 
 3. uruchom narzedzie :
 ```
 dotnet run <plik_config.json>
@@ -24,7 +24,7 @@ dotnet run <plik_config.json>
     "pushOverAppTokenId": "register app on pushover dashboard",
     "DoNotSendPushForSlotsAboveDays" : 4,
     "CheckIntervalMinutes" : 5,
-    "ExamindationSearchData": {
+    "ExaminationSearchData": {
         "regionId": 204,
         "bookingTypeId": 1,
         "serviceId": 521,
@@ -39,13 +39,15 @@ dotnet run <plik_config.json>
     }
 }
 ```
-Wydaje mi się, iż wszystko jest jasne :-) Zwróc uwagę czy plik konfiguracyjny zawiera sekcję *ExamindationSearchData* dla badań i *ConsultationSearchData* dla wizyt u lekarza. 
+Wydaje mi się, iż wszystko jest jasne :-) Zwróc uwagę czy plik konfiguracyjny zawiera sekcję *ExamindationSearchData* dla badań,  *ConsultationSearchData* dla wizyt u lekarza lub *PfmSearchData* dla wizyt umawianych z innej formatki, jak, na przykład, szczepienia. 
 
 Uwagi:
 * UsePushOver można ustawić na False i powiadomienia nie będą używane . Zalecam to na testy aplikacji i włączenie powiadomień, jeśli Ci się spodoba
 * DoNotSendPushForSlotsAboveDays to okres dni , począwszy od searchSince, powyżej których apka uznaje iż nie trzeba informowac o wolnym terminie w formie powiadomienia
 
 Niektóre wizyty używają innych formatek na stronie MOl (np. szczepienia). Wsparcie dla takich wizyt jest planowane , muszę tylko znaleźć czas na to. 
+
+W razie problemów skorzystaj z zakładki *Issues* na tej stronie . Ale to wymaga założenia konta na GitHub'ie. 
 
 Podziękowania dla :
 * https://github.com/apqlzm/medihunter - za ładne opisanie logiki komunikacji http z MOL . Nie musiałem tego sam badać

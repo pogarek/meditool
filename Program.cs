@@ -89,10 +89,10 @@ namespace meditool
             //c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/doctors?region={0}&specialties={1}&vendors={2}", sk1.region,String.Join(", ", p3.specialties.ToArray()),String.Join(", ", p3.vendors.ToArray())), "https://mol.medicover.pl", HttpMethod.Get);
             c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/doctors"), "https://mol.medicover.pl", HttpMethod.Get);
             List<PfmDictionaryItem> doctors = (JsonConvert.DeserializeObject<List<PfmDictionaryItem>>(c));
-/*             jsonoutput = JsonConvert.SerializeObject(doctors, Formatting.Indented,
-                        new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+            /*             jsonoutput = JsonConvert.SerializeObject(doctors, Formatting.Indented,
+                                    new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
 
-            File.WriteAllText("doctors.json", jsonoutput); */
+                        File.WriteAllText("doctors.json", jsonoutput); */
 
 
             c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/specialty"), "https://mol.medicover.pl", HttpMethod.Get);
@@ -139,7 +139,7 @@ namespace meditool
             bool DataOk = false;
             ConsultationsFound searchResults = new ConsultationsFound();
             DateTime StartDate = DateTimeOffset.Now.Date;
-            
+
             if (config.ConsultationSearchData != null)
             {
                 SearchVisit_Konsultacja JClass = new SearchVisit_Konsultacja();
@@ -149,25 +149,25 @@ namespace meditool
                 DataOk = true;
                 StartDate = config.ConsultationSearchData.searchSince;
             }
-            if (config.ExamindationSearchData != null)
+            if (config.ExaminationSearchData != null)
             {
                 DataOk = true;
                 SearchVisit_Badanie JClass = new SearchVisit_Badanie();
-                JClass = config.ExamindationSearchData;
+                JClass = config.ExaminationSearchData;
                 JClass.searchSince = JClass.searchSince.AddHours(3);
                 searchResults = SearchForExamination(JClass);
-                StartDate = config.ExamindationSearchData.searchSince;
+                StartDate = config.ExaminationSearchData.searchSince;
             }
             if (config.PfmSearchData != null)
             {
                 DataOk = true;
-                PfmSearch JClass = new PfmSearch(); 
+                PfmSearch JClass = new PfmSearch();
                 JClass = config.PfmSearchData;
                 JClass.date = JClass.date.AddHours(3);
                 searchResults = PfmSearch(JClass);
-                StartDate = config.PfmSearchData.date; 
+                StartDate = config.PfmSearchData.date;
             }
-            Console.Title = String.Format("{0}: {1}  + {2} dni",args[0],StartDate.ToString("yyyy-MM-dd"),config.DoNotSendPushForSlotsAboveDays.ToString());
+            Console.Title = String.Format("{0}: {1}  + {2} dni", args[0], StartDate.ToString("yyyy-MM-dd"), config.DoNotSendPushForSlotsAboveDays.ToString());
             //Console.WriteLine(String.Format("StartDate: {0}",StartDate.ToString()));    
             if (DataOk)
             {
@@ -205,12 +205,25 @@ namespace meditool
         static void Main(string[] args)
         {
 
-            
+
             do
             {
                 config = new Config();
                 config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + args[0]));
-                Run(args);
+                try
+                {
+                    Run(args);
+                }
+                catch
+                {
+                    if (config.UsePushOver)
+                    {
+                        {
+                            PushOverSender.SendPushMessage(config.pushOverUserId, config.pushOverAppTokenId, "Medicover Hunt", String.Format("{0} : Blad pobierania danych.", args[0]));
+                        }
+                        Console.WriteLine(String.Format("{0}: Wystapil blad pobierania danych", DateTime.Now.ToShortTimeString()));
+                    }
+                }
                 System.Threading.Thread.Sleep(config.CheckIntervalMinutes * 60 * 1000);
             } while (1 == 1);
         }
