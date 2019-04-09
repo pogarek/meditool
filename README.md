@@ -1,7 +1,7 @@
 # Meditool - znajdź termin w Medicover i dowiedz się o tym , jak inny pacjent go zwolni
 
 ## Instalacja
-1. Pobierz i zanstaluj https://dotnet.microsoft.com/download dla swojej platformy
+1. Pobierz i zanstaluj https://dotnet.microsoft.com/download dla swojej platformy (Windows , Linux, macOS)
 2. Pobierz repozytorium (.zip lub przy użyciu git)
 3. Wejdź do katalogu z wypakowanym repozytorium i wpisz:
 ```
