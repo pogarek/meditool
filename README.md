@@ -47,8 +47,6 @@ Uwagi:
 * UsePushOver można ustawić na False i powiadomienia nie będą używane . Zalecam to na testy aplikacji i włączenie powiadomień, jeśli Ci się spodoba
 * DoNotSendPushForSlotsAboveDays to okres dni , począwszy od searchSince, powyżej których apka uznaje iż nie trzeba informowac o wolnym terminie w formie powiadomienia
 
-Niektóre wizyty używają innych formatek na stronie MOl (np. szczepienia). Wsparcie dla takich wizyt jest planowane , muszę tylko znaleźć czas na to. 
-
 W razie problemów skorzystaj z zakładki *Issues* na tej stronie . Ale to wymaga założenia konta na GitHub'ie. 
 
 Podziękowania dla :
