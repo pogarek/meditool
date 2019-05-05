@@ -89,10 +89,10 @@ namespace meditool
             //c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/doctors?region={0}&specialties={1}&vendors={2}", sk1.region,String.Join(", ", p3.specialties.ToArray()),String.Join(", ", p3.vendors.ToArray())), "https://mol.medicover.pl", HttpMethod.Get);
             c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/doctors"), "https://mol.medicover.pl", HttpMethod.Get);
             List<PfmDictionaryItem> doctors = (JsonConvert.DeserializeObject<List<PfmDictionaryItem>>(c));
-                       jsonoutput = JsonConvert.SerializeObject(doctors, Formatting.Indented,
-                                    new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+            jsonoutput = JsonConvert.SerializeObject(doctors, Formatting.Indented,
+                         new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
 
-                        File.WriteAllText("doctors.json", jsonoutput); 
+            File.WriteAllText("doctors.json", jsonoutput);
 
 
             c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/specialty"), "https://mol.medicover.pl", HttpMethod.Get);
@@ -171,31 +171,42 @@ namespace meditool
             //Console.WriteLine(String.Format("StartDate: {0}",StartDate.ToString()));    
             if (DataOk)
             {
+
                 if (searchResults.items.Count > 0)
+
                 {
-                    OutText = string.Format("{3}: Kiedy: {0}, {5}  Gdzie:  {1}   Kto: {2}, {4}", searchResults.items[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults.items[0].clinicName, searchResults.items[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults.items[0].specializationName, DateTimeFormatInfo.CurrentInfo.GetDayName(searchResults.items[0].appointmentDate.DayOfWeek));
-                    Console.WriteLine(OutText);
-                    if (searchResults.items[0].appointmentDate != LastResult.appointmentDate)
+                    var searchResults2 = searchResults.items.Where(w => w.appointmentDate.Hour >= config.AfterHour).ToList();
+                    if (searchResults2.Count > 0)
                     {
-                        LastResult = searchResults.items[0];
-                        var dt = LastResult.appointmentDate - StartDate;
-                        if (dt.Days <= config.DoNotSendPushForSlotsAboveDays)
+
+                        OutText = string.Format("{3}: Kiedy: {0}, {5}  Gdzie:  {1}   Kto: {2}, {4}", searchResults2[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults.items[0].clinicName, searchResults.items[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults.items[0].specializationName, DateTimeFormatInfo.CurrentInfo.GetDayName(searchResults.items[0].appointmentDate.DayOfWeek));
+                        Console.WriteLine(OutText);
+                        if (searchResults2[0].appointmentDate != LastResult.appointmentDate)
                         {
-                            if (LastResult.appointmentDate.Hour >= config.AfterHour)
+                            LastResult = searchResults2[0];
+                            var dt = LastResult.appointmentDate - StartDate;
+                            if (dt.Days <= config.DoNotSendPushForSlotsAboveDays)
                             {
-                                if (config.UsePushOver)
+                                if (LastResult.appointmentDate.Hour >= config.AfterHour)
                                 {
-                                    PushOverSender.SendPushMessage(config.pushOverUserId, config.pushOverAppTokenId, "Medicover Hunt", OutText);
-                                    Console.WriteLine("==> Push wysłany");
+                                    if (config.UsePushOver)
+                                    {
+                                        PushOverSender.SendPushMessage(config.pushOverUserId, config.pushOverAppTokenId, "Medicover Hunt", OutText);
+                                        Console.WriteLine("==> Push wysłany");
+                                    }
                                 }
-                            } else {
-                                 Console.WriteLine(String.Format("==> Wizyta jest o złej godzinie. Nie wysyłam powiadomienia", config.DoNotSendPushForSlotsAboveDays.ToString(), StartDate.ToString("yyyy-MM-dd")));
+                                else
+                                {
+                                    Console.WriteLine(String.Format("==> Wizyta jest o złej godzinie. Nie wysyłam powiadomienia", config.DoNotSendPushForSlotsAboveDays.ToString(), StartDate.ToString("yyyy-MM-dd")));
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine(String.Format("==> Wizyta jest za więcej niz {0} dni od {1}. Nie wysyłam powiadomienia", config.DoNotSendPushForSlotsAboveDays.ToString(), StartDate.ToString("yyyy-MM-dd")));
                             }
                         }
-                        else
-                        {
-                            Console.WriteLine(String.Format("==> Wizyta jest za więcej niz {0} dni od {1}. Nie wysyłam powiadomienia", config.DoNotSendPushForSlotsAboveDays.ToString(), StartDate.ToString("yyyy-MM-dd")));
-                        }
+                    } else {
+                         Console.WriteLine(String.Format("{0}: Brak wizyt spełniających zadane kryteria po danej godzinie", DateTime.Now.ToShortTimeString()));
                     }
                 }
                 else
