@@ -179,7 +179,7 @@ namespace meditool
                     if (searchResults2.Count > 0)
                     {
 
-                        OutText = string.Format("{3}: Kiedy: {0}, {5}  Gdzie:  {1}   Kto: {2}, {4}", searchResults2[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults.items[0].clinicName, searchResults.items[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults.items[0].specializationName, DateTimeFormatInfo.CurrentInfo.GetDayName(searchResults.items[0].appointmentDate.DayOfWeek));
+                        OutText = string.Format("{3}: Kiedy: {0}, {5}  Gdzie:  {1}   Kto: {2}, {4}", searchResults2[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults2[0].clinicName, searchResults2[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults2[0].specializationName, DateTimeFormatInfo.CurrentInfo.GetDayName(searchResults2[0].appointmentDate.DayOfWeek));
                         Console.WriteLine(OutText);
                         if (searchResults2[0].appointmentDate != LastResult.appointmentDate)
                         {
