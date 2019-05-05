@@ -6,6 +6,7 @@
     "pushOverAppTokenId": "register app on pushover dashboard",
     "DoNotSendPushForSlotsAboveDays" : 4,
     "CheckIntervalMinutes" : 5,
+    "AfterHour" : 0,
     "ConsultationSearchData": {
             "regionId": 204,
             "bookingTypeId": 2,

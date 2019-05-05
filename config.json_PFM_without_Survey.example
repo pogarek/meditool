@@ -6,6 +6,7 @@
     "pushOverAppTokenId": "register app on pushover dashboard",
     "DoNotSendPushForSlotsAboveDays" : 4,
     "CheckIntervalMinutes" : 5,
+    "AfterHour" : 0,
     "PfmSearchData": {
         "regionId": 204,
         "MeetingString": "INTERNIST_COLD_WITHOUT_SURVEY",

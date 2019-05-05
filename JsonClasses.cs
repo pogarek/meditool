@@ -10,6 +10,7 @@ namespace meditool
         public int CheckIntervalMinutes = 5;
         public int DoNotSendPushForSlotsAboveDays = 14;
         public bool UsePushOver = true;
+        public int  AfterHour = 0;
 
         public string pushOverUserId;
         public string pushOverAppTokenId;
