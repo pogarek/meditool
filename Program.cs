@@ -80,14 +80,14 @@ namespace meditool
                                         //NullValueHandling = NullValueHandling.Ignore
                                     });
 
-            c = s.SendRequestJson(jsonoutput, String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/appointment-slots/{0}", pfmSession.id), "https://mol.medicover.pl");
+            c = s.SendRequestJson(jsonoutput, String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/appointment-slots/{0}", pfmSession.id), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}",JClass.MeetingString));
             AppointmentData2 p3 = JsonConvert.DeserializeObject<AppointmentData2>(c);
             //c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/clinics?region={0}&specialties={1}&vendors={2}", sk1.region, String.Join(", ", p3.specialties.ToArray()), String.Join(", ", p3.vendors.ToArray())), "https://mol.medicover.pl", HttpMethod.Get);
-            c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/clinics"), "https://mol.medicover.pl", HttpMethod.Get);
+            c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/clinics"), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}",JClass.MeetingString), HttpMethod.Get);
             List<PfmDictionaryItem> clinics = (JsonConvert.DeserializeObject<List<PfmDictionaryItem>>(c));
 
             //c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/doctors?region={0}&specialties={1}&vendors={2}", sk1.region,String.Join(", ", p3.specialties.ToArray()),String.Join(", ", p3.vendors.ToArray())), "https://mol.medicover.pl", HttpMethod.Get);
-            c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/doctors"), "https://mol.medicover.pl", HttpMethod.Get);
+            c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/doctors"), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}",JClass.MeetingString), HttpMethod.Get);
             List<PfmDictionaryItem> doctors = (JsonConvert.DeserializeObject<List<PfmDictionaryItem>>(c));
             jsonoutput = JsonConvert.SerializeObject(doctors, Formatting.Indented,
                          new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
@@ -95,7 +95,7 @@ namespace meditool
             File.WriteAllText("doctors.json", jsonoutput);
 
 
-            c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/specialty"), "https://mol.medicover.pl", HttpMethod.Get);
+            c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/specialty"), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}",JClass.MeetingString), HttpMethod.Get);
             List<PfmDictionaryItem> specializations = (JsonConvert.DeserializeObject<List<PfmDictionaryItem>>(c));
             PfmSearch2 sk2 = new PfmSearch2();
             sk2.caseId = sk1.caseId;
@@ -105,27 +105,45 @@ namespace meditool
             sk2.region = sk1.region;
             sk2.slot = sk2.slot;
             sk2.ticket = p3.ticket;
-            jsonoutput = JsonConvert.SerializeObject(sk2, Formatting.Indented,
+            jsonoutput = JsonConvert.SerializeObject(sk1, Formatting.Indented,
                                     new JsonSerializerSettings
                                     {
                                         DateFormatHandling = DateFormatHandling.IsoDateFormat,
                                         DateFormatString = "yyyy-MM-ddTHH:mm:ss",
                                         //NullValueHandling = NullValueHandling.Ignore
                                     });
-            c = s.SendRequestJson(jsonoutput, String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/appointment-slots/{0}", pfmSession.id), "https://mol.medicover.pl");
+            c = s.SendRequestJson(jsonoutput, String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/appointment-slots/{0}", pfmSession.id), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}",JClass.MeetingString));
             ConsultationFoundInternalV2 cs2 = JsonConvert.DeserializeObject<ConsultationFoundInternalV2>(c);
             ConsultationsFound csf = new ConsultationsFound();
-            foreach (var entry in cs2.appointmentSlots)
+            //DateTime LastVisitFound = sk2.date;
+            do
             {
-                ConsultationFound cf = new ConsultationFound();
-                cf.appointmentDate = entry.dateTime;
-                var aaa = doctors.Where(cf2 => cf2.code == entry.doctor);
-                cf.doctorName = doctors.Where(cf2 => cf2.code == entry.doctor).FirstOrDefault().label;
-                cf.clinicName = clinics.Where(cf1 => cf1.code == entry.clinic).FirstOrDefault().label;
-                cf.id = entry.id;
-                cf.specializationName = specializations.Where(cf3 => cf3.code == entry.specialty).FirstOrDefault().label;
-                csf.items.Add(cf);
-            }
+                
+                foreach (var entry in cs2.appointmentSlots)
+                {
+                    ConsultationFound cf = new ConsultationFound();
+                    cf.appointmentDate = entry.dateTime;
+                    var aaa = doctors.Where(cf2 => cf2.code == entry.doctor);
+                    cf.doctorName = doctors.Where(cf2 => cf2.code == entry.doctor).FirstOrDefault().label;
+                    cf.clinicName = clinics.Where(cf1 => cf1.code == entry.clinic).FirstOrDefault().label;
+                    cf.id = entry.id;
+                    cf.specializationName = specializations.Where(cf3 => cf3.code == entry.specialty).FirstOrDefault().label;
+                    csf.items.Add(cf);
+                }
+                //sk2.date = csf.items.OrderBy(w => w.appointmentDate).Last().appointmentDate.AddMinutes(1);
+                sk2.ticket = cs2.ticket;
+                jsonoutput = JsonConvert.SerializeObject(sk2, Formatting.Indented,
+                                    new JsonSerializerSettings
+                                    {
+                                        DateFormatHandling = DateFormatHandling.IsoDateFormat,
+                                        DateFormatString = "yyyy-MM-ddTHH:mm:ss",
+                                        //NullValueHandling = NullValueHandling.Ignore
+                                    });
+                c="";
+                c = s.SendRequestJson(jsonoutput, String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/appointment-slots/{0}", pfmSession.id), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}",JClass.MeetingString));
+                cs2 = null;
+                cs2 = JsonConvert.DeserializeObject<ConsultationFoundInternalV2>(c);
+            } while (cs2.appointmentSlots.Count >0);
             csf.items = csf.items.OrderBy(w => w.appointmentDate).ToList();
             return csf;
         }
