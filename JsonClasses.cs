@@ -137,4 +137,14 @@ namespace meditool
         public object doctor { get; set; }
         public DateTime date { get; set; }
     }
+        public class DoctorInfo
+    {
+        public string DoctorName;
+        public string Restrictions;
+        public string Specialities;
+        public string Rank;
+        public string SurveyCount;
+        public string Place;
+    }
+
 }

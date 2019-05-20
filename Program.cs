@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Globalization;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace meditool
 {
@@ -17,6 +18,7 @@ namespace meditool
         static MySession s;
         static Config config = new Config();
         static ConsultationFound LastResult = new ConsultationFound();
+        public static List<DoctorInfo> Doctors = new List<DoctorInfo>();
         static ConsultationsFound SearchForConsultation(SearchVisit_Konsultacja JClass)
         {
             string jsonoutput = JsonConvert.SerializeObject(JClass, Formatting.Indented,
@@ -197,7 +199,19 @@ namespace meditool
                     if (searchResults2.Count > 0)
                     {
 
-                        OutText = string.Format("{3}: Kiedy: {0}, {5}  Gdzie:  {1}   Kto: {2}, {4}", searchResults2[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults2[0].clinicName, searchResults2[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults2[0].specializationName, DateTimeFormatInfo.CurrentInfo.GetDayName(searchResults2[0].appointmentDate.DayOfWeek));
+                        string[] tmp = Regex.Split(searchResults2[0].doctorName," ");
+                        string tmp2 = tmp[1] +" " + tmp[0];
+                        var doc = Doctors.Where(d=> d.DoctorName ==tmp2);
+                        string Score="";
+                        if (doc.Count() == 1 ) {
+                                var doc2 = doc.First();
+                                Score = String.Format("{0} ; {1} ocen",doc2.Rank, doc2.SurveyCount);
+                        }
+                        if (Score =="") {
+                            OutText = string.Format("{3}: Kiedy: {0}, {5}  Gdzie:  {1}   Kto: {2}, {4}", searchResults2[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults2[0].clinicName, searchResults2[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults2[0].specializationName, DateTimeFormatInfo.CurrentInfo.GetDayName(searchResults2[0].appointmentDate.DayOfWeek));
+                        } else {
+                            OutText = string.Format("{3}: Kiedy: {0}, {5}  Gdzie:  {1}   Kto: {2}, {4}   Ocena: {6}", searchResults2[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults2[0].clinicName, searchResults2[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults2[0].specializationName, DateTimeFormatInfo.CurrentInfo.GetDayName(searchResults2[0].appointmentDate.DayOfWeek),Score);
+                        }
                         Console.WriteLine(OutText);
                         if (searchResults2[0].appointmentDate != LastResult.appointmentDate)
                         {
@@ -238,7 +252,9 @@ namespace meditool
 
         static void Main(string[] args)
         {
-
+            if (System.IO.File.Exists(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString()+"doctors.json.db")) {
+                Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString()+"doctors.json.db"));
+            }    
 
             do
             {
