@@ -214,6 +214,9 @@ namespace meditool
                                 Score += String.Format("  Restrykcje: {0}", doc2.Restrictions);
                             }
                         }
+                        if (Score != "") {
+                            Score+= " ";    
+                        }
                         Score+= GetDataFromZnanyLekarz(searchResults2[0].doctorName);
                         
                         if (Score == "")
