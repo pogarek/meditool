@@ -301,13 +301,12 @@ namespace meditool
             htmlDoc.LoadHtml(tmp1);
 
             var nodes = htmlDoc.DocumentNode.SelectNodes("//*/ul[@data-id='search-list']/li//*/div[@data-id='rank-element']");
-            var node = nodes.Where(n=> n.Attributes["data-eecommerce-name"].Value == SearchPhrase.Replace("-"," ").Replace("_","-") ).First();
-
+            var node = nodes.Where(n=> n.Attributes["data-eecommerce-name"].Value == SearchPhrase.Replace("-"," ").Replace("_","-") );
             //var node = htmlDoc.DocumentNode.SelectNodes("//*/ul[@data-id='search-list']/li[1]//*/div[@data-id='rank-element']").First();
 
-            if (node != null) {
-                if (node.Attributes["data-eecommerce-name"].Value == SearchPhrase.Replace("-"," ").Replace("_","-") ) {
-                    var node2 = node.SelectNodes("div//*/a[@class='rating rating--md text-muted']").First();
+            if (node.Count()==1) {
+                if (node.First().Attributes["data-eecommerce-name"].Value == SearchPhrase.Replace("-"," ").Replace("_","-") ) {
+                    var node2 = node.First().SelectNodes("div//*/a[@class='rating rating--md text-muted']").First();
                     Result = string.Format("ZL: {0}/5  {1} opinii",node2.Attributes["data-score"].Value,node2.Attributes["data-total-count"].Value);
                 }
             }   
