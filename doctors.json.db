@@ -21,7 +21,7 @@
     "Specialities": "Internista, Lekarz medycyny podróży",
     "Rank": "4.5/5",
     "SurveyCount": "654",
-    "Place": "Centrum Medicover - Wołoska"
+    "Place": "Centrum Medicover - Wołoska, Szpital Medicover"
   },
   {
     "DoctorName": "Marek Drzewiecki",
@@ -45,7 +45,7 @@
     "Specialities": "Ginekolog",
     "Rank": "2.5/5",
     "SurveyCount": "473",
-    "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
+    "Place": "Centrum Medicover - Kraków Bora Komorowskiego, Centrum Medicover - Kraków Podgórska"
   },
   {
     "DoctorName": "Katarzyna Pustułka",
@@ -173,7 +173,7 @@
     "Specialities": "Ginekolog",
     "Rank": "4/5",
     "SurveyCount": "352",
-    "Place": "Centrum Medicover - Jerozolimskie, Centrum Medicover - Inflancka, Centrum Medicover - Tarchomin"
+    "Place": "Centrum Medicover - Inflancka, Centrum Medicover - Tarchomin"
   },
   {
     "DoctorName": "Ewa Kazalska - Grzybowska",
@@ -213,7 +213,7 @@
     "Specialities": "Alergolog, Internista, Pulmonolog",
     "Rank": "3.5/5",
     "SurveyCount": "332",
-    "Place": "Centrum Medicover - Atrium, Centrum Medicover - Inflancka, Centrum Medicover - Grochowska"
+    "Place": "Centrum Medicover - Atrium, Centrum Medicover - Grochowska"
   },
   {
     "DoctorName": "Aleksandra Buczyńska - Barbachowska",
@@ -381,7 +381,7 @@
     "Specialities": "Internista, Lekarz medycyny rodzinnej, Lekarz medycyny rodzinnej dzieci, Pediatra",
     "Rank": "4/5",
     "SurveyCount": "253",
-    "Place": "Centrum Medicover - Pomorska Łódź"
+    "Place": "Centrum Medicover - Pomorska Łódź, Centrum Medicover - Piłsudskiego Łódź"
   },
   {
     "DoctorName": "Andrzej Mirecki",
@@ -421,7 +421,7 @@
     "Specialities": "Kardiolog",
     "Rank": "4/5",
     "SurveyCount": "242",
-    "Place": "Centrum Medicover - Kraków Podgórska, Centrum Medicover - Kraków Ruczaj"
+    "Place": "Centrum Medicover - Kraków Ruczaj"
   },
   {
     "DoctorName": "Marek Trzaskowski",
@@ -541,7 +541,7 @@
     "Specialities": "Internista, Lekarz medycyny rodzinnej, Lekarz medycyny rodzinnej dzieci, Pediatra",
     "Rank": "4.5/5",
     "SurveyCount": "203",
-    "Place": "Centrum Medicover - Pomorska Łódź"
+    "Place": "Centrum Medicover - Pomorska Łódź, Centrum Medicover - Piłsudskiego Łódź"
   },
   {
     "DoctorName": "Kinga Brożek - Szymańska",
@@ -813,7 +813,7 @@
     "Specialities": "Endokrynolog",
     "Rank": "4.5/5",
     "SurveyCount": "137",
-    "Place": "Centrum Medicover - Kraków Bora Komorowskiego, Centrum Medicover - Kraków Podgórska"
+    "Place": "Centrum Medicover - Kraków Podgórska"
   },
   {
     "DoctorName": "Daniel Jakubowski",
@@ -845,7 +845,7 @@
     "Specialities": "Urolog",
     "Rank": "4/5",
     "SurveyCount": "129",
-    "Place": "Centrum Medicover - Gdynia Sea Towers, Centrum Medicover - Grunwaldzka"
+    "Place": "Centrum Medicover - Gdynia Sea Towers"
   },
   {
     "DoctorName": "Jacek Tabor",
@@ -896,14 +896,6 @@
     "Place": "Centrum Medicover - Klimczaka"
   },
   {
-    "DoctorName": "Renata Turek - Jabrocka",
-    "Restrictions": "",
-    "Specialities": "Endokrynolog, Internista",
-    "Rank": "4.5/5",
-    "SurveyCount": "122",
-    "Place": "Centrum Medicover - Kraków Podgórska"
-  },
-  {
     "DoctorName": "Jerzy Jamka",
     "Restrictions": "",
     "Specialities": "Ortopeda",
@@ -918,14 +910,6 @@
     "Rank": "3/5",
     "SurveyCount": "119",
     "Place": "Centrum Medicover - Kraków Bora Komorowskiego, Centrum Medicover - Kraków Podgórska"
-  },
-  {
-    "DoctorName": "Paweł Gidziński",
-    "Restrictions": "",
-    "Specialities": "Ortopeda",
-    "Rank": "3/5",
-    "SurveyCount": "118",
-    "Place": "Centrum Medicover - Jerozolimskie"
   },
   {
     "DoctorName": "Maciej Kasparek",
@@ -976,14 +960,6 @@
     "Place": "Centrum Medicover - Atrium, Centrum Medicover - Tarchomin"
   },
   {
-    "DoctorName": "Dariusz Czerwiński",
-    "Restrictions": "",
-    "Specialities": "Ortopeda, Ortopeda dziecięcy",
-    "Rank": "2/5",
-    "SurveyCount": "113",
-    "Place": "Centrum Medicover - Grunwaldzka"
-  },
-  {
     "DoctorName": "Arkadiusz Nowak",
     "Restrictions": "",
     "Specialities": "Neurochirurg",
@@ -1013,7 +989,7 @@
     "Specialities": "Urolog, Urolog dziecięcy",
     "Rank": "4/5",
     "SurveyCount": "111",
-    "Place": "Szpital Medicover, Centrum Medicover - Klimczaka"
+    "Place": "Szpital Medicover"
   },
   {
     "DoctorName": "Lesław Pawlak",
@@ -1176,14 +1152,6 @@
     "Place": "Centrum Medicover - Piłsudskiego Łódź"
   },
   {
-    "DoctorName": "Małgorzata Preś - Jachimowska",
-    "Restrictions": "",
-    "Specialities": "Neurolog",
-    "Rank": "2.5/5",
-    "SurveyCount": "91",
-    "Place": "Centrum Medicover - Wołoska"
-  },
-  {
     "DoctorName": "Marek Śliwiński",
     "Restrictions": "",
     "Specialities": "Endokrynolog, Ginekolog",
@@ -1288,14 +1256,6 @@
     "Place": "Centrum Medycyny Pracy"
   },
   {
-    "DoctorName": "Małgorzata Niedźwiecka",
-    "Restrictions": "",
-    "Specialities": "Ginekolog",
-    "Rank": "2.5/5",
-    "SurveyCount": "87",
-    "Place": "Centrum Medicover - Grunwaldzka"
-  },
-  {
     "DoctorName": "Renata Karpińska - Miluśka",
     "Restrictions": "",
     "Specialities": "Okulista",
@@ -1357,7 +1317,7 @@
     "Specialities": "Okulista, Okulista dziecięcy",
     "Rank": "3/5",
     "SurveyCount": "78",
-    "Place": "Warszawa CM Prosta"
+    "Place": "Centrum Medycyny Pracy, Warszawa CM Prosta"
   },
   {
     "DoctorName": "Andrzej Cieślik",
@@ -1488,14 +1448,6 @@
     "Place": "Centrum Medycyny Pracy"
   },
   {
-    "DoctorName": "Agnieszka Harabin - Matysiak",
-    "Restrictions": "",
-    "Specialities": "Ginekolog",
-    "Rank": "4/5",
-    "SurveyCount": "61",
-    "Place": "Centrum Medicover - Inflancka"
-  },
-  {
     "DoctorName": "Halina Zbłowska",
     "Restrictions": "",
     "Specialities": "Lekarz medycyny pracy, Neurochirurg, Neurolog",
@@ -1621,7 +1573,7 @@
     "Specialities": "Pediatra",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Inflancka, Szpital Medicover"
+    "Place": "Centrum Medicover - Inflancka"
   },
   {
     "DoctorName": "Michał Bujacki",
@@ -1661,7 +1613,7 @@
     "Specialities": "Dietetyk, Dietetyk dziecięcy",
     "Rank": "3/5",
     "SurveyCount": "44",
-    "Place": "Centrum Medicover - Pomorska Łódź, Centrum Medicover Rydza-Śmigłego"
+    "Place": "Centrum Medicover - Pomorska Łódź"
   },
   {
     "DoctorName": "Anna Hamielec - Machaczka",
@@ -1694,14 +1646,6 @@
     "Rank": "3.5/5",
     "SurveyCount": "44",
     "Place": "Centrum Medicover - Jerozolimskie"
-  },
-  {
-    "DoctorName": "Ryszard Zbroński",
-    "Restrictions": "",
-    "Specialities": "Urolog",
-    "Rank": "4/5",
-    "SurveyCount": "44",
-    "Place": "Centrum Medicover - Gliwice"
   },
   {
     "DoctorName": "Laura Ziuzia",
@@ -1912,14 +1856,6 @@
     "Place": "Centrum Medicover - Wołoska"
   },
   {
-    "DoctorName": "Barbara Białynicka - Birula",
-    "Restrictions": "",
-    "Specialities": "Lekarz medycyny podróży dzieci, Pediatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Grunwaldzka"
-  },
-  {
     "DoctorName": "Anna Dąbrowska",
     "Restrictions": "",
     "Specialities": "Pediatra",
@@ -1958,14 +1894,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Pomorska Łódź"
-  },
-  {
-    "DoctorName": "Maria G&#243;rnaś",
-    "Restrictions": "",
-    "Specialities": "Onkolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Inflancka"
   },
   {
     "DoctorName": "Emilia Karchier",
@@ -2216,14 +2144,6 @@
     "Place": "Centrum Medicover - Kraków Podgórska"
   },
   {
-    "DoctorName": "Robert Bliźniewski",
-    "Restrictions": "",
-    "Specialities": "",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Piłsudskiego Łódź"
-  },
-  {
     "DoctorName": "Albert Boguszewski",
     "Restrictions": "",
     "Specialities": "Neurolog",
@@ -2384,14 +2304,6 @@
     "Place": "Stomatologia Medicover - Atrium, Centrum Medicover - Puławska"
   },
   {
-    "DoctorName": "Anna Jankowska",
-    "Restrictions": "",
-    "Specialities": "Kardiolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Lublin"
-  },
-  {
     "DoctorName": "Andrzej Jarosz",
     "Restrictions": "",
     "Specialities": "Internista, Lekarz medycyny pracy",
@@ -2424,28 +2336,12 @@
     "Place": "Centrum Medicover - Wołoska"
   },
   {
-    "DoctorName": "Hubert Jezierski",
-    "Restrictions": "",
-    "Specialities": "Ortopeda",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Klimczaka"
-  },
-  {
     "DoctorName": "Piotr Kamasiński",
     "Restrictions": "",
     "Specialities": "Fizjoterapeuta",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Pomorska Łódź, Centrum Medicover Rydza-Śmigłego"
-  },
-  {
-    "DoctorName": "Piotr Kamiński",
-    "Restrictions": "",
-    "Specialities": "Alergolog, Alergolog dziecięcy",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Lublin"
   },
   {
     "DoctorName": "Łukasz Kapiczenko",
@@ -2469,7 +2365,7 @@
     "Specialities": "Internista, Lekarz medycyny pracy",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medi Partner Kraków (Jasnogórska), Centrum Medi Partner Kraków (Świętokrzyska)"
+    "Place": "Centrum Medi Partner Kraków (Świętokrzyska)"
   },
   {
     "DoctorName": "Iwonna Katana - Jakubowicz",
@@ -2581,7 +2477,7 @@
     "Specialities": "Alergolog, Alergolog dziecięcy",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Gdynia Sea Towers, Centrum Medicover - Grunwaldzka"
+    "Place": "Centrum Medicover - Grunwaldzka"
   },
   {
     "DoctorName": "Maria Kuszej",
@@ -2797,7 +2693,7 @@
     "Specialities": "",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Jerozolimskie, Centrum Medicover - Klimczaka"
+    "Place": "Centrum Medicover - Klimczaka"
   },
   {
     "DoctorName": "Dariusz Pietrasik",
@@ -2878,14 +2774,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Stomatologia Medicover - Atrium, Stomatologia Medicover Klimczaka"
-  },
-  {
-    "DoctorName": "Bogumił Paweł Siekierski",
-    "Restrictions": "",
-    "Specialities": "Ginekolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Szpital Medicover"
   },
   {
     "DoctorName": "Marta Siewert - Gutowska",
@@ -3153,7 +3041,7 @@
   },
   {
     "DoctorName": "Wiaczesław Bramski",
-    "Restrictions": "",
+    "Restrictions": "Lekarz kieruje się klauzulą sumienia",
     "Specialities": "Ginekolog",
     "Rank": "4.5/5",
     "SurveyCount": "640",
@@ -3181,7 +3069,7 @@
     "Specialities": "Dermatolog, Dermatolog dziecięcy",
     "Rank": "4.5/5",
     "SurveyCount": "497",
-    "Place": "Centrum Medicover - Katowice Graniczna, Centrum Medicover - Bielsko - Biała, Centrum Medicover - Katowice Chorzowska"
+    "Place": "Centrum Medicover - Katowice Graniczna, Centrum Medicover - Bielsko - Biała"
   },
   {
     "DoctorName": "Sylwia Wojciechowska",
@@ -3425,7 +3313,7 @@
   },
   {
     "DoctorName": "Tomasz Zajdel",
-    "Restrictions": "",
+    "Restrictions": "Lekarz kieruje się klauzulą sumienia",
     "Specialities": "Ginekolog",
     "Rank": "3/5",
     "SurveyCount": "283",
@@ -3473,7 +3361,7 @@
   },
   {
     "DoctorName": "Marcin Duczmal",
-    "Restrictions": "",
+    "Restrictions": "Lekarz kieruje się klauzulą sumienia",
     "Specialities": "Internista, Lekarz medycyny rodzinnej, Lekarz medycyny rodzinnej dzieci",
     "Rank": "4.5/5",
     "SurveyCount": "270",
@@ -3517,7 +3405,7 @@
     "Specialities": "Internista, Lekarz medycyny rodzinnej, Lekarz medycyny rodzinnej dzieci",
     "Rank": "4.5/5",
     "SurveyCount": "256",
-    "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
+    "Place": "Centrum Medicover - Kraków Bora Komorowskiego, Centrum Medi Partner Kraków (Jasnogórska)"
   },
   {
     "DoctorName": "Bogdan Patalan",
@@ -3669,7 +3557,7 @@
     "Specialities": "Ortopeda",
     "Rank": "3/5",
     "SurveyCount": "235",
-    "Place": "Centrum Medicover - Katowice Graniczna, Centrum Medicover - Katowice Chorzowska"
+    "Place": "Centrum Medicover - Katowice Chorzowska"
   },
   {
     "DoctorName": "Aleksandra Kardaszewicz",
@@ -3801,7 +3689,7 @@
   },
   {
     "DoctorName": "Agata Targowska - Ferenc",
-    "Restrictions": "",
+    "Restrictions": "Lekarz kieruje się klauzulą sumienia",
     "Specialities": "Ginekolog",
     "Rank": "3.5/5",
     "SurveyCount": "208",
@@ -3909,7 +3797,7 @@
     "Specialities": "Ortopeda",
     "Rank": "4/5",
     "SurveyCount": "192",
-    "Place": "Szpital Medicover"
+    "Place": "Szpital Medicover, Warszawa CM Prosta"
   },
   {
     "DoctorName": "Rafał Sołtysek",
@@ -3934,14 +3822,6 @@
     "Rank": "3.5/5",
     "SurveyCount": "188",
     "Place": "Centrum Medicover - Piłsudskiego Łódź"
-  },
-  {
-    "DoctorName": "Małgorzata Goławska",
-    "Restrictions": "",
-    "Specialities": "Ginekolog",
-    "Rank": "4/5",
-    "SurveyCount": "188",
-    "Place": "Centrum Medicover - Puławska"
   },
   {
     "DoctorName": "Marcin Jopek",
@@ -4005,7 +3885,7 @@
     "Specialities": "Okulista, Okulista dziecięcy",
     "Rank": "4.5/5",
     "SurveyCount": "180",
-    "Place": "Centrum Medicover - Strzegomska Wrocław, Centrum Medicover - Globis Wrocław, Wrocław CM Tarasy Grabiszyńskie"
+    "Place": "Centrum Medicover - Globis Wrocław, Wrocław CM Tarasy Grabiszyńskie"
   },
   {
     "DoctorName": "Łukasz Blukacz",
@@ -4029,7 +3909,7 @@
     "Specialities": "Neurolog",
     "Rank": "3/5",
     "SurveyCount": "176",
-    "Place": "Centrum Medicover - Katowice Graniczna, Centrum Medicover - Katowice Chorzowska, Centrum Medicover - Katowice Bednorza"
+    "Place": "Centrum Medicover - Katowice Chorzowska, Centrum Medicover - Katowice Bednorza"
   },
   {
     "DoctorName": "Aleksandra Hołowiecka",
@@ -4080,20 +3960,12 @@
     "Place": "Centrum Medicover - Katowice Graniczna"
   },
   {
-    "DoctorName": "Małgorzata Micał - Strąk",
-    "Restrictions": "",
-    "Specialities": "Dermatolog, Dermatolog dziecięcy",
-    "Rank": "5/5",
-    "SurveyCount": "170",
-    "Place": "Centrum Medicover - Globis Wrocław"
-  },
-  {
     "DoctorName": "Julita Duda",
     "Restrictions": "",
     "Specialities": "Endokrynolog, Internista, Lekarz medycyny rodzinnej",
     "Rank": "4/5",
     "SurveyCount": "169",
-    "Place": "e-wizyta, Centrum Medicover - Szczecin"
+    "Place": "Centrum Medicover - Szczecin"
   },
   {
     "DoctorName": "Marcin Ducki",
@@ -4142,6 +4014,14 @@
     "Rank": "4/5",
     "SurveyCount": "167",
     "Place": "Centrum Medicover - Szczecin"
+  },
+  {
+    "DoctorName": "Renata Skrzypczak - Sokołowska",
+    "Restrictions": "",
+    "Specialities": "Internista",
+    "Rank": "4.5/5",
+    "SurveyCount": "167",
+    "Place": "Centrum Medicover - Poznań Malta"
   },
   {
     "DoctorName": "Rafał Moczarski",
@@ -4437,7 +4317,7 @@
     "Specialities": "Internista, Lekarz medycyny rodzinnej, Lekarz medycyny rodzinnej dzieci, Pediatra",
     "Rank": "4/5",
     "SurveyCount": "139",
-    "Place": "Centrum Medicover - Pomorska Łódź"
+    "Place": "Centrum Medicover - Pomorska Łódź, Centrum Medicover - Piłsudskiego Łódź"
   },
   {
     "DoctorName": "Aleksandra Semik - Orzech",
@@ -4600,14 +4480,6 @@
     "Place": "Centrum Medicover - Globis Wrocław"
   },
   {
-    "DoctorName": "Anna Michalik - Wójcik",
-    "Restrictions": "",
-    "Specialities": "Okulista, Okulista dziecięcy",
-    "Rank": "4.5/5",
-    "SurveyCount": "126",
-    "Place": "Centrum Medicover - Kraków Podgórska"
-  },
-  {
     "DoctorName": "Paweł Alexewicz",
     "Restrictions": "",
     "Specialities": "Angiolog",
@@ -4637,7 +4509,7 @@
     "Specialities": "Okulista, Okulista dziecięcy",
     "Rank": "4.5/5",
     "SurveyCount": "125",
-    "Place": "Centrum Medicover - Jerozolimskie, Centrum Medicover - Łukiska"
+    "Place": "Centrum Medicover - Jerozolimskie"
   },
   {
     "DoctorName": "Anna Plucik - Mrożek",
@@ -4645,7 +4517,7 @@
     "Specialities": "Internista, Lekarz medycyny sportowej",
     "Rank": "4.5/5",
     "SurveyCount": "125",
-    "Place": "Centrum Medicover - Jerozolimskie, Szpital Medicover"
+    "Place": "Centrum Medicover - Jerozolimskie"
   },
   {
     "DoctorName": "Anna Wrzosek",
@@ -4912,14 +4784,6 @@
     "Place": "Warszawa CM Prosta"
   },
   {
-    "DoctorName": "Ewa Kwiatek - Kołcon",
-    "Restrictions": "",
-    "Specialities": "Internista",
-    "Rank": "4/5",
-    "SurveyCount": "105",
-    "Place": "Centrum Medicover - Katowice Chorzowska"
-  },
-  {
     "DoctorName": "Kinga Zimna",
     "Restrictions": "",
     "Specialities": "Ginekolog, Ginekolog dziecięcy",
@@ -4949,7 +4813,7 @@
     "Specialities": "Ginekolog Endokrynolog",
     "Rank": "3.5/5",
     "SurveyCount": "104",
-    "Place": "Centrum Medicover - Grochowska, Centrum Medicover - Łukiska"
+    "Place": "Centrum Medicover - Grochowska"
   },
   {
     "DoctorName": "Ilona Dziemianko",
@@ -4998,6 +4862,14 @@
     "Rank": "5/5",
     "SurveyCount": "101",
     "Place": "Centrum Medicover - Lublin"
+  },
+  {
+    "DoctorName": "Krzysztof Król",
+    "Restrictions": "",
+    "Specialities": "Ortopeda",
+    "Rank": "3.5/5",
+    "SurveyCount": "100",
+    "Place": "Szpital Medicover"
   },
   {
     "DoctorName": "Agata Wasilewska",
@@ -5064,14 +4936,6 @@
     "Place": "Centrum Medicover - Poznań Malta"
   },
   {
-    "DoctorName": "Anna Bronikowska - Kolasa",
-    "Restrictions": "",
-    "Specialities": "Dermatolog",
-    "Rank": "4/5",
-    "SurveyCount": "95",
-    "Place": "Centrum Medicover - Grochowska"
-  },
-  {
     "DoctorName": "Bernadetta Kałuża",
     "Restrictions": "",
     "Specialities": "Endokrynolog, Internista",
@@ -5104,14 +4968,6 @@
     "Place": "Centrum Medicover - Katowice Graniczna"
   },
   {
-    "DoctorName": "Magdalena Ignaszak - Szczepaniak",
-    "Restrictions": "",
-    "Specialities": "Endokrynolog, Internista",
-    "Rank": "4.5/5",
-    "SurveyCount": "93",
-    "Place": "Centrum Medicover - Poznań Plac Andersa"
-  },
-  {
     "DoctorName": "Joanna Kostrzewska",
     "Restrictions": "",
     "Specialities": "Internista",
@@ -5125,7 +4981,7 @@
     "Specialities": "Ortopeda",
     "Rank": "3/5",
     "SurveyCount": "92",
-    "Place": "Centrum Medicover - Kraków Bora Komorowskiego, Centrum Medicover - Kraków Podgórska"
+    "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
   },
   {
     "DoctorName": "Magdalena Milewicz",
@@ -5150,14 +5006,6 @@
     "Rank": "4/5",
     "SurveyCount": "91",
     "Place": "Centrum Medicover - Atrium"
-  },
-  {
-    "DoctorName": "Bartosz Cieślak",
-    "Restrictions": "",
-    "Specialities": "Chirurg",
-    "Rank": "4/5",
-    "SurveyCount": "91",
-    "Place": "Warszawa CM Prosta"
   },
   {
     "DoctorName": "Anna Gołębiewska",
@@ -5192,6 +5040,14 @@
     "Place": "Centrum Medicover - Gdynia Sea Towers"
   },
   {
+    "DoctorName": "Iwona Świdzińska",
+    "Restrictions": "",
+    "Specialities": "Dermatolog, Dermatolog dziecięcy",
+    "Rank": "3.5/5",
+    "SurveyCount": "90",
+    "Place": "Centrum Medicover - Jerozolimskie"
+  },
+  {
     "DoctorName": "Anna Bienkiewicz",
     "Restrictions": "",
     "Specialities": "Internista, Kardiolog",
@@ -5205,7 +5061,7 @@
     "Specialities": "Okulista, Okulista dziecięcy",
     "Rank": "4/5",
     "SurveyCount": "89",
-    "Place": "Centrum Medicover - Pomorska Łódź, Centrum Medicover Rydza-Śmigłego"
+    "Place": "Centrum Medicover Rydza-Śmigłego"
   },
   {
     "DoctorName": "Anna Goździk",
@@ -5240,16 +5096,8 @@
     "Place": "Centrum Medicover - Wołoska"
   },
   {
-    "DoctorName": "Dorota Grędziak - Straś",
-    "Restrictions": "",
-    "Specialities": "Dermatolog, Dermatolog dziecięcy",
-    "Rank": "4/5",
-    "SurveyCount": "87",
-    "Place": "Centrum Medicover - Globis Wrocław"
-  },
-  {
     "DoctorName": "Elżbieta Krupa",
-    "Restrictions": "",
+    "Restrictions": "Lekarz kieruje się klauzulą sumienia",
     "Specialities": "Ginekolog",
     "Rank": "4/5",
     "SurveyCount": "87",
@@ -5397,15 +5245,7 @@
     "Specialities": "Okulista, Okulista dziecięcy",
     "Rank": "4.5/5",
     "SurveyCount": "83",
-    "Place": "Centrum Medycyny Pracy, Centrum Medicover - Łukiska"
-  },
-  {
-    "DoctorName": "Karolina Golkowska",
-    "Restrictions": "",
-    "Specialities": "Ginekolog",
-    "Rank": "3/5",
-    "SurveyCount": "83",
-    "Place": "Centrum Medicover - Poznań Plac Andersa"
+    "Place": "Centrum Medicover - Łukiska"
   },
   {
     "DoctorName": "Agnieszka Kondratowicz",
@@ -5584,14 +5424,6 @@
     "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
   },
   {
-    "DoctorName": "Łukasz Konkol",
-    "Restrictions": "",
-    "Specialities": "Chirurg",
-    "Rank": "4/5",
-    "SurveyCount": "79",
-    "Place": "Centrum Medicover - Grunwaldzka"
-  },
-  {
     "DoctorName": "Wojciech Skrzypczak",
     "Restrictions": "",
     "Specialities": "Laryngolog, Laryngolog dziecięcy",
@@ -5694,14 +5526,6 @@
     "Rank": "4.5/5",
     "SurveyCount": "76",
     "Place": "Centrum Medicover - Katowice Graniczna"
-  },
-  {
-    "DoctorName": "Ewa Głąb",
-    "Restrictions": "",
-    "Specialities": "Endokrynolog, Endokrynolog dziecięcy",
-    "Rank": "4/5",
-    "SurveyCount": "75",
-    "Place": "Centrum Medicover - Globis Wrocław"
   },
   {
     "DoctorName": "Agnieszka Kuch - Wocial",
@@ -5813,7 +5637,7 @@
     "Specialities": "Okulista, Okulista dziecięcy",
     "Rank": "4/5",
     "SurveyCount": "72",
-    "Place": "Centrum Medicover - Wołoska, Centrum Medycyny Pracy, Centrum Medicover - Puławska"
+    "Place": "Centrum Medicover - Wołoska, Centrum Medicover - Puławska"
   },
   {
     "DoctorName": "Zofia Syska - Mastalerz",
@@ -5845,15 +5669,7 @@
     "Specialities": "Internista",
     "Rank": "3.5/5",
     "SurveyCount": "71",
-    "Place": "Centrum Medicover - Strzegomska Wrocław, Wrocław CM Pogotowie"
-  },
-  {
-    "DoctorName": "Izabela Materek - Kuśmierkiewicz",
-    "Restrictions": "",
-    "Specialities": "Diabetolog, Internista",
-    "Rank": "5/5",
-    "SurveyCount": "71",
-    "Place": "Centrum Medicover - Piłsudskiego Łódź"
+    "Place": "Wrocław CM Pogotowie"
   },
   {
     "DoctorName": "Agnieszka Muszyńska",
@@ -5861,7 +5677,7 @@
     "Specialities": "Internista, Lekarz medycyny rodzinnej, Lekarz medycyny rodzinnej dzieci, Pediatra",
     "Rank": "4/5",
     "SurveyCount": "71",
-    "Place": "Centrum Medicover - Strzegomska Wrocław, e-wizyta"
+    "Place": "e-wizyta"
   },
   {
     "DoctorName": "Justyna Sowińska",
@@ -5984,14 +5800,6 @@
     "Place": "Centrum Medicover - Bielsko - Biała"
   },
   {
-    "DoctorName": "Wojciech Wrona",
-    "Restrictions": "",
-    "Specialities": "Ginekolog",
-    "Rank": "5/5",
-    "SurveyCount": "68",
-    "Place": "Centrum Medicover - Lublin"
-  },
-  {
     "DoctorName": "Agnieszka Czyżewska",
     "Restrictions": "",
     "Specialities": "Gastroenterolog",
@@ -6096,14 +5904,6 @@
     "Place": "Centrum Medicover - Szczecin"
   },
   {
-    "DoctorName": "Aleksandra Wach",
-    "Restrictions": "",
-    "Specialities": "Internista",
-    "Rank": "2.5/5",
-    "SurveyCount": "65",
-    "Place": "Warszawa CM Prosta"
-  },
-  {
     "DoctorName": "Katarzyna Bladocha - Kołodziej",
     "Restrictions": "",
     "Specialities": "Ginekolog",
@@ -6134,14 +5934,6 @@
     "Rank": "3/5",
     "SurveyCount": "64",
     "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
-  },
-  {
-    "DoctorName": "Tomasz Kruszyna",
-    "Restrictions": "",
-    "Specialities": "Chirurg, Proktolog",
-    "Rank": "5/5",
-    "SurveyCount": "64",
-    "Place": "Centrum Medicover - Kraków Podgórska"
   },
   {
     "DoctorName": "Ewa Paw",
@@ -6256,6 +6048,14 @@
     "Place": "Centrum Medicover - Inflancka"
   },
   {
+    "DoctorName": "Adam Gesing",
+    "Restrictions": "",
+    "Specialities": "Endokrynolog",
+    "Rank": "5/5",
+    "SurveyCount": "61",
+    "Place": "Centrum Medicover - Piłsudskiego Łódź"
+  },
+  {
     "DoctorName": "Justyna Jachimowska",
     "Restrictions": "",
     "Specialities": "Kardiolog",
@@ -6309,7 +6109,7 @@
     "Specialities": "Internista, Lekarz medycyny rodzinnej, Lekarz medycyny rodzinnej dzieci, Lekarz medycyny sportowej",
     "Rank": "4/5",
     "SurveyCount": "59",
-    "Place": "Volvo OH - Wrocław"
+    "Place": "Centrum Medicover - Strzegomska Wrocław"
   },
   {
     "DoctorName": "Magdalena Bizoń - Szpernalowska",
@@ -6470,14 +6270,6 @@
     "Rank": "4/5",
     "SurveyCount": "55",
     "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
-  },
-  {
-    "DoctorName": "Bartosz Adamiec",
-    "Restrictions": "",
-    "Specialities": "Ginekolog",
-    "Rank": "1/5",
-    "SurveyCount": "54",
-    "Place": "Centrum Medicover - Grochowska"
   },
   {
     "DoctorName": "Aneta Ficek - Roszyk",
@@ -6661,15 +6453,7 @@
     "Specialities": "Okulista",
     "Rank": "1.5/5",
     "SurveyCount": "48",
-    "Place": "Centrum Medicover - Kraków Podgórska, Centrum Medi Partner Kraków (Świętokrzyska), Centrum Medicover - Kraków Ruczaj"
-  },
-  {
-    "DoctorName": "Marta Piepiorka - Broniecka",
-    "Restrictions": "",
-    "Specialities": "Kardiolog",
-    "Rank": "4/5",
-    "SurveyCount": "48",
-    "Place": "Centrum Medicover - Gdynia Sea Towers"
+    "Place": "Centrum Medicover - Kraków Podgórska, Centrum Medi Partner Kraków (Świętokrzyska)"
   },
   {
     "DoctorName": "Edyta Tetera - Rudnicka",
@@ -6797,7 +6581,7 @@
     "Specialities": "Okulista, Okulista dziecięcy",
     "Rank": "5/5",
     "SurveyCount": "46",
-    "Place": "Centrum Medycyny Pracy, Centrum Medicover - Klimczaka"
+    "Place": "Centrum Medycyny Pracy"
   },
   {
     "DoctorName": "Barbara Pluta - Walczak",
@@ -6814,14 +6598,6 @@
     "Rank": "4.5/5",
     "SurveyCount": "46",
     "Place": "Centrum Medicover - Kraków Podgórska"
-  },
-  {
-    "DoctorName": "Anna Ujazdowska",
-    "Restrictions": "",
-    "Specialities": "Okulista, Okulista dziecięcy",
-    "Rank": "2/5",
-    "SurveyCount": "46",
-    "Place": "Centrum Medicover - Grunwaldzka"
   },
   {
     "DoctorName": "Piotr Zalewski",
@@ -6853,7 +6629,7 @@
     "Specialities": "Ortopeda",
     "Rank": "4.5/5",
     "SurveyCount": "45",
-    "Place": "Szpital Medicover, Warszawa CM Prosta"
+    "Place": "Szpital Medicover"
   },
   {
     "DoctorName": "Anna Krzemińska",
@@ -6950,14 +6726,6 @@
     "Rank": "5/5",
     "SurveyCount": "44",
     "Place": "Centrum Medicover - Strzegomska Wrocław"
-  },
-  {
-    "DoctorName": "Jadwiga Bernardczyk - Meller",
-    "Restrictions": "",
-    "Specialities": "Okulista, Okulista dziecięcy",
-    "Rank": "2/5",
-    "SurveyCount": "43",
-    "Place": "Centrum Medicover - Poznań Malta"
   },
   {
     "DoctorName": "Jan Dąbrowski",
@@ -7120,14 +6888,6 @@
     "Place": "Centrum Medicover - Puławska"
   },
   {
-    "DoctorName": "Mateusz Jęckowski",
-    "Restrictions": "",
-    "Specialities": "Chirurg",
-    "Rank": "4/5",
-    "SurveyCount": "41",
-    "Place": "Centrum Medicover - Piłsudskiego Łódź"
-  },
-  {
     "DoctorName": "Barbara Larysz",
     "Restrictions": "",
     "Specialities": "Kardiolog",
@@ -7142,14 +6902,6 @@
     "Rank": "3.5/5",
     "SurveyCount": "41",
     "Place": "Centrum Medicover - Wołoska"
-  },
-  {
-    "DoctorName": "Małgorzata Migdał",
-    "Restrictions": "",
-    "Specialities": "Ginekolog",
-    "Rank": "2/5",
-    "SurveyCount": "41",
-    "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
   },
   {
     "DoctorName": "Marzena Pietrzak",
@@ -7269,15 +7021,7 @@
     "Specialities": "Chirurg",
     "Rank": "4/5",
     "SurveyCount": "40",
-    "Place": "Centrum Medicover - Poznań Plac Andersa, Centrum Medi Partner Poznań"
-  },
-  {
-    "DoctorName": "Piotr Straszyński",
-    "Restrictions": "",
-    "Specialities": "Laryngolog",
-    "Rank": "4/5",
-    "SurveyCount": "40",
-    "Place": "Warszawa CM Prosta"
+    "Place": "Centrum Medicover - Poznań Plac Andersa"
   },
   {
     "DoctorName": "Kinga Wilusz - Ludwiczak",
@@ -7293,7 +7037,7 @@
     "Specialities": "Dermatolog, Dermatolog dziecięcy",
     "Rank": "4/5",
     "SurveyCount": "40",
-    "Place": "Centrum Medi Partner Poznań"
+    "Place": "Centrum Medicover - Poznań Malta"
   },
   {
     "DoctorName": "Wioletta Wójcik",
@@ -7326,22 +7070,6 @@
     "Rank": "4.5/5",
     "SurveyCount": "39",
     "Place": "Centrum Medicover - Atrium"
-  },
-  {
-    "DoctorName": "Krzysztof Rękawek",
-    "Restrictions": "",
-    "Specialities": "Ortopeda, Ortopeda dziecięcy",
-    "Rank": "4/5",
-    "SurveyCount": "39",
-    "Place": "Centrum Medicover - Szczecin"
-  },
-  {
-    "DoctorName": "Izabela Sowińska",
-    "Restrictions": "",
-    "Specialities": "Laryngolog, Laryngolog dziecięcy",
-    "Rank": "3.5/5",
-    "SurveyCount": "39",
-    "Place": "Centrum Medicover - Gliwice"
   },
   {
     "DoctorName": "Alicja Stańczuk",
@@ -7446,14 +7174,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Poznań Malta"
-  },
-  {
-    "DoctorName": "Małgorzata Piotrowska - Iwaniuk",
-    "Restrictions": "",
-    "Specialities": "Diabetolog, Internista",
-    "Rank": "4/5",
-    "SurveyCount": "38",
-    "Place": "Centrum Medicover - Tarchomin"
   },
   {
     "DoctorName": "Monika Popiak",
@@ -7592,14 +7312,6 @@
     "Place": "Centrum Medicover - Lublin"
   },
   {
-    "DoctorName": "Marcin Tomalski",
-    "Restrictions": "",
-    "Specialities": "Ortopeda",
-    "Rank": "4/5",
-    "SurveyCount": "37",
-    "Place": "Centrum Medicover - Kraków Podgórska"
-  },
-  {
     "DoctorName": "Małgorzata Wyszyńska - Kowalewska",
     "Restrictions": "",
     "Specialities": "Okulista, Okulista dziecięcy",
@@ -7648,14 +7360,6 @@
     "Place": "Centrum Medicover Rydza-Śmigłego"
   },
   {
-    "DoctorName": "Mariusz Karlik",
-    "Restrictions": "",
-    "Specialities": "Pulmonolog",
-    "Rank": "4.5/5",
-    "SurveyCount": "36",
-    "Place": "Centrum Medicover - Katowice Chorzowska"
-  },
-  {
     "DoctorName": "Grzegorz Karpiński",
     "Restrictions": "",
     "Specialities": "Ortopeda",
@@ -7680,28 +7384,12 @@
     "Place": "Centrum Medicover Rydza-Śmigłego"
   },
   {
-    "DoctorName": "Lidia Nycz",
-    "Restrictions": "",
-    "Specialities": "Chirurg",
-    "Rank": "4/5",
-    "SurveyCount": "36",
-    "Place": "Centrum Medicover - Bielsko - Biała"
-  },
-  {
     "DoctorName": "Monika Przegalińska - Kałamucka",
     "Restrictions": "",
     "Specialities": "Ginekolog",
     "Rank": "3/5",
     "SurveyCount": "36",
     "Place": "Centrum Medicover - Lublin"
-  },
-  {
-    "DoctorName": "Przemysław Susicki",
-    "Restrictions": "",
-    "Specialities": "Chirurg, Onkolog",
-    "Rank": "4/5",
-    "SurveyCount": "36",
-    "Place": "Centrum Medicover – Bydgoszcz"
   },
   {
     "DoctorName": "Jerzy Bruś",
@@ -7718,14 +7406,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Wrocław CM Tarasy Grabiszyńskie"
-  },
-  {
-    "DoctorName": "Grzegorz Gomoliński",
-    "Restrictions": "",
-    "Specialities": "Chirurg dziecięcy, Ortopeda dziecięcy",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Jerozolimskie"
   },
   {
     "DoctorName": "Paweł Majak",
@@ -7777,7 +7457,7 @@
   },
   {
     "DoctorName": "Błażej Szuflak",
-    "Restrictions": "",
+    "Restrictions": "Lekarz kieruje się klauzulą sumienia",
     "Specialities": "Chirurg",
     "Rank": "3.5/5",
     "SurveyCount": "35",
@@ -7797,7 +7477,7 @@
     "Specialities": "Internista, Lekarz medycyny pracy",
     "Rank": "4.5/5",
     "SurveyCount": "34",
-    "Place": "Centrum Medicover Rydza-Śmigłego"
+    "Place": "Centrum Medicover - Piłsudskiego Łódź, Centrum Medicover Rydza-Śmigłego"
   },
   {
     "DoctorName": "Teresa Griesgraber",
@@ -7821,14 +7501,6 @@
     "Specialities": "Gastroenterolog, Internista",
     "Rank": "3.5/5",
     "SurveyCount": "34",
-    "Place": "Centrum Medicover - Bielsko - Biała"
-  },
-  {
-    "DoctorName": "Bożena Kulig - Fajfer",
-    "Restrictions": "",
-    "Specialities": "Neurolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
     "Place": "Centrum Medicover - Bielsko - Biała"
   },
   {
@@ -7909,7 +7581,7 @@
     "Specialities": "Neurolog",
     "Rank": "4/5",
     "SurveyCount": "33",
-    "Place": "Centrum Medicover - Kraków Podgórska, Centrum Medi Partner Kraków (Świętokrzyska)"
+    "Place": "Centrum Medi Partner Kraków (Świętokrzyska)"
   },
   {
     "DoctorName": "Maria Jaranowska",
@@ -7926,14 +7598,6 @@
     "Rank": "2.5/5",
     "SurveyCount": "33",
     "Place": "Centrum Medicover - Poznań Plac Andersa"
-  },
-  {
-    "DoctorName": "Katarzyna Mihułka",
-    "Restrictions": "",
-    "Specialities": "Internista",
-    "Rank": "4.5/5",
-    "SurveyCount": "33",
-    "Place": "Centrum Medicover - Kraków Podgórska"
   },
   {
     "DoctorName": "Mirosław Moskalewicz",
@@ -7992,14 +7656,6 @@
     "Place": "Centrum Medicover - Klimczaka"
   },
   {
-    "DoctorName": "Grzegorz Szpotowicz",
-    "Restrictions": "",
-    "Specialities": "Ortopeda",
-    "Rank": "4.5/5",
-    "SurveyCount": "33",
-    "Place": "Wrocław CM Tarasy Grabiszyńskie"
-  },
-  {
     "DoctorName": "Piotr Wieniawski",
     "Restrictions": "",
     "Specialities": "Kardiolog dziecięcy, Pediatra",
@@ -8024,28 +7680,12 @@
     "Place": "Centrum Medicover - Kraków Podgórska"
   },
   {
-    "DoctorName": "Marta Bittner",
-    "Restrictions": "",
-    "Specialities": "Alergolog dziecięcy",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Katowice Graniczna"
-  },
-  {
     "DoctorName": "Roman Bubiński",
     "Restrictions": "",
     "Specialities": "Kardiolog",
     "Rank": "3.5/5",
     "SurveyCount": "32",
     "Place": "Centrum Medicover - Piłsudskiego Łódź"
-  },
-  {
-    "DoctorName": "Mariusz Cieślak",
-    "Restrictions": "",
-    "Specialities": "Pediatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Jerozolimskie"
   },
   {
     "DoctorName": "Elżbieta Droszcz - Karsz",
@@ -8081,7 +7721,7 @@
   },
   {
     "DoctorName": "Irena Kaim",
-    "Restrictions": "",
+    "Restrictions": "Lekarz kieruje się klauzulą sumienia",
     "Specialities": "Ginekolog",
     "Rank": "3.5/5",
     "SurveyCount": "32",
@@ -8173,15 +7813,7 @@
     "Specialities": "Pediatra",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Gdynia Sea Towers"
-  },
-  {
-    "DoctorName": "Mariusz Skoneczny",
-    "Restrictions": "",
-    "Specialities": "Urolog",
-    "Rank": "3.5/5",
-    "SurveyCount": "32",
-    "Place": "Centrum Medicover - Piłsudskiego Łódź"
+    "Place": "Centrum Medicover - Gdynia Sea Towers, e-wizyta"
   },
   {
     "DoctorName": "Katarzyna Smółka",
@@ -8232,14 +7864,6 @@
     "Place": "Centrum Medicover - Strzegomska Wrocław"
   },
   {
-    "DoctorName": "Stanisław Woźniak",
-    "Restrictions": "",
-    "Specialities": "Ortopeda",
-    "Rank": "3.5/5",
-    "SurveyCount": "32",
-    "Place": "Centrum Medicover Rydza-Śmigłego"
-  },
-  {
     "DoctorName": "Marcin Zegadło",
     "Restrictions": "",
     "Specialities": "Pediatra",
@@ -8280,14 +7904,6 @@
     "Place": "Centrum Medicover - Globis Wrocław"
   },
   {
-    "DoctorName": "Marcin Borowski",
-    "Restrictions": "",
-    "Specialities": "Ortopeda, Ortopeda dziecięcy",
-    "Rank": "4/5",
-    "SurveyCount": "31",
-    "Place": "Centrum Medicover - Katowice Graniczna"
-  },
-  {
     "DoctorName": "Jadwiga Burczyńska",
     "Restrictions": "",
     "Specialities": "Reumatolog",
@@ -8296,28 +7912,12 @@
     "Place": "Centrum Medicover - Piłsudskiego Łódź"
   },
   {
-    "DoctorName": "Dariusz Butryn",
-    "Restrictions": "",
-    "Specialities": "Ginekolog",
-    "Rank": "2.5/5",
-    "SurveyCount": "31",
-    "Place": "Centrum Medicover - Kraków Podgórska"
-  },
-  {
     "DoctorName": "Ilona Cebula - Byrska",
     "Restrictions": "",
     "Specialities": "Reumatolog",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Katowice Graniczna"
-  },
-  {
-    "DoctorName": "Agnieszka Dorocińska",
-    "Restrictions": "",
-    "Specialities": "Pediatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Grunwaldzka"
   },
   {
     "DoctorName": "Małgorzata Dziużycka",
@@ -8440,14 +8040,6 @@
     "Place": "Centrum Medicover - Bielsko - Biała"
   },
   {
-    "DoctorName": "Piotr Kuczmera",
-    "Restrictions": "",
-    "Specialities": "Ortopeda",
-    "Rank": "4.5/5",
-    "SurveyCount": "31",
-    "Place": "Centrum Medicover - Łukiska"
-  },
-  {
     "DoctorName": "Wojciech Kwaśniewski",
     "Restrictions": "",
     "Specialities": "Internista, Lekarz medycyny rodzinnej, Lekarz medycyny rodzinnej dzieci, Pediatra",
@@ -8470,6 +8062,14 @@
     "Rank": "2.5/5",
     "SurveyCount": "31",
     "Place": "Centrum Medicover – Bydgoszcz"
+  },
+  {
+    "DoctorName": "Aleksandra Liska",
+    "Restrictions": "",
+    "Specialities": "Neurolog",
+    "Rank": "3/5",
+    "SurveyCount": "31",
+    "Place": "Centrum Medicover - Katowice Chorzowska"
   },
   {
     "DoctorName": "Małgorzata Migniewicz",
@@ -8502,14 +8102,6 @@
     "Rank": "4.5/5",
     "SurveyCount": "31",
     "Place": "Centrum Medicover - Gdynia Sea Towers"
-  },
-  {
-    "DoctorName": "Michał Pędziwiatr",
-    "Restrictions": "",
-    "Specialities": "Chirurg",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
   },
   {
     "DoctorName": "Justyna Pietrasik",
@@ -8672,14 +8264,6 @@
     "Place": "Centrum Medicover - Katowice Graniczna"
   },
   {
-    "DoctorName": "Dariusz Ciećwierz",
-    "Restrictions": "",
-    "Specialities": "Kardiolog",
-    "Rank": "2.5/5",
-    "SurveyCount": "30",
-    "Place": "Centrum Medicover - Grunwaldzka"
-  },
-  {
     "DoctorName": "Witold Drexler",
     "Restrictions": "",
     "Specialities": "Laryngolog, Laryngolog dziecięcy",
@@ -8808,14 +8392,6 @@
     "Place": "Centrum Medicover - Poznań Plac Andersa"
   },
   {
-    "DoctorName": "Piotr Maciejewicz",
-    "Restrictions": "",
-    "Specialities": "Okulista",
-    "Rank": "3/5",
-    "SurveyCount": "30",
-    "Place": "Centrum Medicover - Jerozolimskie"
-  },
-  {
     "DoctorName": "Barbara Malanowicz",
     "Restrictions": "",
     "Specialities": "Lekarz medycyny rodzinnej dzieci, Pediatra",
@@ -8856,6 +8432,14 @@
     "Place": "Warszawa CM Prosta"
   },
   {
+    "DoctorName": "Grzegorz Natora",
+    "Restrictions": "",
+    "Specialities": "Ginekolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Grunwaldzka"
+  },
+  {
     "DoctorName": "Magdalena Nowacka - Mazurek",
     "Restrictions": "",
     "Specialities": "Internista, Pulmonolog",
@@ -8880,36 +8464,12 @@
     "Place": "Centrum Medicover - Szczecin"
   },
   {
-    "DoctorName": "Aneta Pogodzińska",
-    "Restrictions": "",
-    "Specialities": "Pediatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Katowice Graniczna"
-  },
-  {
-    "DoctorName": "Joanna Połowinczak - Przybyłek",
-    "Restrictions": "",
-    "Specialities": "Onkolog",
-    "Rank": "5/5",
-    "SurveyCount": "30",
-    "Place": "Centrum Medicover - Piłsudskiego Łódź"
-  },
-  {
     "DoctorName": "Marek Poniżyński",
     "Restrictions": "",
     "Specialities": "Kardiolog",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Poznań Plac Andersa, Centrum Medi Partner Poznań"
-  },
-  {
-    "DoctorName": "Beata Rechcińska - Roślak",
-    "Restrictions": "",
-    "Specialities": "Lekarz rehabilitacji dorośli i dzieci",
-    "Rank": "4/5",
-    "SurveyCount": "30",
-    "Place": "Centrum Medicover - Pomorska Łódź"
   },
   {
     "DoctorName": "Anna Ryszkowska",
@@ -8928,14 +8488,6 @@
     "Place": "Centrum Medicover - Poznań Malta"
   },
   {
-    "DoctorName": "Małgorzata Skibińska",
-    "Restrictions": "",
-    "Specialities": "Dermatolog, Dermatolog dziecięcy",
-    "Rank": "4.5/5",
-    "SurveyCount": "30",
-    "Place": "Centrum Medicover - Pomorska Łódź"
-  },
-  {
     "DoctorName": "Witold Sośnicki",
     "Restrictions": "",
     "Specialities": "Chirurg",
@@ -8950,14 +8502,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Atrium"
-  },
-  {
-    "DoctorName": "Paulina Surowiec",
-    "Restrictions": "",
-    "Specialities": "Internista",
-    "Rank": "4/5",
-    "SurveyCount": "30",
-    "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
   },
   {
     "DoctorName": "Maciej Szydłowski",
@@ -9017,7 +8561,7 @@
   },
   {
     "DoctorName": "Mohamed Aboul - Hassan",
-    "Restrictions": "",
+    "Restrictions": "Lekarz kieruje się klauzulą sumienia",
     "Specialities": "Ginekolog",
     "Rank": "brak",
     "SurveyCount": "0",
@@ -9080,6 +8624,14 @@
     "Place": "Centrum Medi Partner Poznań"
   },
   {
+    "DoctorName": "Beata Ankowska",
+    "Restrictions": "",
+    "Specialities": "Dietetyk",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Kraków Podgórska"
+  },
+  {
     "DoctorName": "Aneta Antkowicz - Breik",
     "Restrictions": "",
     "Specialities": "Internista, Kardiolog, Pediatra",
@@ -9101,15 +8653,7 @@
     "Specialities": "Alergolog, Alergolog dziecięcy, Pediatra, Pulmonolog, Pulmonolog dziecięcy",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover Rydza-Śmigłego"
-  },
-  {
-    "DoctorName": "Agnieszka Augustyn",
-    "Restrictions": "",
-    "Specialities": "Stomatolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": ""
+    "Place": "Centrum Medicover - Piłsudskiego Łódź, Centrum Medicover Rydza-Śmigłego"
   },
   {
     "DoctorName": "Grażyna Augustyniak",
@@ -9184,14 +8728,6 @@
     "Place": "Centrum Medicover - Katowice Graniczna"
   },
   {
-    "DoctorName": "Aleksander Bardyszewski",
-    "Restrictions": "",
-    "Specialities": "Internista, Kardiolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Szpital Medicover"
-  },
-  {
     "DoctorName": "Jakub Bargiel",
     "Restrictions": "",
     "Specialities": "Chirurg stomatolog, Chirurg szczękowy, Implantolog, Stomatolog",
@@ -9224,12 +8760,12 @@
     "Place": "Centrum Medycyny Pracy, MEDVIT Medi Partner Piaseczno"
   },
   {
-    "DoctorName": "Maciej Bazała",
+    "DoctorName": "Ewa Bednarek - Ciastoń",
     "Restrictions": "",
-    "Specialities": "Ortopeda",
+    "Specialities": "Lekarz medycyny rodzinnej, Lekarz medycyny rodzinnej dzieci",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Szpital Medicover"
+    "Place": "Centrum Medicover - Globis Wrocław"
   },
   {
     "DoctorName": "Magdalena Beker",
@@ -9336,28 +8872,12 @@
     "Place": "Stomatologia Medicover Kraków Pawia"
   },
   {
-    "DoctorName": "Robert Bogdanik",
-    "Restrictions": "",
-    "Specialities": "Chirurg, Internista",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Szpital Medicover"
-  },
-  {
     "DoctorName": "Tamara Bogdanowicz",
     "Restrictions": "",
     "Specialities": "Psycholog",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medi Partner Kraków (Świętokrzyska)"
-  },
-  {
-    "DoctorName": "Katarzyna Borkusiewicz",
-    "Restrictions": "",
-    "Specialities": "",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Grunwaldzka"
   },
   {
     "DoctorName": "Monika Brociek",
@@ -9381,7 +8901,7 @@
     "Specialities": "Endodonta, Stomatolog",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Globis Wrocław, Wrocław CM Tarasy Grabiszyńskie"
+    "Place": "Wrocław CM Tarasy Grabiszyńskie"
   },
   {
     "DoctorName": "Katarzyna Paulina Brzezińska",
@@ -9406,6 +8926,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Szpital Medicover"
+  },
+  {
+    "DoctorName": "Tomasz Buczyński",
+    "Restrictions": "",
+    "Specialities": "Pediatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Gliwice"
   },
   {
     "DoctorName": "Agnieszka Budziak",
@@ -9472,6 +9000,14 @@
     "Place": "Szpital Medicover"
   },
   {
+    "DoctorName": "Ewa Car - Korowaj",
+    "Restrictions": "",
+    "Specialities": "Stomatolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Puławska"
+  },
+  {
     "DoctorName": "Katarzyna Cembala - Jaklińska",
     "Restrictions": "",
     "Specialities": "Lekarz medycyny pracy",
@@ -9534,22 +9070,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Gdynia Sea Towers, Centrum Medicover - Grunwaldzka"
-  },
-  {
-    "DoctorName": "Maja Chrzanowska - Wąsik",
-    "Restrictions": "",
-    "Specialities": "Internista, Lekarz medycyny rodzinnej, Lekarz medycyny rodzinnej dzieci, Pediatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Lublin"
-  },
-  {
-    "DoctorName": "Michał Chudzik",
-    "Restrictions": "",
-    "Specialities": "Kardiolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Pomorska Łódź"
   },
   {
     "DoctorName": "Iwona Chybowska",
@@ -9640,20 +9160,12 @@
     "Place": "Centrum Medicover - Katowice Chorzowska"
   },
   {
-    "DoctorName": "Anna Cybulska",
-    "Restrictions": "",
-    "Specialities": "Gastroenterolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Szpital Medicover"
-  },
-  {
     "DoctorName": "Katarzyna Cybulska",
     "Restrictions": "",
     "Specialities": "Internista, Kardiolog",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Klimczaka, Szpital Medicover"
+    "Place": "Szpital Medicover"
   },
   {
     "DoctorName": "Aleksandra Cyran - Sudak",
@@ -9677,7 +9189,7 @@
     "Specialities": "Internista, Lekarz medycyny rodzinnej, Lekarz medycyny rodzinnej dzieci, Pediatra",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Piłsudskiego Łódź, Centrum Medicover Rydza-Śmigłego"
+    "Place": "Centrum Medicover - Piłsudskiego Łódź"
   },
   {
     "DoctorName": "Jolanta Czaplińska - Jaszczurowska",
@@ -9718,14 +9230,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Puławska"
-  },
-  {
-    "DoctorName": "Artur Dębski",
-    "Restrictions": "",
-    "Specialities": "Internista, Kardiolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Szpital Medicover"
   },
   {
     "DoctorName": "Zdzisława Dobrowolska",
@@ -9781,7 +9285,7 @@
     "Specialities": "Internista, Lekarz medycyny pracy, Lekarz medycyny rodzinnej",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Pomorska Łódź, Centrum Medicover Rydza-Śmigłego"
+    "Place": "Centrum Medicover - Pomorska Łódź"
   },
   {
     "DoctorName": "Jowita Dydejczyk",
@@ -9798,14 +9302,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Stomatologia Medicover Kraków Pawia"
-  },
-  {
-    "DoctorName": "Dorota Dyjor",
-    "Restrictions": "",
-    "Specialities": "",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Strzegomska Wrocław"
   },
   {
     "DoctorName": "Marian Dyński",
@@ -9904,20 +9400,20 @@
     "Place": "Stomatologia Medicover Wołoska, Stomatologia Medicover Klimczaka"
   },
   {
+    "DoctorName": "Elżbieta Fijałkowska",
+    "Restrictions": "",
+    "Specialities": "Laryngolog, Laryngolog dziecięcy",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Łukiska"
+  },
+  {
     "DoctorName": "Magdalena Fijałkowska",
     "Restrictions": "",
     "Specialities": "Internista, Lekarz medycyny pracy",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medycyny Pracy"
-  },
-  {
-    "DoctorName": "Maria Flicińska",
-    "Restrictions": "",
-    "Specialities": "Neurolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Poznań Plac Andersa"
   },
   {
     "DoctorName": "Tomasz Floriańczyk",
@@ -9957,7 +9453,7 @@
     "Specialities": "",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Pomorska Łódź, Centrum Medicover - Piłsudskiego Łódź"
+    "Place": "Centrum Medicover - Pomorska Łódź"
   },
   {
     "DoctorName": "Magdalena Gacioch",
@@ -10014,22 +9510,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "e-wizyta"
-  },
-  {
-    "DoctorName": "Dorota Gizińska",
-    "Restrictions": "",
-    "Specialities": "Psychiatra, Psychiatra dziecięcy",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Gdynia Sea Towers"
-  },
-  {
-    "DoctorName": "Dagmara Glembin",
-    "Restrictions": "",
-    "Specialities": "Laryngolog, Laryngolog dziecięcy",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Wołoska"
   },
   {
     "DoctorName": "Dorota Gliwicz - Miedzińska",
@@ -10208,14 +9688,6 @@
     "Place": "Centrum Medicover - Klimczaka, Centrum Medicover - Puławska"
   },
   {
-    "DoctorName": "Jolanta Gutarowska",
-    "Restrictions": "",
-    "Specialities": "Neurolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Piłsudskiego Łódź"
-  },
-  {
     "DoctorName": "Adam Gutowski",
     "Restrictions": "",
     "Specialities": "",
@@ -10240,6 +9712,22 @@
     "Place": "Centrum Medicover - Gdynia Sea Towers"
   },
   {
+    "DoctorName": "Barbara Haluch - Zielińska",
+    "Restrictions": "",
+    "Specialities": "Reumatolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Poznań Plac Andersa"
+  },
+  {
+    "DoctorName": "Julia Hamankiewicz",
+    "Restrictions": "",
+    "Specialities": "Pediatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Szpital Medicover"
+  },
+  {
     "DoctorName": "Magdalena Hamera",
     "Restrictions": "",
     "Specialities": "Laryngolog, Laryngolog dziecięcy",
@@ -10253,7 +9741,15 @@
     "Specialities": "Internista, Lekarz medycyny pracy",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medycyny Pracy, Centrum Medicover - Atrium, Warszawa CM Prosta"
+    "Place": "Centrum Medicover - Atrium, Warszawa CM Prosta"
+  },
+  {
+    "DoctorName": "Andrzej Hanczewski",
+    "Restrictions": "",
+    "Specialities": "Radiolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Szpital Medicover"
   },
   {
     "DoctorName": "Małgorzata Hanke",
@@ -10296,36 +9792,12 @@
     "Place": "e-wizyta"
   },
   {
-    "DoctorName": "Ilona Hill - Wiśnicka",
-    "Restrictions": "",
-    "Specialities": "",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Katowice Graniczna"
-  },
-  {
-    "DoctorName": "Joanna Horbaczewska",
-    "Restrictions": "",
-    "Specialities": "Internista",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Gliwice"
-  },
-  {
     "DoctorName": "Dominika Hryciuk",
     "Restrictions": "",
     "Specialities": "Fizjoterapeuta",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Atrium, Warszawa CM Prosta"
-  },
-  {
-    "DoctorName": "Elżbieta Hryciuk - Umer",
-    "Restrictions": "",
-    "Specialities": "Laryngolog, Laryngolog dziecięcy",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Lublin"
+    "Place": "Warszawa CM Prosta"
   },
   {
     "DoctorName": "Andrzej Hryniewicz",
@@ -10334,14 +9806,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Białystok"
-  },
-  {
-    "DoctorName": "Aleksander Husak",
-    "Restrictions": "",
-    "Specialities": "Chirurg",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Atrium"
   },
   {
     "DoctorName": "Katarzyna Hytry",
@@ -10374,14 +9838,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Puławska"
-  },
-  {
-    "DoctorName": "Dorota Jabłońska",
-    "Restrictions": "",
-    "Specialities": "Internista, Reumatolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Katowice Chorzowska"
   },
   {
     "DoctorName": "Joanna Jacko",
@@ -10496,20 +9952,12 @@
     "Place": "Centrum Medicover - Szczecin"
   },
   {
-    "DoctorName": "Marcin Jarek",
-    "Restrictions": "",
-    "Specialities": "Internista, Pediatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Klimczaka"
-  },
-  {
     "DoctorName": "Tamara Jarmińska - Jackowiak",
     "Restrictions": "",
     "Specialities": "Internista",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medi Partner Poznań"
+    "Place": "Centrum Medicover - Poznań Plac Andersa"
   },
   {
     "DoctorName": "Daniel Jarosz",
@@ -10563,14 +10011,6 @@
     "DoctorName": "Elżbieta Jezierska",
     "Restrictions": "",
     "Specialities": "",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Lublin"
-  },
-  {
-    "DoctorName": "Mariusz Jęczeń",
-    "Restrictions": "",
-    "Specialities": "Ginekolog",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Lublin"
@@ -10664,6 +10104,14 @@
     "Place": "Stomatologia Medicover Łukiska"
   },
   {
+    "DoctorName": "Halszka Kamińska",
+    "Restrictions": "",
+    "Specialities": "Kardiolog dziecięcy, Pediatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Szpital Medicover"
+  },
+  {
     "DoctorName": "Szymon Kamiński",
     "Restrictions": "",
     "Specialities": "Fizjoterapeuta",
@@ -10720,20 +10168,20 @@
     "Place": "Centrum Medycyny Pracy"
   },
   {
+    "DoctorName": "Tomasz Kędra",
+    "Restrictions": "",
+    "Specialities": "Lekarz medycyny estetycznej",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Lublin"
+  },
+  {
     "DoctorName": "Katarzyna Kiciak",
     "Restrictions": "",
     "Specialities": "Chirurg, Proktolog",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Szpital Medicover"
-  },
-  {
-    "DoctorName": "Dorota Kirejczyk",
-    "Restrictions": "",
-    "Specialities": "Psychiatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Białystok"
   },
   {
     "DoctorName": "Elżbieta Kisiel",
@@ -10832,14 +10280,6 @@
     "Place": "Centrum Medicover - Poznań Plac Andersa"
   },
   {
-    "DoctorName": "Marek Konka",
-    "Restrictions": "",
-    "Specialities": "",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Szpital Medicover"
-  },
-  {
     "DoctorName": "Ewa Kopacz",
     "Restrictions": "",
     "Specialities": "Periodontolog, Stomatolog",
@@ -10936,14 +10376,6 @@
     "Place": "Szpital Medicover"
   },
   {
-    "DoctorName": "Paulina Kowalska",
-    "Restrictions": "",
-    "Specialities": "Laryngolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover Rydza-Śmigłego"
-  },
-  {
     "DoctorName": "Edward Kowalski",
     "Restrictions": "",
     "Specialities": "Radiolog",
@@ -10957,15 +10389,7 @@
     "Specialities": "Fizjoterapeuta",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medi Partner Wrocław, Wrocław CM Tarasy Grabiszyńskie"
-  },
-  {
-    "DoctorName": "Swietłana Kozaczuk",
-    "Restrictions": "",
-    "Specialities": "Stomatolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Stomatologia Medicover Kraków Pawia"
+    "Place": "Wrocław CM Tarasy Grabiszyńskie"
   },
   {
     "DoctorName": "Magdalena Kozielczyk",
@@ -10976,20 +10400,12 @@
     "Place": "Centrum Medicover - Gdynia Sea Towers, Centrum Medicover - Grunwaldzka"
   },
   {
-    "DoctorName": "Ilona Kozub - Doros",
-    "Restrictions": "",
-    "Specialities": "Neurolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Gliwice"
-  },
-  {
     "DoctorName": "Magdalena Krakowska - Strąg",
     "Restrictions": "",
     "Specialities": "Chirurg stomatolog, Stomatolog",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Stomatologia Medicover Graniczna Katowice"
+    "Place": "Centrum Medicover - Katowice Chorzowska, Stomatologia Medicover Graniczna Katowice"
   },
   {
     "DoctorName": "Elżbieta Kraśnikow",
@@ -11064,12 +10480,12 @@
     "Place": "Stomatologia Medicover Rydza-Śmigłego"
   },
   {
-    "DoctorName": "Ida Krysińska - Grabowska",
+    "DoctorName": "Katarzyna Kryniewska",
     "Restrictions": "",
-    "Specialities": "",
+    "Specialities": "Ginekolog",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Poznań Plac Andersa"
+    "Place": "Centrum Medicover - Gdynia Sea Towers"
   },
   {
     "DoctorName": "Tomasz Kubacki",
@@ -11104,14 +10520,6 @@
     "Place": "Szpital Medicover"
   },
   {
-    "DoctorName": "Dariusz Kühn",
-    "Restrictions": "",
-    "Specialities": "Ginekolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": ""
-  },
-  {
     "DoctorName": "Renata Kujszczyk - Kot",
     "Restrictions": "",
     "Specialities": "Fizjoterapeuta",
@@ -11136,14 +10544,6 @@
     "Place": "Szpital Medicover"
   },
   {
-    "DoctorName": "Anna Kuprjanowicz",
-    "Restrictions": "",
-    "Specialities": "",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Szczecin"
-  },
-  {
     "DoctorName": "Piotr Kurnatowski",
     "Restrictions": "",
     "Specialities": "Laryngolog",
@@ -11158,14 +10558,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Szpital Medicover"
-  },
-  {
-    "DoctorName": "Agata Kurzawa",
-    "Restrictions": "",
-    "Specialities": "Okulista, Okulista dziecięcy",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Łukiska"
   },
   {
     "DoctorName": "Monika Kusowska",
@@ -11312,14 +10704,6 @@
     "Place": "Centrum Medicover - Gliwice"
   },
   {
-    "DoctorName": "Danuta Leśniak",
-    "Restrictions": "",
-    "Specialities": "Pediatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Piłsudskiego Łódź"
-  },
-  {
     "DoctorName": "Agnieszka Lewandowska",
     "Restrictions": "",
     "Specialities": "Endodonta, Stomatolog",
@@ -11342,14 +10726,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Stomatologia Medicover Rydza-Śmigłego"
-  },
-  {
-    "DoctorName": "Leszek Lewandowski",
-    "Restrictions": "",
-    "Specialities": "Ginekolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Szpital Medicover"
   },
   {
     "DoctorName": "Magdalena Lewańska",
@@ -11432,14 +10808,6 @@
     "Place": "Centrum Medicover - Szczecin"
   },
   {
-    "DoctorName": "Monika Łukowiak",
-    "Restrictions": "",
-    "Specialities": "Internista, Lekarz medycyny rodzinnej",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medi Partner Poznań"
-  },
-  {
     "DoctorName": "Jarosław Maczuch",
     "Restrictions": "",
     "Specialities": "",
@@ -11472,20 +10840,12 @@
     "Place": "Centrum Medicover - Poznań Malta"
   },
   {
-    "DoctorName": "Aleksandra Maksymiuk",
-    "Restrictions": "",
-    "Specialities": "Internista",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover Rydza-Śmigłego"
-  },
-  {
     "DoctorName": "Karolina Makulik",
     "Restrictions": "",
     "Specialities": "Internista",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Katowice Chorzowska, Centrum Medicover - Katowice Bednorza"
+    "Place": "Centrum Medicover - Katowice Chorzowska"
   },
   {
     "DoctorName": "Maciej Małolepszy",
@@ -11512,14 +10872,6 @@
     "Place": "Centrum Medicover - Katowice Graniczna"
   },
   {
-    "DoctorName": "Michał Marchel",
-    "Restrictions": "",
-    "Specialities": "",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Atrium"
-  },
-  {
     "DoctorName": "Gabriela Markowska",
     "Restrictions": "",
     "Specialities": "Fizjoterapeuta",
@@ -11536,14 +10888,6 @@
     "Place": "Centrum Medicover - Lublin"
   },
   {
-    "DoctorName": "Andrzej Marszałek",
-    "Restrictions": "",
-    "Specialities": "Chirurg stomatolog, Stomatolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Stomatologia Medicover Kraków Pawia"
-  },
-  {
     "DoctorName": "Kamila Marszałek - Dziuba",
     "Restrictions": "",
     "Specialities": "Pediatra",
@@ -11557,7 +10901,7 @@
     "Specialities": "Chirurg stomatolog, Chirurg szczękowy, Implantolog, Stomatolog",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Stomatologia Medicover - Atrium, Stomatologia Medicover Jerozolimskie"
+    "Place": "Stomatologia Medicover - Atrium, Centrum Medicover - Puławska, Stomatologia Medicover Jerozolimskie"
   },
   {
     "DoctorName": "Katarzyna Matuszczyk",
@@ -11576,14 +10920,6 @@
     "Place": "Centrum Medicover - Lublin"
   },
   {
-    "DoctorName": "Małgorzata Mechlińska - Ciosek",
-    "Restrictions": "",
-    "Specialities": "Psychiatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Piłsudskiego Łódź"
-  },
-  {
     "DoctorName": "Katarzyna Męczkowska",
     "Restrictions": "",
     "Specialities": "Laryngolog",
@@ -11592,12 +10928,12 @@
     "Place": "Centrum Medicover - Inflancka"
   },
   {
-    "DoctorName": "Ewa Miastkowska",
+    "DoctorName": "Paweł Michalak",
     "Restrictions": "",
-    "Specialities": "Stomatolog",
+    "Specialities": "",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Puławska"
+    "Place": "Centrum Medicover - Białystok"
   },
   {
     "DoctorName": "Justyna Michalczak",
@@ -11624,14 +10960,6 @@
     "Place": "Szpital Medicover"
   },
   {
-    "DoctorName": "Agnieszka Mickiewicz - Łączyńska",
-    "Restrictions": "",
-    "Specialities": "",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Inflancka"
-  },
-  {
     "DoctorName": "Marzena Mierzicka",
     "Restrictions": "",
     "Specialities": "Internista, Lekarz medycyny pracy",
@@ -11646,14 +10974,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Łukiska"
-  },
-  {
-    "DoctorName": "Agnieszka Mikszewicz - Górska",
-    "Restrictions": "",
-    "Specialities": "Okulista, Okulista dziecięcy",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Grunwaldzka"
   },
   {
     "DoctorName": "Krystyna Minkiewicz",
@@ -11720,6 +11040,14 @@
     "Place": "Centrum Medicover - Białystok"
   },
   {
+    "DoctorName": "Piotr Myśliwiec",
+    "Restrictions": "",
+    "Specialities": "Chirurg",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Białystok"
+  },
+  {
     "DoctorName": "Paweł Mytko",
     "Restrictions": "",
     "Specialities": "Internista",
@@ -11768,14 +11096,6 @@
     "Place": "Centrum Medicover - Pomorska Łódź"
   },
   {
-    "DoctorName": "Joanna Niedzielska",
-    "Restrictions": "",
-    "Specialities": "Pediatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Jerozolimskie"
-  },
-  {
     "DoctorName": "Olga Niewiadomska",
     "Restrictions": "",
     "Specialities": "Pediatra",
@@ -11798,6 +11118,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Bielsko - Biała, Centrum Medicover - Katowice Chorzowska"
+  },
+  {
+    "DoctorName": "Irena Nowak",
+    "Restrictions": "",
+    "Specialities": "",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Grochowska"
   },
   {
     "DoctorName": "Lesław Nowak",
@@ -11869,7 +11197,7 @@
     "Specialities": "Alergolog, Alergolog dziecięcy",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Katowice Graniczna, Centrum Medi Partner Kraków (Świętokrzyska)"
+    "Place": "Centrum Medi Partner Kraków (Świętokrzyska)"
   },
   {
     "DoctorName": "Piotr Orzechowski",
@@ -11990,22 +11318,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Strzegomska Wrocław, Centrum Medicover - Globis Wrocław"
-  },
-  {
-    "DoctorName": "Anita Paszkowska",
-    "Restrictions": "",
-    "Specialities": "Ortodonta, Stomatolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Stomatologia Medicover Wołoska"
-  },
-  {
-    "DoctorName": "Tomasz Patla",
-    "Restrictions": "",
-    "Specialities": "Anestezjolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Szpital Medicover"
   },
   {
     "DoctorName": "Arkadiusz Pawlak",
@@ -12144,14 +11456,6 @@
     "Place": "e-wizyta"
   },
   {
-    "DoctorName": "Paweł Piotrowski",
-    "Restrictions": "",
-    "Specialities": "Stomatolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Stomatologia Medicover Wołoska"
-  },
-  {
     "DoctorName": "Zofia Pniakowska",
     "Restrictions": "",
     "Specialities": "Okulista",
@@ -12174,6 +11478,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Stomatologia Medicover Rydza-Śmigłego"
+  },
+  {
+    "DoctorName": "Monika Pohorecka",
+    "Restrictions": "",
+    "Specialities": "Pediatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Jerozolimskie"
   },
   {
     "DoctorName": "Magdalena Pokrzywnicka",
@@ -12709,7 +12021,7 @@
     "Specialities": "Laryngolog, Laryngolog dziecięcy",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Puławska, Centrum Medicover - Łukiska"
+    "Place": "Centrum Medicover - Puławska"
   },
   {
     "DoctorName": "Tomasz Straszak",
@@ -12872,14 +12184,6 @@
     "Place": "Centrum Medicover - Kraków Ruczaj"
   },
   {
-    "DoctorName": "Beata Szostakiewicz",
-    "Restrictions": "",
-    "Specialities": "Dermatolog, Dermatolog dziecięcy",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Lublin"
-  },
-  {
     "DoctorName": "Jacek Sztramski",
     "Restrictions": "",
     "Specialities": "Ginekolog",
@@ -12981,23 +12285,7 @@
     "Specialities": "Lekarz medycyny pracy",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Kraków Bora Komorowskiego, Centrum Medi Partner Kraków (Jasnogórska)"
-  },
-  {
-    "DoctorName": "Brygida Targońska",
-    "Restrictions": "",
-    "Specialities": "Alergolog, Alergolog dziecięcy",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Poznań Malta"
-  },
-  {
-    "DoctorName": "Dariusz Tarwacki",
-    "Restrictions": "",
-    "Specialities": "Ginekolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Szpital Medicover"
+    "Place": "Centrum Medi Partner Kraków (Jasnogórska)"
   },
   {
     "DoctorName": "Ryszard Teodorczyk",
@@ -13064,14 +12352,6 @@
     "Place": "Centrum Medicover - Globis Wrocław"
   },
   {
-    "DoctorName": "Aleksandra Urbanik",
-    "Restrictions": "",
-    "Specialities": "Pediatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Szpital Medicover"
-  },
-  {
     "DoctorName": "Mariusz Uryszek",
     "Restrictions": "",
     "Specialities": "Chirurg",
@@ -13102,14 +12382,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Szpital Medicover"
-  },
-  {
-    "DoctorName": "Michał Walczak",
-    "Restrictions": "",
-    "Specialities": "Gastroenterolog, Hepatolog, Internista",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover – Bydgoszcz"
   },
   {
     "DoctorName": "Anna Walicka",
@@ -13197,7 +12469,7 @@
     "Specialities": "Internista, Lekarz medycyny pracy",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Jerozolimskie"
+    "Place": "Centrum Medicover - Jerozolimskie, Centrum Medycyny Pracy"
   },
   {
     "DoctorName": "Wioletta Wilimska",
@@ -13229,7 +12501,7 @@
     "Specialities": "Kardiolog",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Kraków Bora Komorowskiego, Centrum Medicover - Kraków Podgórska"
+    "Place": "Centrum Medicover - Kraków Bora Komorowskiego, Centrum Medicover - Kraków Podgórska, Centrum Medicover - Kraków Ruczaj"
   },
   {
     "DoctorName": "Edyta Witkowska",
@@ -13328,6 +12600,14 @@
     "Place": "Centrum Medicover - Globis Wrocław"
   },
   {
+    "DoctorName": "Katarzyna Wrona",
+    "Restrictions": "",
+    "Specialities": "Internista",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Łukiska"
+  },
+  {
     "DoctorName": "Michał Wrotyński",
     "Restrictions": "",
     "Specialities": "Kardiolog",
@@ -13366,14 +12646,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Warszawa CM Prosta"
-  },
-  {
-    "DoctorName": "Mateusz Wyrębek",
-    "Restrictions": "",
-    "Specialities": "Stomatolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Stomatologia Medicover - Atrium"
   },
   {
     "DoctorName": "Andrzej Wysocki",
@@ -13432,36 +12704,12 @@
     "Place": "Centrum Medicover - Grunwaldzka"
   },
   {
-    "DoctorName": "Przemysław Zajączkowski",
-    "Restrictions": "",
-    "Specialities": "Ginekolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Kraków Podgórska"
-  },
-  {
     "DoctorName": "Małgorzata Załuska",
     "Restrictions": "",
     "Specialities": "Pediatra",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Kraków Podgórska"
-  },
-  {
-    "DoctorName": "Arnold Zaraska",
-    "Restrictions": "",
-    "Specialities": "Ortodonta",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Stomatologia Medicover Kraków Pawia"
-  },
-  {
-    "DoctorName": "Anna Zawadzka - Kępczyńska",
-    "Restrictions": "",
-    "Specialities": "",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Gdynia Sea Towers"
   },
   {
     "DoctorName": "Dominika Zelik - Święch",
@@ -13504,36 +12752,12 @@
     "Place": "Centrum Medicover - Poznań Plac Andersa"
   },
   {
-    "DoctorName": "Irena Złotnik",
-    "Restrictions": "",
-    "Specialities": "Alergolog, Alergolog dziecięcy, Internista",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Białystok"
-  },
-  {
     "DoctorName": "Andrzej Zurek",
     "Restrictions": "",
     "Specialities": "Chirurg",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Katowice Chorzowska"
-  },
-  {
-    "DoctorName": "Marek Zych",
-    "Restrictions": "",
-    "Specialities": "Internista, Lekarz medycyny pracy",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Pomorska Łódź"
-  },
-  {
-    "DoctorName": "Jolanta Zyśk",
-    "Restrictions": "",
-    "Specialities": "Okulista",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Gliwice"
   },
   {
     "DoctorName": "Wojciech Żebrowski",
@@ -13560,14 +12784,6 @@
     "Place": "Wrocław CM Tarasy Grabiszyńskie"
   },
   {
-    "DoctorName": "Michał Żyła",
-    "Restrictions": "",
-    "Specialities": "Internista, Pediatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Piłsudskiego Łódź"
-  },
-  {
     "DoctorName": "Katarzyna Bobrowska - Karol",
     "Restrictions": "",
     "Specialities": "Internista",
@@ -13590,6 +12806,30 @@
     "Rank": "4.5/5",
     "SurveyCount": "133",
     "Place": "Centrum Medicover - Poznań Malta"
+  },
+  {
+    "DoctorName": "Renata Turek - Jabrocka",
+    "Restrictions": "",
+    "Specialities": "Endokrynolog, Internista",
+    "Rank": "4.5/5",
+    "SurveyCount": "122",
+    "Place": "Centrum Medicover - Kraków Podgórska"
+  },
+  {
+    "DoctorName": "Paweł Gidziński",
+    "Restrictions": "",
+    "Specialities": "Ortopeda",
+    "Rank": "3/5",
+    "SurveyCount": "118",
+    "Place": "Centrum Medicover - Jerozolimskie"
+  },
+  {
+    "DoctorName": "Dariusz Czerwiński",
+    "Restrictions": "",
+    "Specialities": "Ortopeda, Ortopeda dziecięcy",
+    "Rank": "2/5",
+    "SurveyCount": "113",
+    "Place": "Centrum Medicover - Grunwaldzka"
   },
   {
     "DoctorName": "Zoulikha Jabiry - Zieniewicz",
@@ -13616,6 +12856,14 @@
     "Place": "Centrum Medicover - Tarchomin"
   },
   {
+    "DoctorName": "Małgorzata Preś - Jachimowska",
+    "Restrictions": "",
+    "Specialities": "Neurolog",
+    "Rank": "2.5/5",
+    "SurveyCount": "91",
+    "Place": "Centrum Medicover - Wołoska"
+  },
+  {
     "DoctorName": "Jacek Białecki",
     "Restrictions": "",
     "Specialities": "Chirurg",
@@ -13630,6 +12878,14 @@
     "Rank": "4/5",
     "SurveyCount": "87",
     "Place": ""
+  },
+  {
+    "DoctorName": "Małgorzata Niedźwiecka",
+    "Restrictions": "",
+    "Specialities": "Ginekolog",
+    "Rank": "2.5/5",
+    "SurveyCount": "87",
+    "Place": "Centrum Medicover - Grunwaldzka"
   },
   {
     "DoctorName": "Bożena Walewska - Zielecka",
@@ -13654,6 +12910,14 @@
     "Rank": "5/5",
     "SurveyCount": "67",
     "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
+  },
+  {
+    "DoctorName": "Agnieszka Harabin - Matysiak",
+    "Restrictions": "",
+    "Specialities": "Ginekolog",
+    "Rank": "4/5",
+    "SurveyCount": "61",
+    "Place": "Centrum Medicover - Atrium"
   },
   {
     "DoctorName": "Arkadiusz Gawryluk",
@@ -13686,6 +12950,14 @@
     "Rank": "4/5",
     "SurveyCount": "44",
     "Place": "Centrum Medicover - Gdynia Sea Towers"
+  },
+  {
+    "DoctorName": "Ryszard Zbroński",
+    "Restrictions": "",
+    "Specialities": "Urolog",
+    "Rank": "4/5",
+    "SurveyCount": "44",
+    "Place": "Centrum Medicover - Gliwice"
   },
   {
     "DoctorName": "Wojciech Janowicz",
@@ -13736,12 +13008,28 @@
     "Place": "Centrum Medicover - Wołoska"
   },
   {
+    "DoctorName": "Barbara Białynicka - Birula",
+    "Restrictions": "",
+    "Specialities": "Lekarz medycyny podróży dzieci, Pediatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Grunwaldzka"
+  },
+  {
     "DoctorName": "Marcin Obodziński",
     "Restrictions": "",
     "Specialities": "Lekarz medycyny rodzinnej, Lekarz medycyny rodzinnej dzieci",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Kraków Podgórska"
+  },
+  {
+    "DoctorName": "Maria G&#243;rnaś",
+    "Restrictions": "",
+    "Specialities": "Onkolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Inflancka"
   },
   {
     "DoctorName": "Agnieszka Motyl",
@@ -13790,6 +13078,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Szpital Medicover"
+  },
+  {
+    "DoctorName": "Robert Bliźniewski",
+    "Restrictions": "",
+    "Specialities": "",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Piłsudskiego Łódź"
   },
   {
     "DoctorName": "Krzysztof Cendrowski",
@@ -13878,6 +13174,30 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Szpital Medicover"
+  },
+  {
+    "DoctorName": "Anna Jankowska",
+    "Restrictions": "",
+    "Specialities": "Kardiolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Lublin"
+  },
+  {
+    "DoctorName": "Hubert Jezierski",
+    "Restrictions": "",
+    "Specialities": "Ortopeda",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Klimczaka"
+  },
+  {
+    "DoctorName": "Piotr Kamiński",
+    "Restrictions": "",
+    "Specialities": "Alergolog, Alergolog dziecięcy",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Lublin"
   },
   {
     "DoctorName": "Grzegorz Kempa",
@@ -13992,6 +13312,14 @@
     "Place": "Szpital Medicover"
   },
   {
+    "DoctorName": "Bogumił Paweł Siekierski",
+    "Restrictions": "",
+    "Specialities": "Ginekolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Szpital."
+  },
+  {
     "DoctorName": "Hanna Sobczak",
     "Restrictions": "",
     "Specialities": "Chirurg stomatolog, Stomatolog",
@@ -14104,12 +13432,20 @@
     "Place": "Centrum Medicover - Puławska"
   },
   {
-    "DoctorName": "Renata Skrzypczak - Sokołowska",
+    "DoctorName": "Małgorzata Goławska",
     "Restrictions": "",
-    "Specialities": "Internista",
-    "Rank": "4.5/5",
-    "SurveyCount": "167",
-    "Place": ""
+    "Specialities": "Ginekolog",
+    "Rank": "4/5",
+    "SurveyCount": "188",
+    "Place": "Centrum Medicover - Puławska"
+  },
+  {
+    "DoctorName": "Małgorzata Micał - Strąk",
+    "Restrictions": "",
+    "Specialities": "Dermatolog, Dermatolog dziecięcy",
+    "Rank": "5/5",
+    "SurveyCount": "170",
+    "Place": "Centrum Medicover - Globis Wrocław"
   },
   {
     "DoctorName": "Katarzyna Kostusiak",
@@ -14142,6 +13478,14 @@
     "Rank": "4.5/5",
     "SurveyCount": "128",
     "Place": "Centrum Medicover - Poznań Plac Andersa"
+  },
+  {
+    "DoctorName": "Anna Michalik - Wójcik",
+    "Restrictions": "",
+    "Specialities": "Okulista, Okulista dziecięcy",
+    "Rank": "4.5/5",
+    "SurveyCount": "126",
+    "Place": "Centrum Medicover - Kraków Podgórska"
   },
   {
     "DoctorName": "Anna Bachleda - Curuś",
@@ -14184,6 +13528,14 @@
     "Place": "Centrum Medicover - Katowice Chorzowska"
   },
   {
+    "DoctorName": "Ewa Kwiatek - Kołcon",
+    "Restrictions": "",
+    "Specialities": "Internista",
+    "Rank": "4/5",
+    "SurveyCount": "105",
+    "Place": "Centrum Medicover - Katowice Chorzowska"
+  },
+  {
     "DoctorName": "Ewa Sznura",
     "Restrictions": "",
     "Specialities": "Ginekolog",
@@ -14200,12 +13552,12 @@
     "Place": "Centrum Medicover - Katowice Graniczna"
   },
   {
-    "DoctorName": "Krzysztof Król",
+    "DoctorName": "Anna Bronikowska - Kolasa",
     "Restrictions": "",
-    "Specialities": "Ortopeda",
-    "Rank": "3.5/5",
-    "SurveyCount": "100",
-    "Place": ""
+    "Specialities": "Dermatolog",
+    "Rank": "4/5",
+    "SurveyCount": "95",
+    "Place": "Centrum Medicover - Grochowska"
   },
   {
     "DoctorName": "Magdalena Włoch - Targońska",
@@ -14214,6 +13566,14 @@
     "Rank": "4.5/5",
     "SurveyCount": "95",
     "Place": "Centrum Medicover - Katowice Graniczna"
+  },
+  {
+    "DoctorName": "Magdalena Ignaszak - Szczepaniak",
+    "Restrictions": "",
+    "Specialities": "Endokrynolog, Internista",
+    "Rank": "4.5/5",
+    "SurveyCount": "93",
+    "Place": "Centrum Medicover - Poznań Plac Andersa"
   },
   {
     "DoctorName": "Marcin Janczak",
@@ -14232,6 +13592,14 @@
     "Place": "Centrum Medicover - Globis Wrocław"
   },
   {
+    "DoctorName": "Bartosz Cieślak",
+    "Restrictions": "",
+    "Specialities": "Chirurg",
+    "Rank": "4/5",
+    "SurveyCount": "91",
+    "Place": ""
+  },
+  {
     "DoctorName": "Małgorzata Dubrawska",
     "Restrictions": "",
     "Specialities": "Pulmonolog, Pulmonolog dziecięcy",
@@ -14240,20 +13608,20 @@
     "Place": "Centrum Medicover - Gliwice"
   },
   {
-    "DoctorName": "Iwona Świdzińska",
-    "Restrictions": "",
-    "Specialities": "Dermatolog, Dermatolog dziecięcy",
-    "Rank": "3.5/5",
-    "SurveyCount": "90",
-    "Place": "Centrum Medicover - Jerozolimskie"
-  },
-  {
     "DoctorName": "Tomasz Kasprzak",
     "Restrictions": "",
     "Specialities": "Ginekolog",
     "Rank": "5/5",
     "SurveyCount": "89",
     "Place": "Centrum Medicover - Poznań Plac Andersa"
+  },
+  {
+    "DoctorName": "Dorota Grędziak - Straś",
+    "Restrictions": "",
+    "Specialities": "Dermatolog, Dermatolog dziecięcy",
+    "Rank": "4/5",
+    "SurveyCount": "87",
+    "Place": "Centrum Medicover - Globis Wrocław"
   },
   {
     "DoctorName": "Grzegorz Kanturski",
@@ -14296,6 +13664,14 @@
     "Place": ""
   },
   {
+    "DoctorName": "Karolina Golkowska",
+    "Restrictions": "",
+    "Specialities": "Ginekolog",
+    "Rank": "3/5",
+    "SurveyCount": "83",
+    "Place": "Centrum Medicover - Poznań Plac Andersa"
+  },
+  {
     "DoctorName": "Iwona Górnicka",
     "Restrictions": "",
     "Specialities": "Dermatolog, Dermatolog dziecięcy",
@@ -14326,6 +13702,22 @@
     "Rank": "5/5",
     "SurveyCount": "81",
     "Place": "Centrum Medicover - Puławska"
+  },
+  {
+    "DoctorName": "Łukasz Konkol",
+    "Restrictions": "",
+    "Specialities": "Chirurg",
+    "Rank": "4/5",
+    "SurveyCount": "79",
+    "Place": "Centrum Medicover - Grunwaldzka"
+  },
+  {
+    "DoctorName": "Ewa Głąb",
+    "Restrictions": "",
+    "Specialities": "Endokrynolog, Endokrynolog dziecięcy",
+    "Rank": "4/5",
+    "SurveyCount": "75",
+    "Place": "Centrum Medicover - Globis Wrocław"
   },
   {
     "DoctorName": "Ewa Mężyk",
@@ -14376,6 +13768,14 @@
     "Place": "Centrum Medicover - Poznań Malta"
   },
   {
+    "DoctorName": "Izabela Materek - Kuśmierkiewicz",
+    "Restrictions": "",
+    "Specialities": "Diabetolog, Internista",
+    "Rank": "5/5",
+    "SurveyCount": "71",
+    "Place": "Centrum Medicover - Piłsudskiego Łódź"
+  },
+  {
     "DoctorName": "Maria Olkowska",
     "Restrictions": "",
     "Specialities": "Internista, Reumatolog",
@@ -14390,6 +13790,14 @@
     "Rank": "4/5",
     "SurveyCount": "69",
     "Place": "Centrum Medicover - Puławska"
+  },
+  {
+    "DoctorName": "Wojciech Wrona",
+    "Restrictions": "",
+    "Specialities": "Ginekolog",
+    "Rank": "5/5",
+    "SurveyCount": "68",
+    "Place": "Centrum Medicover - Lublin"
   },
   {
     "DoctorName": "Iwona Krasnowska",
@@ -14422,6 +13830,22 @@
     "Rank": "4/5",
     "SurveyCount": "65",
     "Place": ""
+  },
+  {
+    "DoctorName": "Aleksandra Wach",
+    "Restrictions": "",
+    "Specialities": "Internista",
+    "Rank": "2.5/5",
+    "SurveyCount": "65",
+    "Place": ""
+  },
+  {
+    "DoctorName": "Tomasz Kruszyna",
+    "Restrictions": "",
+    "Specialities": "Chirurg, Proktolog",
+    "Rank": "5/5",
+    "SurveyCount": "64",
+    "Place": "Centrum Medicover - Kraków Podgórska"
   },
   {
     "DoctorName": "Anna Stobierska",
@@ -14464,14 +13888,6 @@
     "Place": "Centrum Medicover - Poznań Malta"
   },
   {
-    "DoctorName": "Adam Gesing",
-    "Restrictions": "",
-    "Specialities": "Endokrynolog",
-    "Rank": "5/5",
-    "SurveyCount": "61",
-    "Place": "Centrum Medicover - Piłsudskiego Łódź"
-  },
-  {
     "DoctorName": "Joanna Gunarys",
     "Restrictions": "",
     "Specialities": "Chirurg, Proktolog",
@@ -14496,6 +13912,14 @@
     "Place": "Centrum Medicover - Jerozolimskie"
   },
   {
+    "DoctorName": "Bartosz Adamiec",
+    "Restrictions": "",
+    "Specialities": "Ginekolog",
+    "Rank": "1/5",
+    "SurveyCount": "54",
+    "Place": ""
+  },
+  {
     "DoctorName": "Małgorzata Bill",
     "Restrictions": "",
     "Specialities": "Internista",
@@ -14518,6 +13942,22 @@
     "Rank": "5/5",
     "SurveyCount": "51",
     "Place": "Centrum Medicover - Globis Wrocław"
+  },
+  {
+    "DoctorName": "Marta Piepiorka - Broniecka",
+    "Restrictions": "",
+    "Specialities": "Kardiolog",
+    "Rank": "4/5",
+    "SurveyCount": "48",
+    "Place": "Centrum Medicover - Gdynia Sea Towers"
+  },
+  {
+    "DoctorName": "Anna Ujazdowska",
+    "Restrictions": "",
+    "Specialities": "Okulista, Okulista dziecięcy",
+    "Rank": "2/5",
+    "SurveyCount": "46",
+    "Place": "Centrum Medicover - Grunwaldzka"
   },
   {
     "DoctorName": "Krzysztof Więczkowski",
@@ -14560,6 +14000,14 @@
     "Place": ""
   },
   {
+    "DoctorName": "Jadwiga Bernardczyk - Meller",
+    "Restrictions": "",
+    "Specialities": "Okulista, Okulista dziecięcy",
+    "Rank": "2/5",
+    "SurveyCount": "43",
+    "Place": "Centrum Medicover - Poznań Malta"
+  },
+  {
     "DoctorName": "Agnieszka Koligat - Seitz",
     "Restrictions": "",
     "Specialities": "Laryngolog",
@@ -14582,6 +14030,30 @@
     "Rank": "2/5",
     "SurveyCount": "41",
     "Place": "Centrum Medicover - Piłsudskiego Łódź"
+  },
+  {
+    "DoctorName": "Mateusz Jęckowski",
+    "Restrictions": "",
+    "Specialities": "Chirurg",
+    "Rank": "4/5",
+    "SurveyCount": "41",
+    "Place": ""
+  },
+  {
+    "DoctorName": "Małgorzata Migdał",
+    "Restrictions": "",
+    "Specialities": "Ginekolog",
+    "Rank": "2/5",
+    "SurveyCount": "41",
+    "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
+  },
+  {
+    "DoctorName": "Piotr Straszyński",
+    "Restrictions": "",
+    "Specialities": "Laryngolog",
+    "Rank": "4/5",
+    "SurveyCount": "40",
+    "Place": ""
   },
   {
     "DoctorName": "Mateusz Hanslik",
@@ -14608,6 +14080,22 @@
     "Place": "Centrum Medicover - Poznań Malta"
   },
   {
+    "DoctorName": "Krzysztof Rękawek",
+    "Restrictions": "",
+    "Specialities": "Ortopeda, Ortopeda dziecięcy",
+    "Rank": "4/5",
+    "SurveyCount": "39",
+    "Place": "Centrum Medicover - Szczecin"
+  },
+  {
+    "DoctorName": "Izabela Sowińska",
+    "Restrictions": "",
+    "Specialities": "Laryngolog, Laryngolog dziecięcy",
+    "Rank": "3.5/5",
+    "SurveyCount": "39",
+    "Place": "Centrum Medicover - Gliwice"
+  },
+  {
     "DoctorName": "Marcin Gdaniec",
     "Restrictions": "",
     "Specialities": "Ginekolog",
@@ -14630,6 +14118,14 @@
     "Rank": "2/5",
     "SurveyCount": "38",
     "Place": "Centrum Medicover - Globis Wrocław"
+  },
+  {
+    "DoctorName": "Małgorzata Piotrowska - Iwaniuk",
+    "Restrictions": "",
+    "Specialities": "Diabetolog, Internista",
+    "Rank": "4/5",
+    "SurveyCount": "38",
+    "Place": ""
   },
   {
     "DoctorName": "Jacek Brzost",
@@ -14672,12 +14168,36 @@
     "Place": "Centrum Medicover - Atrium"
   },
   {
+    "DoctorName": "Marcin Tomalski",
+    "Restrictions": "",
+    "Specialities": "Ortopeda",
+    "Rank": "4/5",
+    "SurveyCount": "37",
+    "Place": ""
+  },
+  {
+    "DoctorName": "Mariusz Karlik",
+    "Restrictions": "",
+    "Specialities": "Pulmonolog",
+    "Rank": "4.5/5",
+    "SurveyCount": "36",
+    "Place": "Centrum Medicover - Katowice Chorzowska"
+  },
+  {
     "DoctorName": "Ewa Kochanowicz",
     "Restrictions": "",
     "Specialities": "Internista, Lekarz medycyny rodzinnej",
     "Rank": "2/5",
     "SurveyCount": "36",
     "Place": ""
+  },
+  {
+    "DoctorName": "Lidia Nycz",
+    "Restrictions": "",
+    "Specialities": "Chirurg",
+    "Rank": "4/5",
+    "SurveyCount": "36",
+    "Place": "Centrum Medicover - Bielsko - Biała"
   },
   {
     "DoctorName": "Anetta Pawluś",
@@ -14688,12 +14208,28 @@
     "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
   },
   {
+    "DoctorName": "Przemysław Susicki",
+    "Restrictions": "",
+    "Specialities": "Chirurg, Onkolog",
+    "Rank": "4/5",
+    "SurveyCount": "36",
+    "Place": "Centrum Medicover – Bydgoszcz"
+  },
+  {
     "DoctorName": "Agnieszka Szabelska",
     "Restrictions": "",
     "Specialities": "Dermatolog, Dermatolog dziecięcy",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Wołoska"
+  },
+  {
+    "DoctorName": "Grzegorz Gomoliński",
+    "Restrictions": "",
+    "Specialities": "Chirurg dziecięcy, Ortopeda dziecięcy",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Jerozolimskie"
   },
   {
     "DoctorName": "Bartosz Kijewski",
@@ -14726,6 +14262,14 @@
     "Rank": "5/5",
     "SurveyCount": "34",
     "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
+  },
+  {
+    "DoctorName": "Bożena Kulig - Fajfer",
+    "Restrictions": "",
+    "Specialities": "Neurolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Bielsko - Biała"
   },
   {
     "DoctorName": "Piotr Olbromski",
@@ -14784,6 +14328,22 @@
     "Place": "Centrum Medicover - Poznań Plac Andersa"
   },
   {
+    "DoctorName": "Katarzyna Mihułka",
+    "Restrictions": "",
+    "Specialities": "Internista",
+    "Rank": "4.5/5",
+    "SurveyCount": "33",
+    "Place": ""
+  },
+  {
+    "DoctorName": "Grzegorz Szpotowicz",
+    "Restrictions": "",
+    "Specialities": "Ortopeda",
+    "Rank": "4.5/5",
+    "SurveyCount": "33",
+    "Place": ""
+  },
+  {
     "DoctorName": "Katarzyna Tymoszewska",
     "Restrictions": "",
     "Specialities": "Alergolog, Alergolog dziecięcy, Pulmonolog",
@@ -14792,12 +14352,28 @@
     "Place": "Centrum Medicover - Puławska"
   },
   {
+    "DoctorName": "Marta Bittner",
+    "Restrictions": "",
+    "Specialities": "Alergolog dziecięcy",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Katowice Graniczna"
+  },
+  {
     "DoctorName": "Szymon Błażejewski",
     "Restrictions": "",
     "Specialities": "Ortopeda",
     "Rank": "4/5",
     "SurveyCount": "32",
     "Place": ""
+  },
+  {
+    "DoctorName": "Mariusz Cieślak",
+    "Restrictions": "",
+    "Specialities": "Pediatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Jerozolimskie"
   },
   {
     "DoctorName": "Dominika Herlenius - Sawicka",
@@ -14824,6 +14400,14 @@
     "Place": ""
   },
   {
+    "DoctorName": "Mariusz Skoneczny",
+    "Restrictions": "",
+    "Specialities": "Urolog",
+    "Rank": "3.5/5",
+    "SurveyCount": "32",
+    "Place": "Centrum Medicover - Piłsudskiego Łódź"
+  },
+  {
     "DoctorName": "Iwona Widziszewska",
     "Restrictions": "",
     "Specialities": "Pediatra",
@@ -14838,6 +14422,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Globis Wrocław"
+  },
+  {
+    "DoctorName": "Stanisław Woźniak",
+    "Restrictions": "",
+    "Specialities": "Ortopeda",
+    "Rank": "3.5/5",
+    "SurveyCount": "32",
+    "Place": ""
   },
   {
     "DoctorName": "Bartłomiej Wroński",
@@ -14864,6 +14456,30 @@
     "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
   },
   {
+    "DoctorName": "Marcin Borowski",
+    "Restrictions": "",
+    "Specialities": "Ortopeda, Ortopeda dziecięcy",
+    "Rank": "4/5",
+    "SurveyCount": "31",
+    "Place": "Centrum Medicover - Katowice Graniczna"
+  },
+  {
+    "DoctorName": "Dariusz Butryn",
+    "Restrictions": "",
+    "Specialities": "Ginekolog",
+    "Rank": "2.5/5",
+    "SurveyCount": "31",
+    "Place": ""
+  },
+  {
+    "DoctorName": "Agnieszka Dorocińska",
+    "Restrictions": "",
+    "Specialities": "Pediatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Grunwaldzka"
+  },
+  {
     "DoctorName": "Monika Dudra - Jastrzębska",
     "Restrictions": "",
     "Specialities": "Dermatolog, Dermatolog dziecięcy",
@@ -14888,12 +14504,12 @@
     "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
   },
   {
-    "DoctorName": "Aleksandra Liska",
+    "DoctorName": "Piotr Kuczmera",
     "Restrictions": "",
-    "Specialities": "Neurolog",
-    "Rank": "3/5",
+    "Specialities": "Ortopeda",
+    "Rank": "4.5/5",
     "SurveyCount": "31",
-    "Place": "Centrum Medicover - Katowice Chorzowska"
+    "Place": "Centrum Medicover - Łukiska"
   },
   {
     "DoctorName": "Marek Neuberg",
@@ -14902,6 +14518,14 @@
     "Rank": "1/5",
     "SurveyCount": "31",
     "Place": "Centrum Medicover - Atrium"
+  },
+  {
+    "DoctorName": "Michał Pędziwiatr",
+    "Restrictions": "",
+    "Specialities": "Chirurg",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
   },
   {
     "DoctorName": "Katarzyna Pycio",
@@ -14960,6 +14584,14 @@
     "Place": "Centrum Medicover - Kraków Podgórska"
   },
   {
+    "DoctorName": "Dariusz Ciećwierz",
+    "Restrictions": "",
+    "Specialities": "Kardiolog",
+    "Rank": "2.5/5",
+    "SurveyCount": "30",
+    "Place": "Centrum Medicover - Grunwaldzka"
+  },
+  {
     "DoctorName": "Monika Czajkowska",
     "Restrictions": "",
     "Specialities": "Okulista",
@@ -15016,6 +14648,14 @@
     "Place": "Centrum Medicover - Kraków Bora Komorowskiego"
   },
   {
+    "DoctorName": "Piotr Maciejewicz",
+    "Restrictions": "",
+    "Specialities": "Okulista",
+    "Rank": "3/5",
+    "SurveyCount": "30",
+    "Place": "Centrum Medycyny Pracy"
+  },
+  {
     "DoctorName": "Łukasz Mazurek",
     "Restrictions": "",
     "Specialities": "Laryngolog, Laryngolog dziecięcy",
@@ -15032,14 +14672,6 @@
     "Place": "Centrum Medicover - Poznań Plac Andersa"
   },
   {
-    "DoctorName": "Grzegorz Natora",
-    "Restrictions": "",
-    "Specialities": "Ginekolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Grunwaldzka"
-  },
-  {
     "DoctorName": "Martyna Nowak",
     "Restrictions": "",
     "Specialities": "Okulista, Okulista dziecięcy",
@@ -15053,6 +14685,22 @@
     "Specialities": "Chirurg dziecięcy",
     "Rank": "brak",
     "SurveyCount": "0",
+    "Place": "Centrum Medicover - Piłsudskiego Łódź"
+  },
+  {
+    "DoctorName": "Aneta Pogodzińska",
+    "Restrictions": "",
+    "Specialities": "Pediatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Katowice Graniczna"
+  },
+  {
+    "DoctorName": "Joanna Połowinczak - Przybyłek",
+    "Restrictions": "",
+    "Specialities": "Onkolog",
+    "Rank": "5/5",
+    "SurveyCount": "30",
     "Place": "Centrum Medicover - Piłsudskiego Łódź"
   },
   {
@@ -15080,6 +14728,14 @@
     "Place": "Centrum Medicover - Strzegomska Wrocław"
   },
   {
+    "DoctorName": "Beata Rechcińska - Roślak",
+    "Restrictions": "",
+    "Specialities": "Lekarz rehabilitacji dorośli i dzieci",
+    "Rank": "4/5",
+    "SurveyCount": "30",
+    "Place": "Centrum Medicover - Pomorska Łódź"
+  },
+  {
     "DoctorName": "Barbara Rozwenc",
     "Restrictions": "",
     "Specialities": "Pediatra",
@@ -15104,12 +14760,28 @@
     "Place": "Centrum Medicover - Poznań Malta"
   },
   {
+    "DoctorName": "Małgorzata Skibińska",
+    "Restrictions": "",
+    "Specialities": "Dermatolog, Dermatolog dziecięcy",
+    "Rank": "4.5/5",
+    "SurveyCount": "30",
+    "Place": ""
+  },
+  {
     "DoctorName": "Mariusz Stefański",
     "Restrictions": "",
     "Specialities": "Alergolog, Alergolog dziecięcy, Internista, Lekarz medycyny rodzinnej, Lekarz medycyny rodzinnej dzieci",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Szczecin"
+  },
+  {
+    "DoctorName": "Paulina Surowiec",
+    "Restrictions": "",
+    "Specialities": "Internista",
+    "Rank": "4/5",
+    "SurveyCount": "30",
+    "Place": "Centrum Medicover - Kraków Podgórska"
   },
   {
     "DoctorName": "Sławomir Wróbel",
@@ -15168,14 +14840,6 @@
     "Place": "Centrum Medicover - Poznań Plac Andersa"
   },
   {
-    "DoctorName": "Beata Ankowska",
-    "Restrictions": "",
-    "Specialities": "Dietetyk",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Kraków Podgórska"
-  },
-  {
     "DoctorName": "Karolina Antkowiak - Piątyszek",
     "Restrictions": "",
     "Specialities": "Internista",
@@ -15198,6 +14862,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Puławska"
+  },
+  {
+    "DoctorName": "Agnieszka Augustyn",
+    "Restrictions": "",
+    "Specialities": "Stomatolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
   },
   {
     "DoctorName": "Khaled Aziz",
@@ -15232,12 +14904,28 @@
     "Place": ""
   },
   {
+    "DoctorName": "Aleksander Bardyszewski",
+    "Restrictions": "",
+    "Specialities": "Internista, Kardiolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Szpital Medicover"
+  },
+  {
     "DoctorName": "Marlena Bartkowiak - Fabisiak",
     "Restrictions": "",
     "Specialities": "Internista",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Poznań Malta"
+  },
+  {
+    "DoctorName": "Maciej Bazała",
+    "Restrictions": "",
+    "Specialities": "Ortopeda",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Atrium"
   },
   {
     "DoctorName": "Michał Bazylewicz",
@@ -15254,14 +14942,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Poznań Malta"
-  },
-  {
-    "DoctorName": "Ewa Bednarek - Ciastoń",
-    "Restrictions": "",
-    "Specialities": "Lekarz medycyny rodzinnej, Lekarz medycyny rodzinnej dzieci",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": ""
   },
   {
     "DoctorName": "Andrzej Biederman",
@@ -15312,6 +14992,14 @@
     "Place": ""
   },
   {
+    "DoctorName": "Robert Bogdanik",
+    "Restrictions": "",
+    "Specialities": "Chirurg, Internista",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Szpital Medicover"
+  },
+  {
     "DoctorName": "Adam Bołtuć",
     "Restrictions": "",
     "Specialities": "",
@@ -15326,6 +15014,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Szpital Medicover"
+  },
+  {
+    "DoctorName": "Katarzyna Borkusiewicz",
+    "Restrictions": "",
+    "Specialities": "",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Grunwaldzka"
   },
   {
     "DoctorName": "Elżbieta Brudło - Ornowska",
@@ -15360,14 +15056,6 @@
     "Place": "Stomatologia Medicover - Atrium"
   },
   {
-    "DoctorName": "Tomasz Buczyński",
-    "Restrictions": "",
-    "Specialities": "Pediatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Gliwice"
-  },
-  {
     "DoctorName": "Ewa Bujnowska",
     "Restrictions": "",
     "Specialities": "Internista",
@@ -15392,14 +15080,6 @@
     "Place": "Stomatologia Medicover - Atrium"
   },
   {
-    "DoctorName": "Ewa Car - Korowaj",
-    "Restrictions": "",
-    "Specialities": "Stomatolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Stomatologia Medicover - Puławska"
-  },
-  {
     "DoctorName": "Michał Charytonowicz",
     "Restrictions": "",
     "Specialities": "Chirurg plastyczny",
@@ -15416,12 +15096,28 @@
     "Place": ""
   },
   {
+    "DoctorName": "Maja Chrzanowska - Wąsik",
+    "Restrictions": "",
+    "Specialities": "Internista, Lekarz medycyny rodzinnej, Lekarz medycyny rodzinnej dzieci, Pediatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Lublin CM Pogotowie"
+  },
+  {
     "DoctorName": "Jarosław Chrząstek",
     "Restrictions": "",
     "Specialities": "",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Szpital Medicover"
+  },
+  {
+    "DoctorName": "Michał Chudzik",
+    "Restrictions": "",
+    "Specialities": "Kardiolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Pomorska Łódź"
   },
   {
     "DoctorName": "Jakub Chwiećko",
@@ -15454,6 +15150,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": ""
+  },
+  {
+    "DoctorName": "Anna Cybulska",
+    "Restrictions": "",
+    "Specialities": "Gastroenterolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Klinika Medycyny Wellness"
   },
   {
     "DoctorName": "Aneta Czaplicka",
@@ -15528,6 +15232,14 @@
     "Place": ""
   },
   {
+    "DoctorName": "Artur Dębski",
+    "Restrictions": "",
+    "Specialities": "Internista, Kardiolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Szpital Medicover"
+  },
+  {
     "DoctorName": "Edward Dobies",
     "Restrictions": "",
     "Specialities": "Ortopeda",
@@ -15584,6 +15296,14 @@
     "Place": "Centrum Medicover - Poznań Plac Andersa"
   },
   {
+    "DoctorName": "Dorota Dyjor",
+    "Restrictions": "",
+    "Specialities": "",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Strzegomska Wrocław"
+  },
+  {
     "DoctorName": "Katarzyna Dyndor",
     "Restrictions": "",
     "Specialities": "",
@@ -15632,14 +15352,6 @@
     "Place": "Centrum Medicover - Piłsudskiego Łódź"
   },
   {
-    "DoctorName": "Elżbieta Fijałkowska",
-    "Restrictions": "",
-    "Specialities": "Laryngolog, Laryngolog dziecięcy",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": ""
-  },
-  {
     "DoctorName": "Katarzyna Filipczyk - Fagas",
     "Restrictions": "",
     "Specialities": "Fizjoterapeuta",
@@ -15654,6 +15366,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": ""
+  },
+  {
+    "DoctorName": "Maria Flicińska",
+    "Restrictions": "",
+    "Specialities": "Neurolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Poznań Plac Andersa"
   },
   {
     "DoctorName": "Paulina Frankiewicz",
@@ -15723,6 +15443,22 @@
     "DoctorName": "Joanna Gilewicz",
     "Restrictions": "",
     "Specialities": "Chirurg stomatolog, Chirurg szczękowy, Implantolog, Stomatolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
+  },
+  {
+    "DoctorName": "Dorota Gizińska",
+    "Restrictions": "",
+    "Specialities": "Psychiatra, Psychiatra dziecięcy",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Gdynia Sea Towers"
+  },
+  {
+    "DoctorName": "Dagmara Glembin",
+    "Restrictions": "",
+    "Specialities": "Laryngolog, Laryngolog dziecięcy",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": ""
@@ -15848,28 +15584,12 @@
     "Place": "Centrum Medicover - Atrium"
   },
   {
-    "DoctorName": "Barbara Haluch - Zielińska",
+    "DoctorName": "Jolanta Gutarowska",
     "Restrictions": "",
-    "Specialities": "Reumatolog",
+    "Specialities": "Neurolog",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Poznań Plac Andersa"
-  },
-  {
-    "DoctorName": "Julia Hamankiewicz",
-    "Restrictions": "",
-    "Specialities": "Pediatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": ""
-  },
-  {
-    "DoctorName": "Andrzej Hanczewski",
-    "Restrictions": "",
-    "Specialities": "Radiolog",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Szpital Medicover"
+    "Place": "Centrum Medicover - Piłsudskiego Łódź"
   },
   {
     "DoctorName": "Marzena Heigelman",
@@ -15888,12 +15608,36 @@
     "Place": "Volvo OH - Wrocław"
   },
   {
+    "DoctorName": "Ilona Hill - Wiśnicka",
+    "Restrictions": "",
+    "Specialities": "",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Katowice Graniczna"
+  },
+  {
     "DoctorName": "Joanna Holanowska",
     "Restrictions": "",
     "Specialities": "Laryngolog, Laryngolog dziecięcy",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": ""
+  },
+  {
+    "DoctorName": "Joanna Horbaczewska",
+    "Restrictions": "",
+    "Specialities": "Internista",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
+  },
+  {
+    "DoctorName": "Elżbieta Hryciuk - Umer",
+    "Restrictions": "",
+    "Specialities": "Laryngolog, Laryngolog dziecięcy",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Lublin"
   },
   {
     "DoctorName": "Zenon Huczek",
@@ -15904,12 +15648,28 @@
     "Place": "Szpital Medicover"
   },
   {
+    "DoctorName": "Aleksander Husak",
+    "Restrictions": "",
+    "Specialities": "Chirurg",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
+  },
+  {
     "DoctorName": "Michał Iwanek",
     "Restrictions": "",
     "Specialities": "Stomatolog",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Stomatologia Medicover - Atrium"
+  },
+  {
+    "DoctorName": "Dorota Jabłońska",
+    "Restrictions": "",
+    "Specialities": "Internista, Reumatolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Katowice Chorzowska"
   },
   {
     "DoctorName": "Anna Janaszek - Borek",
@@ -15936,6 +15696,14 @@
     "Place": "Stomatologia Medicover - Atrium"
   },
   {
+    "DoctorName": "Marcin Jarek",
+    "Restrictions": "",
+    "Specialities": "Internista, Pediatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
+  },
+  {
     "DoctorName": "Michał Jasiński",
     "Restrictions": "",
     "Specialities": "Endodonta, Stomatolog",
@@ -15950,6 +15718,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Szpital Medicover"
+  },
+  {
+    "DoctorName": "Mariusz Jęczeń",
+    "Restrictions": "",
+    "Specialities": "Ginekolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Lublin"
   },
   {
     "DoctorName": "Weronika Jończyk",
@@ -16032,14 +15808,6 @@
     "Place": "Stomatologia Medicover - Gdynia"
   },
   {
-    "DoctorName": "Halszka Kamińska",
-    "Restrictions": "",
-    "Specialities": "Kardiolog dziecięcy, Pediatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Szpital Medicover"
-  },
-  {
     "DoctorName": "Teresa Kamińska - Pilarz",
     "Restrictions": "",
     "Specialities": "Stomatolog",
@@ -16112,14 +15880,6 @@
     "Place": "Centrum Medicover - Jerozolimskie"
   },
   {
-    "DoctorName": "Tomasz Kędra",
-    "Restrictions": "",
-    "Specialities": "Lekarz medycyny estetycznej",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Lublin"
-  },
-  {
     "DoctorName": "Karolina Kielska - Tłuczewicz",
     "Restrictions": "",
     "Specialities": "Chirurg stomatolog, Stomatolog",
@@ -16134,6 +15894,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Pomorska Łódź"
+  },
+  {
+    "DoctorName": "Dorota Kirejczyk",
+    "Restrictions": "",
+    "Specialities": "Psychiatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Białystok"
   },
   {
     "DoctorName": "Renata Klajda - Nowak",
@@ -16192,6 +15960,14 @@
     "Place": "Centrum Medicover - Jerozolimskie"
   },
   {
+    "DoctorName": "Marek Konka",
+    "Restrictions": "",
+    "Specialities": "",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Szpital Medicover - USG"
+  },
+  {
     "DoctorName": "Kamila Konopka",
     "Restrictions": "",
     "Specialities": "",
@@ -16240,6 +16016,14 @@
     "Place": "Centrum Medicover - Piłsudskiego Łódź"
   },
   {
+    "DoctorName": "Paulina Kowalska",
+    "Restrictions": "",
+    "Specialities": "Laryngolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
+  },
+  {
     "DoctorName": "Marcin Kowalski",
     "Restrictions": "",
     "Specialities": "Chirurg",
@@ -16254,6 +16038,22 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": ""
+  },
+  {
+    "DoctorName": "Swietłana Kozaczuk",
+    "Restrictions": "",
+    "Specialities": "Stomatolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
+  },
+  {
+    "DoctorName": "Ilona Kozub - Doros",
+    "Restrictions": "",
+    "Specialities": "Neurolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Gliwice"
   },
   {
     "DoctorName": "Anna Kozynacka",
@@ -16288,12 +16088,12 @@
     "Place": ""
   },
   {
-    "DoctorName": "Katarzyna Kryniewska",
+    "DoctorName": "Ida Krysińska - Grabowska",
     "Restrictions": "",
-    "Specialities": "Ginekolog",
+    "Specialities": "",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": ""
+    "Place": "Centrum Medicover - Poznań Plac Andersa"
   },
   {
     "DoctorName": "Edyta Książek - Zielińska",
@@ -16320,6 +16120,22 @@
     "Place": ""
   },
   {
+    "DoctorName": "Dariusz Kühn",
+    "Restrictions": "",
+    "Specialities": "Ginekolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
+  },
+  {
+    "DoctorName": "Anna Kuprjanowicz",
+    "Restrictions": "",
+    "Specialities": "",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Szczecin"
+  },
+  {
     "DoctorName": "Katarzyna Kurnicka",
     "Restrictions": "",
     "Specialities": "",
@@ -16334,6 +16150,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Gdynia Sea Towers"
+  },
+  {
+    "DoctorName": "Agata Kurzawa",
+    "Restrictions": "",
+    "Specialities": "Okulista, Okulista dziecięcy",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
   },
   {
     "DoctorName": "Aleksandra Kusiak",
@@ -16392,6 +16216,22 @@
     "Place": ""
   },
   {
+    "DoctorName": "Danuta Leśniak",
+    "Restrictions": "",
+    "Specialities": "Pediatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Piłsudskiego Łódź"
+  },
+  {
+    "DoctorName": "Leszek Lewandowski",
+    "Restrictions": "",
+    "Specialities": "Ginekolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Szpital Medicover"
+  },
+  {
     "DoctorName": "Michał Lewiński",
     "Restrictions": "",
     "Specialities": "Kardiolog",
@@ -16440,6 +16280,14 @@
     "Place": "Szpital Medicover"
   },
   {
+    "DoctorName": "Monika Łukowiak",
+    "Restrictions": "",
+    "Specialities": "Internista, Lekarz medycyny rodzinnej",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
+  },
+  {
     "DoctorName": "Kacper Maciej",
     "Restrictions": "",
     "Specialities": "Chirurg stomatolog, Stomatolog",
@@ -16464,6 +16312,14 @@
     "Place": "Szpital Medicover"
   },
   {
+    "DoctorName": "Aleksandra Maksymiuk",
+    "Restrictions": "",
+    "Specialities": "Internista",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover Rydza-Śmigłego"
+  },
+  {
     "DoctorName": "Magdalena Maleszka - Kurpiel",
     "Restrictions": "",
     "Specialities": "Okulista",
@@ -16472,12 +16328,28 @@
     "Place": "Centrum Medicover - Poznań Plac Andersa"
   },
   {
+    "DoctorName": "Michał Marchel",
+    "Restrictions": "",
+    "Specialities": "",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Atrium"
+  },
+  {
     "DoctorName": "Irena Markiewicz - Bendkowska",
     "Restrictions": "",
     "Specialities": "Alergolog, Alergolog dziecięcy, Pulmonolog, Pulmonolog dziecięcy",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Bielsko - Biała"
+  },
+  {
+    "DoctorName": "Andrzej Marszałek",
+    "Restrictions": "",
+    "Specialities": "Chirurg stomatolog, Stomatolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Stomatologia Medicover - Kraków"
   },
   {
     "DoctorName": "Monika Mastalerz",
@@ -16560,6 +16432,14 @@
     "Place": "Szpital Medicover"
   },
   {
+    "DoctorName": "Małgorzata Mechlińska - Ciosek",
+    "Restrictions": "",
+    "Specialities": "Psychiatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Piłsudskiego Łódź"
+  },
+  {
     "DoctorName": "Katarzyna Mendera",
     "Restrictions": "",
     "Specialities": "Internista",
@@ -16568,12 +16448,12 @@
     "Place": ""
   },
   {
-    "DoctorName": "Paweł Michalak",
+    "DoctorName": "Ewa Miastkowska",
     "Restrictions": "",
-    "Specialities": "",
+    "Specialities": "Stomatolog",
     "Rank": "brak",
     "SurveyCount": "0",
-    "Place": "Centrum Medicover - Białystok"
+    "Place": "Stomatologia Medicover - Puławska"
   },
   {
     "DoctorName": "Luiza Michalska - Ratajczyk",
@@ -16582,6 +16462,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": ""
+  },
+  {
+    "DoctorName": "Agnieszka Mickiewicz - Łączyńska",
+    "Restrictions": "",
+    "Specialities": "",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Inflancka"
   },
   {
     "DoctorName": "Ireneusz Mierzejewski",
@@ -16595,6 +16483,14 @@
     "DoctorName": "Rafał Mierzyński",
     "Restrictions": "",
     "Specialities": "Internista, Lekarz medycyny podróży, Lekarz medycyny podróży dzieci, Lekarz medycyny pracy",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
+  },
+  {
+    "DoctorName": "Agnieszka Mikszewicz - Górska",
+    "Restrictions": "",
+    "Specialities": "Okulista, Okulista dziecięcy",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": ""
@@ -16672,14 +16568,6 @@
     "Place": ""
   },
   {
-    "DoctorName": "Piotr Myśliwiec",
-    "Restrictions": "",
-    "Specialities": "Chirurg",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Białystok"
-  },
-  {
     "DoctorName": "Anna Nazarewska",
     "Restrictions": "",
     "Specialities": "",
@@ -16694,6 +16582,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Gdynia Sea Towers"
+  },
+  {
+    "DoctorName": "Joanna Niedzielska",
+    "Restrictions": "",
+    "Specialities": "Pediatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
   },
   {
     "DoctorName": "Ewa Niemiec - Święc",
@@ -16758,14 +16654,6 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Stomatologia Medicover - Atrium"
-  },
-  {
-    "DoctorName": "Irena Nowak",
-    "Restrictions": "",
-    "Specialities": "",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": ""
   },
   {
     "DoctorName": "Karolina Nowak",
@@ -16904,6 +16792,22 @@
     "Place": "Centrum Medicover - Lublin"
   },
   {
+    "DoctorName": "Anita Paszkowska",
+    "Restrictions": "",
+    "Specialities": "Ortodonta, Stomatolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Stomatologia Medicover - Puławska"
+  },
+  {
+    "DoctorName": "Tomasz Patla",
+    "Restrictions": "",
+    "Specialities": "Anestezjolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Szpital Medicover"
+  },
+  {
     "DoctorName": "Stanisław Pazio",
     "Restrictions": "",
     "Specialities": "Ginekolog",
@@ -16944,6 +16848,14 @@
     "Place": ""
   },
   {
+    "DoctorName": "Paweł Piotrowski",
+    "Restrictions": "",
+    "Specialities": "Stomatolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
+  },
+  {
     "DoctorName": "Anna Piróg - Bednarska",
     "Restrictions": "",
     "Specialities": "Pedodonta, Stomatolog",
@@ -16961,14 +16873,6 @@
   },
   {
     "DoctorName": "Barbara Podolak",
-    "Restrictions": "",
-    "Specialities": "Pediatra",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Szpital Medicover"
-  },
-  {
-    "DoctorName": "Monika Pohorecka",
     "Restrictions": "",
     "Specialities": "Pediatra",
     "Rank": "brak",
@@ -17360,6 +17264,14 @@
     "Place": "Szpital Medicover"
   },
   {
+    "DoctorName": "Beata Szostakiewicz",
+    "Restrictions": "",
+    "Specialities": "Dermatolog, Dermatolog dziecięcy",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
+  },
+  {
     "DoctorName": "Tamara Szwedowicz - Matuszczak",
     "Restrictions": "",
     "Specialities": "Okulista, Okulista dziecięcy",
@@ -17419,6 +17331,22 @@
     "DoctorName": "Izabela Taranta",
     "Restrictions": "",
     "Specialities": "Chirurg",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Szpital Medicover"
+  },
+  {
+    "DoctorName": "Brygida Targońska",
+    "Restrictions": "",
+    "Specialities": "Alergolog, Alergolog dziecięcy",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Poznań Malta"
+  },
+  {
+    "DoctorName": "Dariusz Tarwacki",
+    "Restrictions": "",
+    "Specialities": "Ginekolog",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Szpital Medicover"
@@ -17528,6 +17456,14 @@
     "Place": ""
   },
   {
+    "DoctorName": "Aleksandra Urbanik",
+    "Restrictions": "",
+    "Specialities": "Pediatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
+  },
+  {
     "DoctorName": "Weronika Urbańska",
     "Restrictions": "",
     "Specialities": "Pediatra",
@@ -17539,6 +17475,14 @@
     "DoctorName": "Magdalena Urbaś",
     "Restrictions": "",
     "Specialities": "Laryngolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Poznań Plac Andersa"
+  },
+  {
+    "DoctorName": "Michał Walczak",
+    "Restrictions": "",
+    "Specialities": "Gastroenterolog, Hepatolog, Internista",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Poznań Plac Andersa"
@@ -17720,14 +17664,6 @@
     "Place": "Centrum Medicover - Gdynia Sea Towers"
   },
   {
-    "DoctorName": "Katarzyna Wrona",
-    "Restrictions": "",
-    "Specialities": "Internista",
-    "Rank": "brak",
-    "SurveyCount": "0",
-    "Place": "Centrum Medicover - Łukiska"
-  },
-  {
     "DoctorName": "Krzysztof Wróblewski",
     "Restrictions": "",
     "Specialities": "Dietetyk, Internista, Nefrolog",
@@ -17750,6 +17686,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Szpital Medicover"
+  },
+  {
+    "DoctorName": "Mateusz Wyrębek",
+    "Restrictions": "",
+    "Specialities": "Stomatolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Stomatologia Medicover - Atrium"
   },
   {
     "DoctorName": "Irena Wysocka",
@@ -17776,6 +17720,14 @@
     "Place": ""
   },
   {
+    "DoctorName": "Przemysław Zajączkowski",
+    "Restrictions": "",
+    "Specialities": "Ginekolog",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
+  },
+  {
     "DoctorName": "Grażyna Zalewska",
     "Restrictions": "",
     "Specialities": "Pulmonolog",
@@ -17784,12 +17736,28 @@
     "Place": "Centrum Medicover – Bydgoszcz"
   },
   {
+    "DoctorName": "Arnold Zaraska",
+    "Restrictions": "",
+    "Specialities": "Ortodonta",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": ""
+  },
+  {
     "DoctorName": "Wojciech Zarębski",
     "Restrictions": "",
     "Specialities": "Chirurg",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Katowice Graniczna"
+  },
+  {
+    "DoctorName": "Anna Zawadzka - Kępczyńska",
+    "Restrictions": "",
+    "Specialities": "",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Gdynia Sea Towers"
   },
   {
     "DoctorName": "Jacek Zborowski",
@@ -17808,6 +17776,14 @@
     "Place": ""
   },
   {
+    "DoctorName": "Irena Złotnik",
+    "Restrictions": "",
+    "Specialities": "Alergolog, Alergolog dziecięcy, Internista",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Białystok"
+  },
+  {
     "DoctorName": "Anna Znamirowska - Bajowska",
     "Restrictions": "",
     "Specialities": "Ortodonta, Stomatolog",
@@ -17816,12 +17792,28 @@
     "Place": ""
   },
   {
+    "DoctorName": "Marek Zych",
+    "Restrictions": "",
+    "Specialities": "Internista, Lekarz medycyny pracy",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Pomorska Łódź"
+  },
+  {
     "DoctorName": "Roland Zydroń",
     "Restrictions": "",
     "Specialities": "Laryngolog, Laryngolog dziecięcy",
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": "Centrum Medicover - Poznań Malta"
+  },
+  {
+    "DoctorName": "Jolanta Zyśk",
+    "Restrictions": "",
+    "Specialities": "Okulista",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Gliwice"
   },
   {
     "DoctorName": "Rafał Żak",
@@ -17846,6 +17838,14 @@
     "Rank": "brak",
     "SurveyCount": "0",
     "Place": ""
+  },
+  {
+    "DoctorName": "Michał Żyła",
+    "Restrictions": "",
+    "Specialities": "Internista, Pediatra",
+    "Rank": "brak",
+    "SurveyCount": "0",
+    "Place": "Centrum Medicover - Piłsudskiego Łódź"
   },
   {
     "DoctorName": "Ewelina Żytko",

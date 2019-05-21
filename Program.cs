@@ -206,6 +206,9 @@ namespace meditool
                         if (doc.Count() == 1 ) {
                                 var doc2 = doc.First();
                                 Score = String.Format("{0} ; {1} ocen",doc2.Rank, doc2.SurveyCount);
+                                if (doc2.Restrictions != "") {
+                                    Score+= String.Format("  Restrykcje: {0}",doc2.Restrictions);
+                                }
                         }
                         if (Score =="") {
                             OutText = string.Format("{3}: Kiedy: {0}, {5}  Gdzie:  {1}   Kto: {2}, {4}", searchResults2[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults2[0].clinicName, searchResults2[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults2[0].specializationName, DateTimeFormatInfo.CurrentInfo.GetDayName(searchResults2[0].appointmentDate.DayOfWeek));
