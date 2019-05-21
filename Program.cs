@@ -9,6 +9,8 @@ using System.Globalization;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using HtmlAgilityPack;
+using Diacritics.Extensions;
 
 namespace meditool
 {
@@ -82,14 +84,14 @@ namespace meditool
                                         //NullValueHandling = NullValueHandling.Ignore
                                     });
 
-            c = s.SendRequestJson(jsonoutput, String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/appointment-slots/{0}", pfmSession.id), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}",JClass.MeetingString));
+            c = s.SendRequestJson(jsonoutput, String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/appointment-slots/{0}", pfmSession.id), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}", JClass.MeetingString));
             AppointmentData2 p3 = JsonConvert.DeserializeObject<AppointmentData2>(c);
             //c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/clinics?region={0}&specialties={1}&vendors={2}", sk1.region, String.Join(", ", p3.specialties.ToArray()), String.Join(", ", p3.vendors.ToArray())), "https://mol.medicover.pl", HttpMethod.Get);
-            c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/clinics"), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}",JClass.MeetingString), HttpMethod.Get);
+            c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/clinics"), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}", JClass.MeetingString), HttpMethod.Get);
             List<PfmDictionaryItem> clinics = (JsonConvert.DeserializeObject<List<PfmDictionaryItem>>(c));
 
             //c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/doctors?region={0}&specialties={1}&vendors={2}", sk1.region,String.Join(", ", p3.specialties.ToArray()),String.Join(", ", p3.vendors.ToArray())), "https://mol.medicover.pl", HttpMethod.Get);
-            c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/doctors"), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}",JClass.MeetingString), HttpMethod.Get);
+            c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/doctors"), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}", JClass.MeetingString), HttpMethod.Get);
             List<PfmDictionaryItem> doctors = (JsonConvert.DeserializeObject<List<PfmDictionaryItem>>(c));
             jsonoutput = JsonConvert.SerializeObject(doctors, Formatting.Indented,
                          new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
@@ -97,7 +99,7 @@ namespace meditool
             File.WriteAllText("doctors.json", jsonoutput);
 
 
-            c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/specialty"), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}",JClass.MeetingString), HttpMethod.Get);
+            c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/dictionary/specialty"), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}", JClass.MeetingString), HttpMethod.Get);
             List<PfmDictionaryItem> specializations = (JsonConvert.DeserializeObject<List<PfmDictionaryItem>>(c));
             PfmSearch2 sk2 = new PfmSearch2();
             sk2.caseId = sk1.caseId;
@@ -114,13 +116,13 @@ namespace meditool
                                         DateFormatString = "yyyy-MM-ddTHH:mm:ss",
                                         //NullValueHandling = NullValueHandling.Ignore
                                     });
-            c = s.SendRequestJson(jsonoutput, String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/appointment-slots/{0}", pfmSession.id), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}",JClass.MeetingString));
+            c = s.SendRequestJson(jsonoutput, String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/appointment-slots/{0}", pfmSession.id), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}", JClass.MeetingString));
             ConsultationFoundInternalV2 cs2 = JsonConvert.DeserializeObject<ConsultationFoundInternalV2>(c);
             ConsultationsFound csf = new ConsultationsFound();
             //DateTime LastVisitFound = sk2.date;
             do
             {
-                
+
                 foreach (var entry in cs2.appointmentSlots)
                 {
                     ConsultationFound cf = new ConsultationFound();
@@ -141,11 +143,11 @@ namespace meditool
                                         DateFormatString = "yyyy-MM-ddTHH:mm:ss",
                                         //NullValueHandling = NullValueHandling.Ignore
                                     });
-                c="";
-                c = s.SendRequestJson(jsonoutput, String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/appointment-slots/{0}", pfmSession.id), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}",JClass.MeetingString));
+                c = "";
+                c = s.SendRequestJson(jsonoutput, String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/appointment-slots/{0}", pfmSession.id), string.Format("https://mol.medicover.pl/pfm?pfmProcessDescriptor={0}", JClass.MeetingString));
                 cs2 = null;
                 cs2 = JsonConvert.DeserializeObject<ConsultationFoundInternalV2>(c);
-            } while (cs2.appointmentSlots.Count >0);
+            } while (cs2.appointmentSlots.Count > 0);
             csf.items = csf.items.OrderBy(w => w.appointmentDate).ToList();
             return csf;
         }
@@ -199,21 +201,28 @@ namespace meditool
                     if (searchResults2.Count > 0)
                     {
 
-                        string[] tmp = Regex.Split(searchResults2[0].doctorName," ");
-                        string tmp2 = tmp[1] +" " + tmp[0];
-                        var doc = Doctors.Where(d=> d.DoctorName ==tmp2);
-                        string Score="";
-                        if (doc.Count() == 1 ) {
-                                var doc2 = doc.First();
-                                Score = String.Format("{0} ; {1} ocen",doc2.Rank, doc2.SurveyCount);
-                                if (doc2.Restrictions != "") {
-                                    Score+= String.Format("  Restrykcje: {0}",doc2.Restrictions);
-                                }
+                        string[] tmp = Regex.Split(searchResults2[0].doctorName, " ");
+                        string tmp2 = tmp[1] + " " + tmp[0];
+                        var doc = Doctors.Where(d => d.DoctorName == tmp2);
+                        string Score = "";
+                        if (doc.Count() == 1)
+                        {
+                            var doc2 = doc.First();
+                            Score = String.Format("{0} ; {1} ocen", doc2.Rank, doc2.SurveyCount);
+                            if (doc2.Restrictions != "")
+                            {
+                                Score += String.Format("  Restrykcje: {0}", doc2.Restrictions);
+                            }
                         }
-                        if (Score =="") {
+                        Score+= GetDataFromZnanyLekarz(searchResults2[0].doctorName);
+                        
+                        if (Score == "")
+                        {
                             OutText = string.Format("{3}: Kiedy: {0}, {5}  Gdzie:  {1}   Kto: {2}, {4}", searchResults2[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults2[0].clinicName, searchResults2[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults2[0].specializationName, DateTimeFormatInfo.CurrentInfo.GetDayName(searchResults2[0].appointmentDate.DayOfWeek));
-                        } else {
-                            OutText = string.Format("{3}: Kiedy: {0}, {5}  Gdzie:  {1}   Kto: {2}, {4}   Ocena: {6}", searchResults2[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults2[0].clinicName, searchResults2[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults2[0].specializationName, DateTimeFormatInfo.CurrentInfo.GetDayName(searchResults2[0].appointmentDate.DayOfWeek),Score);
+                        }
+                        else
+                        {
+                            OutText = string.Format("{3}: Kiedy: {0}, {5}  Gdzie:  {1}   Kto: {2}, {4}   Ocena: {6}", searchResults2[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults2[0].clinicName, searchResults2[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults2[0].specializationName, DateTimeFormatInfo.CurrentInfo.GetDayName(searchResults2[0].appointmentDate.DayOfWeek), Score);
                         }
                         Console.WriteLine(OutText);
                         if (searchResults2[0].appointmentDate != LastResult.appointmentDate)
@@ -240,8 +249,10 @@ namespace meditool
                                 Console.WriteLine(String.Format("==> Wizyta jest za więcej niz {0} dni od {1}. Nie wysyłam powiadomienia", config.DoNotSendPushForSlotsAboveDays.ToString(), StartDate.ToString("yyyy-MM-dd")));
                             }
                         }
-                    } else {
-                         Console.WriteLine(String.Format("{0}: Brak wizyt spełniających zadane kryteria po danej godzinie", DateTime.Now.ToShortTimeString()));
+                    }
+                    else
+                    {
+                        Console.WriteLine(String.Format("{0}: Brak wizyt spełniających zadane kryteria po danej godzinie", DateTime.Now.ToShortTimeString()));
                     }
                 }
                 else
@@ -252,12 +263,65 @@ namespace meditool
 
             //string sss = "";
         }
+        public static string GetDataFromZnanyLekarz(string DoctorsName)
+        {
+            string Result = "";
+            
+            DoctorsName = DoctorsName.Replace(" - ","_");
 
+            List<string> tmp = Regex.Split(DoctorsName, " ").ToList();
+            tmp.Reverse();
+            string SearchPhrase = "";
+            foreach (var a in tmp)
+            {
+                SearchPhrase += a + "-";
+            }
+            SearchPhrase = SearchPhrase.Remove(SearchPhrase.Length - 1);            
+            string SearchPhrase2 = SearchPhrase.Trim().RemoveDiacritics();
+            SearchPhrase2 = SearchPhrase2.Replace("_","-");
+            string Url = String.Format("https://www.znanylekarz.pl/ranking-lekarzy/{0}", SearchPhrase2.ToLower());
+
+            HttpClient h = new HttpClient();
+            h.DefaultRequestHeaders.TryAddWithoutValidation("Accept-Language", "pl; q=1.0");
+            bool HttpOk = false;
+            String tmp1 = "";
+            do
+            {
+                try
+                {
+                    tmp1 = h.GetStringAsync(new Uri(Url)).GetAwaiter().GetResult();
+                    HttpOk = true;
+                }
+                catch
+                {
+
+                }
+            } while (!HttpOk);
+            HtmlDocument htmlDoc = new HtmlDocument();
+            htmlDoc.LoadHtml(tmp1);
+
+            var nodes = htmlDoc.DocumentNode.SelectNodes("//*/ul[@data-id='search-list']/li//*/div[@data-id='rank-element']");
+            var node = nodes.Where(n=> n.Attributes["data-eecommerce-name"].Value == SearchPhrase.Replace("-"," ").Replace("_","-") ).First();
+
+            //var node = htmlDoc.DocumentNode.SelectNodes("//*/ul[@data-id='search-list']/li[1]//*/div[@data-id='rank-element']").First();
+
+            if (node != null) {
+                if (node.Attributes["data-eecommerce-name"].Value == SearchPhrase.Replace("-"," ").Replace("_","-") ) {
+                    var node2 = node.SelectNodes("div//*/a[@class='rating rating--md text-muted']").First();
+                    Result = string.Format("ZL: {0}/5  {1} opinii",node2.Attributes["data-score"].Value,node2.Attributes["data-total-count"].Value);
+                }
+            }   
+
+            return Result;
+        }
         static void Main(string[] args)
         {
-            if (System.IO.File.Exists(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString()+"doctors.json.db")) {
-                Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString()+"doctors.json.db"));
-            }    
+            //GetDataFromZnanyLekarz("Gryglewicz Joanna");
+
+            if (System.IO.File.Exists(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"))
+            {
+                Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"));
+            }
 
             do
             {

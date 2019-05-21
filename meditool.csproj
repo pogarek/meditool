@@ -8,6 +8,8 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="*" />
     <PackageReference Include="PushoverNET.Standard" Version="*" />
+    <PackageReference Include="HtmlAgilityPack" Version="*" />
+     <PackageReference Include="Diacritics" Version="*" />
   </ItemGroup>
 
 </Project>
