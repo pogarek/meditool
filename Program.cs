@@ -214,11 +214,12 @@ namespace meditool
                                 Score += String.Format("  Restrykcje: {0}", doc2.Restrictions);
                             }
                         }
-                        if (Score != "") {
-                            Score+= " ";    
+                        if (Score != "")
+                        {
+                            Score += " ";
                         }
-                        Score+= GetDataFromZnanyLekarz(searchResults2[0].doctorName);
-                        
+                        Score += GetDataFromZnanyLekarz(searchResults2[0].doctorName);
+
                         if (Score == "")
                         {
                             OutText = string.Format("{3}: Kiedy: {0}, {5}  Gdzie:  {1}   Kto: {2}, {4}", searchResults2[0].appointmentDate.ToString("yyyy-MM-dd HH:mm"), searchResults2[0].clinicName, searchResults2[0].doctorName, DateTime.Now.ToShortTimeString(), searchResults2[0].specializationName, DateTimeFormatInfo.CurrentInfo.GetDayName(searchResults2[0].appointmentDate.DayOfWeek));
@@ -269,8 +270,8 @@ namespace meditool
         public static string GetDataFromZnanyLekarz(string DoctorsName)
         {
             string Result = "";
-            
-            DoctorsName = DoctorsName.Replace(" - ","_");
+
+            DoctorsName = DoctorsName.Replace(" - ", "_");
 
             List<string> tmp = Regex.Split(DoctorsName, " ").ToList();
             tmp.Reverse();
@@ -279,9 +280,9 @@ namespace meditool
             {
                 SearchPhrase += a + "-";
             }
-            SearchPhrase = SearchPhrase.Remove(SearchPhrase.Length - 1);            
+            SearchPhrase = SearchPhrase.Remove(SearchPhrase.Length - 1);
             string SearchPhrase2 = SearchPhrase.Trim().RemoveDiacritics();
-            SearchPhrase2 = SearchPhrase2.Replace("_","-");
+            SearchPhrase2 = SearchPhrase2.Replace("_", "-");
             string Url = String.Format("https://www.znanylekarz.pl/ranking-lekarzy/{0}", SearchPhrase2.ToLower());
 
             HttpClient h = new HttpClient();
@@ -304,16 +305,20 @@ namespace meditool
             htmlDoc.LoadHtml(tmp1);
 
             var nodes = htmlDoc.DocumentNode.SelectNodes("//*/ul[@data-id='search-list']/li//*/div[@data-id='rank-element']");
-            var node = nodes.Where(n=> n.Attributes["data-eecommerce-name"].Value == SearchPhrase.Replace("-"," ").Replace("_","-") );
-            //var node = htmlDoc.DocumentNode.SelectNodes("//*/ul[@data-id='search-list']/li[1]//*/div[@data-id='rank-element']").First();
+            if (nodes != null)
+            {
+                var node = nodes.Where(n => n.Attributes["data-eecommerce-name"].Value == SearchPhrase.Replace("-", " ").Replace("_", "-"));
+                //var node = htmlDoc.DocumentNode.SelectNodes("//*/ul[@data-id='search-list']/li[1]//*/div[@data-id='rank-element']").First();
 
-            if (node.Count()==1) {
-                if (node.First().Attributes["data-eecommerce-name"].Value == SearchPhrase.Replace("-"," ").Replace("_","-") ) {
-                    var node2 = node.First().SelectNodes("div//*/a[@class='rating rating--md text-muted']").First();
-                    Result = string.Format("ZL: {0}/5  {1} opinii",node2.Attributes["data-score"].Value,node2.Attributes["data-total-count"].Value);
+                if (node.Count() == 1)
+                {
+                    if (node.First().Attributes["data-eecommerce-name"].Value == SearchPhrase.Replace("-", " ").Replace("_", "-"))
+                    {
+                        var node2 = node.First().SelectNodes("div//*/a[@class='rating rating--md text-muted']").First();
+                        Result = string.Format("ZL: {0}/5  {1} opinii", node2.Attributes["data-score"].Value, node2.Attributes["data-total-count"].Value);
+                    }
                 }
-            }   
-
+            }
             return Result;
         }
         static void Main(string[] args)
