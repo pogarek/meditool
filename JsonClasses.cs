@@ -20,17 +20,18 @@ namespace meditool
     }
     public class SearchVisit_Konsultacja
     {
-        public int regionId = 204;
-        public int bookingTypeId = 2;
-        public int specializationId = 9;
-        public int clinicId = -1;
-        public int languageId = -1;
-        public int doctorId = -1;
+        public int[] regionIds = {204};
+        //public int bookingTypeId = 2;
+        public int[] serviceIds = {9};
+        public int[] clinicIds = {};
+        public int[] doctorLanguagesIds = {};
+        public int[] doctorIds = {};
+        public int serviceTypeId = 2;
         public DateTime searchSince = DateTime.Now.Date.AddDays(1);
-        public string searchForNextSince = null;
-        public int periodOfTheDay = 0;
-        public bool isSetBecauseOfPcc = false;
-        public bool isSetBecausePromoteSpecialization = false;
+        //public string searchForNextSince = null;
+        //public int periodOfTheDay = 0;
+        //public bool isSetBecauseOfPcc = false;
+        //public bool isSetBecausePromoteSpecialization = false;
     }
 
     public class SearchVisit_Badanie
