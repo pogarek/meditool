@@ -314,8 +314,13 @@ namespace meditool
                 {
                     if (node.First().Attributes["data-eecommerce-name"].Value == SearchPhrase.Replace("-", " ").Replace("_", "-"))
                     {
-                        var node2 = node.First().SelectNodes("div//*/a[@class='rating rating--md text-muted']").First();
-                        Result = string.Format("ZL: {0}/5  {1} opinii", node2.Attributes["data-score"].Value, node2.Attributes["data-total-count"].Value);
+                        
+                        try {
+                            var node2 = node.First().SelectNodes("div//*/a[@class='rating rating--md text-muted']").FirstOrDefault();
+                            Result = string.Format("ZL: {0}/5  {1} opinii", node2.Attributes["data-score"].Value, node2.Attributes["data-total-count"].Value);
+                        } catch {
+                            Result = "Bład pobierania z  ZnanyLekarz";
+                        }
                     }
                 }
             }
