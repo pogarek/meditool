@@ -307,19 +307,19 @@ namespace meditool
             var nodes = htmlDoc.DocumentNode.SelectNodes("//*/ul[@data-id='search-list']/li//*/div[@data-id='rank-element']");
             if (nodes != null)
             {
-                var node = nodes.Where(n => n.Attributes["data-eecommerce-name"].Value == SearchPhrase.Replace("-", " ").Replace("_", "-"));
+                var node = nodes.Where(n => n.Attributes["data-eecommerce-category"].Value.ToUpper() == SearchPhrase.Replace("-", " ").Replace("_", "-").ToUpper());
                 //var node = htmlDoc.DocumentNode.SelectNodes("//*/ul[@data-id='search-list']/li[1]//*/div[@data-id='rank-element']").First();
 
                 if (node.Count() == 1)
                 {
-                    if (node.First().Attributes["data-eecommerce-name"].Value == SearchPhrase.Replace("-", " ").Replace("_", "-"))
+                    if (node.First().Attributes["data-eecommerce-category"].Value.ToUpper() == SearchPhrase.Replace("-", " ").Replace("_", "-").ToUpper())
                     {
                         
                         try {
                             var node2 = node.First().SelectNodes("div//*/a[@class='rating rating--md text-muted']").FirstOrDefault();
                             Result = string.Format("ZL: {0}/5  {1} opinii", node2.Attributes["data-score"].Value, node2.Attributes["data-total-count"].Value);
                         } catch {
-                            Result = "Bład pobierania z  ZnanyLekarz";
+                            Result = "Brak opinii na ZnanyLekarz";
                         }
                     }
                 }
