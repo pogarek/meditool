@@ -289,10 +289,12 @@ namespace meditool
             h.DefaultRequestHeaders.TryAddWithoutValidation("Accept-Language", "pl; q=1.0");
             bool HttpOk = false;
             String tmp1 = "";
+            int http_attemps = 0;
             do
             {
                 try
                 {
+                    http_attemps++;
                     tmp1 = h.GetStringAsync(new Uri(Url)).GetAwaiter().GetResult();
                     HttpOk = true;
                 }
@@ -300,7 +302,7 @@ namespace meditool
                 {
 
                 }
-            } while (!HttpOk);
+            } while (!HttpOk &  http_attemps<3);
             HtmlDocument htmlDoc = new HtmlDocument();
             htmlDoc.LoadHtml(tmp1);
 
