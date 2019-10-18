@@ -201,23 +201,8 @@ namespace meditool
                     if (searchResults2.Count > 0)
                     {
 
-                        string[] tmp = Regex.Split(searchResults2[0].doctorName, " ");
-                        string tmp2 = tmp[1] + " " + tmp[0];
-                        var doc = Doctors.Where(d => d.DoctorName == tmp2);
                         string Score = "";
-                        if (doc.Count() == 1)
-                        {
-                            var doc2 = doc.First();
-                            Score = String.Format("{0} ; {1} ocen", doc2.Rank, doc2.SurveyCount);
-                            if (doc2.Restrictions != "")
-                            {
-                                Score += String.Format("  Restrykcje: {0}", doc2.Restrictions);
-                            }
-                        }
-                        if (Score != "")
-                        {
-                            Score += " ";
-                        }
+                        Score += GetDoctorsDataMedicover(searchResults2[0].doctorName);
                         Score += GetDataFromZnanyLekarz(searchResults2[0].doctorName);
 
                         if (Score == "")
@@ -302,25 +287,43 @@ namespace meditool
                 {
 
                 }
-            } while (!HttpOk &  http_attemps<3);
+            } while (!HttpOk & http_attemps < 3);
             HtmlDocument htmlDoc = new HtmlDocument();
             htmlDoc.LoadHtml(tmp1);
+            File.WriteAllText("ZL.html", tmp1);
 
             var nodes = htmlDoc.DocumentNode.SelectNodes("//*/ul[@data-id='search-list']/li//*/div[@data-id='rank-element']");
             if (nodes != null)
             {
-                var node = nodes.Where(n => n.Attributes["data-eecommerce-category"].Value.ToUpper() == SearchPhrase.Replace("-", " ").Replace("_", "-").ToUpper());
+                HtmlNode node = null;
+                foreach (var nodetmp in nodes)
+                {
+                    var node3 = nodetmp.SelectNodes("div//*/span[@itemprop='name']");
+                    var node4 = node3.Where(n => n.InnerText.Trim().ToUpper() == SearchPhrase.Replace("-", " ").Replace("_", "-").ToUpper()).FirstOrDefault();
+                    if (node4 != null)
+                    {
+                        node = nodetmp;
+                        break;
+                    }
+                }
+
+
+                //var node = nodes.Where(n => n.Attributes["data-eecommerce-category"].Value.ToUpper() == SearchPhrase.Replace("-", " ").Replace("_", " ").ToUpper());
                 //var node = htmlDoc.DocumentNode.SelectNodes("//*/ul[@data-id='search-list']/li[1]//*/div[@data-id='rank-element']").First();
 
-                if (node.Count() == 1)
+                if (node != null)
                 {
-                    if (node.First().Attributes["data-eecommerce-category"].Value.ToUpper() == SearchPhrase.Replace("-", " ").Replace("_", "-").ToUpper())
+                    //if (node.Attributes["data-eecommerce-category"].Value.ToUpper() == SearchPhrase.Replace("-", " ").Replace("_", "-").ToUpper())
+                    if (1 == 1)
                     {
-                        
-                        try {
-                            var node2 = node.First().SelectNodes("div//*/a[@class='rating rating--md text-muted']").FirstOrDefault();
+
+                        try
+                        {
+                            var node2 = node.SelectNodes("div//*/a[@class='rating rating--md text-muted']").FirstOrDefault();
                             Result = string.Format("ZL: {0}/5  {1} opinii", node2.Attributes["data-score"].Value, node2.Attributes["data-total-count"].Value);
-                        } catch {
+                        }
+                        catch
+                        {
                             Result = "Brak opinii na ZnanyLekarz";
                         }
                     }
@@ -328,15 +331,49 @@ namespace meditool
             }
             return Result;
         }
+        public static string GetDoctorsDataMedicover(string DoctorsName)
+        {
+            DoctorsName = DoctorsName.Replace(" - ", "_");
+
+            List<string> tmp = Regex.Split(DoctorsName, " ").ToList();
+            tmp.Reverse();
+            string SearchPhrase = "";
+            foreach (var a in tmp)
+            {
+                SearchPhrase += a + "-";
+            }
+            SearchPhrase = SearchPhrase.Remove(SearchPhrase.Length - 1);
+            string SearchPhrase2 = SearchPhrase.Trim().RemoveDiacritics();
+            SearchPhrase2 = SearchPhrase2.Replace("-", " ");
+            SearchPhrase2 = SearchPhrase2.Replace("_", " - ");
+            var doc = Doctors.Where(d => d.DoctorName.ToUpper() == SearchPhrase2.ToUpper());
+            
+            string Score = "";
+            if (doc.Count() == 1)
+            {
+                var doc2 = doc.First();
+                Score = String.Format("{0} ; {1} ocen", doc2.Rank, doc2.SurveyCount);
+                if (doc2.Restrictions != "")
+                {
+                    Score += String.Format("  Restrykcje: {0}", doc2.Restrictions);
+                }
+            }
+            if (Score != "")
+            {
+                Score += " ";
+            }
+
+            return Score;
+        }
         static void Main(string[] args)
         {
-            //GetDataFromZnanyLekarz("Gryglewicz Joanna");
 
             if (System.IO.File.Exists(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"))
             {
                 Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"));
             }
-
+            //string aa = GetDataFromZnanyLekarz("Gryglewicz Joanna");
+            //string bb = GetDoctorsDataMedicover("Gryglewicz Joanna");
             do
             {
                 config = new Config();
