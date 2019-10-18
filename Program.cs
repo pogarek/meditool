@@ -372,8 +372,8 @@ namespace meditool
             {
                 Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"));
             }
-            //string aa = GetDataFromZnanyLekarz("Gryglewicz Joanna");
-            //string bb = GetDoctorsDataMedicover("Gryglewicz Joanna");
+            //string aa = GetDataFromZnanyLekarz("lastname firstname");
+            //string bb = GetDoctorsDataMedicover("lastname firstname");
             do
             {
                 config = new Config();
