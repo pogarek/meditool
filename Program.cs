@@ -387,7 +387,7 @@ namespace meditool
                     if (config.UsePushOver)
                     {
                         {
-                            PushOverSender.SendPushMessage(config.pushOverUserId, config.pushOverAppTokenId, "Medicover Hunt", String.Format("{0} : Blad pobierania danych.", args[0]));
+                            //PushOverSender.SendPushMessage(config.pushOverUserId, config.pushOverAppTokenId, "Medicover Hunt", String.Format("{0} : Blad pobierania danych.", args[0]));
                         }
                         Console.WriteLine(String.Format("{0}: Wystapil blad pobierania danych", DateTime.Now.ToShortTimeString()));
                     }
