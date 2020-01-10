@@ -6,18 +6,14 @@
     "pushOverAppTokenId": "register app on pushover dashboard",
     "DoNotSendPushForSlotsAboveDays" : 4,
     "CheckIntervalMinutes" : 5,
-    "AfterHour" : 0,
+    "AfterHour" : 10,
     "ConsultationSearchData": {
-            "regionId": 204,
-            "bookingTypeId": 2,
-            "specializationId": 9, 
-            "clinicId": -1,
-            "languageId": -1,
-            "doctorId": -1,
-            "searchSince": "2019-02-19T03:00:00.000Z",
-            "searchForNextSince": null,
-            "periodOfTheDay": 0,
-            "isSetBecauseOfPcc": false,
-            "isSetBecausePromoteSpecialization": false  
+        "clinicIds": [],
+        "doctorIds": [],
+        "doctorLanguagesIds": [],
+        "regionIds": [204],
+        "searchSince": "2020-01-02T00:00:00.000Z",
+        "serviceIds": [9],
+        "serviceTypeId": 2 
     }
 }
