@@ -32,6 +32,8 @@ namespace meditool
         //public int periodOfTheDay = 0;
         //public bool isSetBecauseOfPcc = false;
         //public bool isSetBecausePromoteSpecialization = false;
+        public string startTime = "0:00";
+        public string endtime = "23:59";
     }
 
     public class SearchVisit_Badanie

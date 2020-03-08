@@ -30,8 +30,12 @@ namespace meditool
                                         DateFormatString = "yyyy-MM-ddTHH:mm:ss.000Z",
                                         //NullValueHandling = NullValueHandling.Ignore
                                     });
+            
             string referer = "https://mol.medicover.pl/MyVisits";
             string c = s.SendRequest("https://mol.medicover.pl/MyVisits?bookingTypeId=2&mex=True&pfm=1", "https://mol.medicover.pl", HttpMethod.Get);
+            if (config.AfterHour >0) {
+                c = s.SendRequest(String.Format("https://mol.medicover.pl/api/MyVisits/SearchFreeSlotsToBook/GetFiltersData?regionIds={0}&serviceTypeId={1}&serviceIds={2}&&&&searchSince={3}&startTime={4}&endTime={5}&selectedSpecialties=null",JClass.regionIds[0],JClass.serviceTypeId,JClass.serviceIds[0],JClass.searchSince,config.AfterHour.ToString()+":00","23:59"),"https://mol.medicover.pl", HttpMethod.Get);
+            }
             string b = s.SendRequestJson(jsonoutput, "https://mol.medicover.pl/api/MyVisits/SearchFreeSlotsToBook?language=pl-PL", referer);
             ConsultationsFound test = (JsonConvert.DeserializeObject<ConsultationsFound>(b));
             return test;
