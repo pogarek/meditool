@@ -10,6 +10,7 @@ using System.Globalization;
 using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using HtmlAgilityPack;
 
 namespace meditool
 {
@@ -68,12 +69,95 @@ namespace meditool
         public void RefreshMain () {
                 HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, "https://mol.medicover.pl");
                 request = AddHeadersLogin(request);
-                request.Headers.Add("Referer", LoginUrl);
+                //request.Headers.Add("Referer", LoginUrl);
                 var response = h.SendAsync(request).Result;
-                //result = response.Content.ReadAsStringAsync().Result;
+                string result = response.Content.ReadAsStringAsync().Result;
+                string aaaa = "";
 
         }
-        public void Login(string username, string password)
+        public void Login(string username, string password) {
+            handler = new HttpClientHandler();
+            handler.AutomaticDecompression = System.Net.DecompressionMethods.GZip;
+            h = new HttpClient(handler);
+            h.Timeout = TimeSpan.FromSeconds(120);
+            
+            //zaczynamy .
+            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, "https://mol.medicover.pl/Users/Account/LogOn?ReturnUrl=%2F");
+            request = AddHeadersLogin(request);
+            HttpResponseMessage response = h.SendAsync(request).Result;
+            string result = response.Content.ReadAsStringAsync().Result;
+            string[] tmp = Regex.Split(result,@"url =");
+            string[] tmp2 = Regex.Split(tmp[1].Trim(),@"""");
+            string Url = tmp2[0];
+            request = new HttpRequestMessage(HttpMethod.Get,Url);
+            
+            request = AddHeadersLogin(request);
+            response = h.SendAsync(request).Result;
+            result = response.Content.ReadAsStringAsync().Result;
+            var lines = Regex.Split(result, @"\n").ToList();
+            string LineWithText = lines.Where(l => l.IndexOf(@"input name=""__RequestVerificationToken""",StringComparison.OrdinalIgnoreCase) >= 0).FirstOrDefault();
+            tmp = Regex.Split(LineWithText,@"value\=");
+            tmp2 = Regex.Split(tmp[1].Trim(),@"""");
+            string RequestValidationToken = tmp2[1];
+            string ReturnUrl = request.RequestUri.Query.Replace("?ReturnUrl=","");
+            
+            request = new HttpRequestMessage(HttpMethod.Post, request.RequestUri.AbsoluteUri);
+            string RequestBody = String.Format(@"__RequestVerificationToken={0}&UserName={1}&Password={2}&ReturnUrl={3}", RequestValidationToken, username, password,ReturnUrl);
+            request = AddHeadersLogin(request);
+            request.Content = new StringContent(RequestBody);
+            var MediaType = new MediaTypeHeaderValue("application/x-www-form-urlencoded");
+            MediaType.CharSet = "utf-8";
+            request.Content.Headers.ContentType = MediaType;
+            request.Headers.Add("Origin", "https://login.medicover.pl");
+            request.Headers.Add("Referer", request.RequestUri.AbsoluteUri);
+            response = h.SendAsync(request).Result;
+            result = response.Content.ReadAsStringAsync().Result;
+            HtmlDocument htmlDoc = new HtmlDocument();
+            htmlDoc.LoadHtml(result);
+            var node = htmlDoc.DocumentNode.SelectSingleNode("//form");
+            //var nodes = node.SelectNodes(".//input[@name]");
+            
+            request = new HttpRequestMessage(HttpMethod.Post, "https://oauth.medicover.pl/signin-oidc");
+            RequestBody = String.Format(@"code={0}&id_token={1}&scope={2}&state={3}&session_state={4}", 
+            node.SelectNodes(".//input[@name='code']").FirstOrDefault().Attributes["value"].Value,
+            node.SelectNodes(".//input[@name='id_token']").FirstOrDefault().Attributes["value"].Value,
+            node.SelectNodes(".//input[@name='scope']").FirstOrDefault().Attributes["value"].Value,
+            node.SelectNodes(".//input[@name='state']").FirstOrDefault().Attributes["value"].Value,
+            node.SelectNodes(".//input[@name='session_state']").FirstOrDefault().Attributes["value"].Value
+            );
+            request = AddHeadersLogin(request);
+            request.Content = new StringContent(RequestBody);
+            request.Content.Headers.ContentType = MediaType;
+            //request.Headers.Add("Origin", "https://login.medicover.pl");
+            //request.Headers.Add("Referer", request.RequestUri.AbsoluteUri);
+            response = h.SendAsync(request).Result;
+            result = response.Content.ReadAsStringAsync().Result;
+            
+            htmlDoc = new HtmlDocument();
+            htmlDoc.LoadHtml(result);
+            node = htmlDoc.DocumentNode.SelectSingleNode("//form");
+            //var nodes = node.SelectNodes(".//input[@name]");
+            request = new HttpRequestMessage(HttpMethod.Post, "https://mol.medicover.pl/Medicover.OpenIdConnectAuthentication/Account/OAuthSignIn");
+            RequestBody = String.Format(@"code={0}&id_token={1}&scope={2}&state={3}&session_state={4}", 
+            node.SelectNodes(".//input[@name='code']").FirstOrDefault().Attributes["value"].Value,
+            node.SelectNodes(".//input[@name='id_token']").FirstOrDefault().Attributes["value"].Value,
+            node.SelectNodes(".//input[@name='scope']").FirstOrDefault().Attributes["value"].Value,
+            node.SelectNodes(".//input[@name='state']").FirstOrDefault().Attributes["value"].Value,
+            node.SelectNodes(".//input[@name='session_state']").FirstOrDefault().Attributes["value"].Value
+            );
+            request = AddHeadersLogin(request);
+            request.Content = new StringContent(RequestBody);
+            request.Content.Headers.ContentType = MediaType;
+            //request.Headers.Add("Origin", "https://login.medicover.pl");
+            //request.Headers.Add("Referer", request.RequestUri.AbsoluteUri);
+            response = h.SendAsync(request).Result;
+            result = response.Content.ReadAsStringAsync().Result;
+             RefreshMain();
+            string Bbb = "";
+
+
+        }
+        public void Login_old(string username, string password)
         {
             handler = new HttpClientHandler();
             handler.AutomaticDecompression = System.Net.DecompressionMethods.GZip;
