@@ -54,6 +54,8 @@ namespace meditool
             string c = s.SendRequest("https://mol.medicover.pl/MyVisits?bookingTypeId=1&mex=True&pfm=1", "https://mol.medicover.pl", HttpMethod.Get);
             string b = s.SendRequestJson(jsonoutput, "https://mol.medicover.pl/api/MyVisits/SearchFreeSlotsToBook?language=pl-PL", referer);
             ConsultationsFound test = (JsonConvert.DeserializeObject<ConsultationsFound>(b));
+
+            
             return test;
 
         }
