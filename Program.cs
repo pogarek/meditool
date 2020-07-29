@@ -473,7 +473,7 @@ namespace meditool
             {
                 Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"));
             }
-            string aa = GetDataFromZnanyLekarz("Śliwiński Marek");
+            //string aa = GetDataFromZnanyLekarz("Śliwiński Marek");
             //string bb = GetDoctorsDataMedicoverOnline("lastname firstname");
             do
             {
