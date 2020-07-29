@@ -337,6 +337,86 @@ namespace meditool
             }
             return Result;
         }
+        public static string GetDoctorsDataMedicoverOnline(string DoctorsName)
+        {
+            string Result = "";
+
+            DoctorsName = DoctorsName.Replace(" - ", "-");
+
+            List<string> tmp = Regex.Split(DoctorsName, " ").ToList();
+            //tmp.Reverse();
+            string SearchPhrase = "";
+            foreach (var a in tmp)
+            {
+                SearchPhrase += a + "-";
+            }
+            SearchPhrase = SearchPhrase.Remove(SearchPhrase.Length - 1);
+            string SearchPhrase2 = SearchPhrase.Trim().RemoveDiacritics();
+            SearchPhrase2 = SearchPhrase2.Replace(" ", "-");
+            string Url = String.Format("https://www.medicover.pl/lekarze/{0},n,s", SearchPhrase2.ToLower());
+
+            HttpClient h = new HttpClient();
+            h.DefaultRequestHeaders.TryAddWithoutValidation("Accept-Language", "pl; q=1.0");
+            bool HttpOk = false;
+            String tmp1 = "";
+            int http_attemps = 0;
+            do
+            {
+                try
+                {
+                    http_attemps++;
+                    tmp1 = h.GetStringAsync(new Uri(Url)).GetAwaiter().GetResult();
+                    HttpOk = true;
+                }
+                catch
+                {
+
+                }
+            } while (!HttpOk & http_attemps < 3);
+            HtmlDocument htmlDoc = new HtmlDocument();
+            htmlDoc.LoadHtml(tmp1);
+            File.WriteAllText("ZL.html", tmp1);
+
+            var nodes = htmlDoc.DocumentNode.SelectNodes("//*/ul[@data-id='search-list']/li//*/div[@data-id='rank-element']");
+            if (nodes != null)
+            {
+                HtmlNode node = null;
+                foreach (var nodetmp in nodes)
+                {
+                    var node3 = nodetmp.SelectNodes("div//*/span[@itemprop='name']");
+                    var node4 = node3.Where(n => n.InnerText.Trim().ToUpper() == SearchPhrase.Replace("-", " ").Replace("_", "-").ToUpper()).FirstOrDefault();
+                    if (node4 != null)
+                    {
+                        node = nodetmp;
+                        break;
+                    }
+                }
+
+
+                //var node = nodes.Where(n => n.Attributes["data-eecommerce-category"].Value.ToUpper() == SearchPhrase.Replace("-", " ").Replace("_", " ").ToUpper());
+                //var node = htmlDoc.DocumentNode.SelectNodes("//*/ul[@data-id='search-list']/li[1]//*/div[@data-id='rank-element']").First();
+
+                if (node != null)
+                {
+                    //if (node.Attributes["data-eecommerce-category"].Value.ToUpper() == SearchPhrase.Replace("-", " ").Replace("_", "-").ToUpper())
+                    if (1 == 1)
+                    {
+
+                        try
+                        {
+                            var node2 = node.SelectNodes("div//*/a[@class='rating rating--md text-muted']").FirstOrDefault();
+                            Result = string.Format("ZL: {0}/5  {1} opinii", node2.Attributes["data-score"].Value, node2.Attributes["data-total-count"].Value);
+                        }
+                        catch
+                        {
+                            Result = "Brak opinii na ZnanyLekarz";
+                        }
+                    }
+                }
+            }
+            return Result;
+        }
+        
         public static string GetDoctorsDataMedicover(string DoctorsName)
         {
             DoctorsName = DoctorsName.Replace(" - ", "_");
@@ -379,7 +459,7 @@ namespace meditool
                 Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"));
             }
             //string aa = GetDataFromZnanyLekarz("lastname firstname");
-            //string bb = GetDoctorsDataMedicover("lastname firstname");
+            //string bb = GetDoctorsDataMedicoverOnline("lastname firstname");
             do
             {
                 config = new Config();

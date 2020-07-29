@@ -23,6 +23,8 @@ namespace meditool
         public int[] regionIds = {204};
         //public int bookingTypeId = 2;
         public int[] serviceIds = {9};
+
+        public string[] selectedSpecialties = {};
         public int[] clinicIds = {};
         public int[] doctorLanguagesIds = {};
         public int[] doctorIds = {};
@@ -34,6 +36,7 @@ namespace meditool
         //public bool isSetBecausePromoteSpecialization = false;
         public string startTime = "0:00";
         public string endtime = "23:59";
+        public string visitType = "0";
     }
 
     public class SearchVisit_Badanie
