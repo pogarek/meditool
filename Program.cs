@@ -30,11 +30,12 @@ namespace meditool
                                         DateFormatString = "yyyy-MM-ddTHH:mm:ss.000Z",
                                         //NullValueHandling = NullValueHandling.Ignore
                                     });
-            
+
             string referer = "https://mol.medicover.pl/MyVisits";
             string c = s.SendRequest("https://mol.medicover.pl/MyVisits?bookingTypeId=2&mex=True&pfm=1", "https://mol.medicover.pl", HttpMethod.Get);
-            if (config.AfterHour >0) {
-                c = s.SendRequest(String.Format("https://mol.medicover.pl/api/MyVisits/SearchFreeSlotsToBook/GetFiltersData?regionIds={0}&serviceTypeId={1}&serviceIds={2}&&&&searchSince={3}&startTime={4}&endTime={5}&selectedSpecialties=null",JClass.regionIds[0],JClass.serviceTypeId,JClass.serviceIds[0],JClass.searchSince,config.AfterHour.ToString()+":00","23:59"),"https://mol.medicover.pl", HttpMethod.Get);
+            if (config.AfterHour > 0)
+            {
+                c = s.SendRequest(String.Format("https://mol.medicover.pl/api/MyVisits/SearchFreeSlotsToBook/GetFiltersData?regionIds={0}&serviceTypeId={1}&serviceIds={2}&&&&searchSince={3}&startTime={4}&endTime={5}&selectedSpecialties=null", JClass.regionIds[0], JClass.serviceTypeId, JClass.serviceIds[0], JClass.searchSince, config.AfterHour.ToString() + ":00", "23:59"), "https://mol.medicover.pl", HttpMethod.Get);
             }
             string b = s.SendRequestJson(jsonoutput, "https://mol.medicover.pl/api/MyVisits/SearchFreeSlotsToBook?language=pl-PL", referer);
             ConsultationsFound test = (JsonConvert.DeserializeObject<ConsultationsFound>(b));
@@ -55,7 +56,7 @@ namespace meditool
             string b = s.SendRequestJson(jsonoutput, "https://mol.medicover.pl/api/MyVisits/SearchFreeSlotsToBook?language=pl-PL", referer);
             ConsultationsFound test = (JsonConvert.DeserializeObject<ConsultationsFound>(b));
 
-            
+
             return test;
 
         }
@@ -274,7 +275,8 @@ namespace meditool
             SearchPhrase = SearchPhrase.Remove(SearchPhrase.Length - 1);
             string SearchPhrase2 = SearchPhrase.Trim().RemoveDiacritics();
             SearchPhrase2 = SearchPhrase2.Replace("_", "-");
-            string Url = String.Format("https://www.znanylekarz.pl/ranking-lekarzy/{0}", SearchPhrase2.ToLower());
+            //string Url = String.Format("https://www.znanylekarz.pl/ranking-lekarzy/{0}", SearchPhrase2.ToLower());
+            string Url = String.Format("https://www.znanylekarz.pl/szukaj?q={0}&loc=", SearchPhrase.Replace("-", "+").ToLower());
 
             HttpClient h = new HttpClient();
             h.DefaultRequestHeaders.TryAddWithoutValidation("Accept-Language", "pl; q=1.0");
@@ -296,39 +298,52 @@ namespace meditool
             } while (!HttpOk & http_attemps < 3);
             HtmlDocument htmlDoc = new HtmlDocument();
             htmlDoc.LoadHtml(tmp1);
-            File.WriteAllText("ZL.html", tmp1);
-
-            var nodes = htmlDoc.DocumentNode.SelectNodes("//*/ul[@data-id='search-list']/li//*/div[@data-id='rank-element']");
-            if (nodes != null)
+            var node3 = htmlDoc.DocumentNode.SelectSingleNode("//a[@data-ga-action='Detail click']");
+            if (node3 != null)
             {
-                HtmlNode node = null;
-                foreach (var nodetmp in nodes)
+                Url = node3.Attributes["href"].Value;   
+                HttpOk = false;
+                tmp1 = "";
+                http_attemps = 0;
+                do
                 {
-                    var node3 = nodetmp.SelectNodes("div//*/span[@itemprop='name']");
-                    var node4 = node3.Where(n => n.InnerText.Trim().ToUpper() == SearchPhrase.Replace("-", " ").Replace("_", "-").ToUpper()).FirstOrDefault();
-                    if (node4 != null)
+                    try
                     {
-                        node = nodetmp;
-                        break;
+                        http_attemps++;
+                        tmp1 = h.GetStringAsync(new Uri(Url)).GetAwaiter().GetResult();
+                        HttpOk = true;
                     }
-                }
-
-
-                //var node = nodes.Where(n => n.Attributes["data-eecommerce-category"].Value.ToUpper() == SearchPhrase.Replace("-", " ").Replace("_", " ").ToUpper());
-                //var node = htmlDoc.DocumentNode.SelectNodes("//*/ul[@data-id='search-list']/li[1]//*/div[@data-id='rank-element']").First();
-
-                if (node != null)
-                {
-                    //if (node.Attributes["data-eecommerce-category"].Value.ToUpper() == SearchPhrase.Replace("-", " ").Replace("_", "-").ToUpper())
-                    if (1 == 1)
+                    catch
                     {
 
-                        try
+                    }
+                } while (!HttpOk & http_attemps < 3);
+                htmlDoc = new HtmlDocument();
+                htmlDoc.LoadHtml(tmp1);
+                //File.WriteAllText("ZL.html", tmp1);
+
+                var nodes = htmlDoc.DocumentNode.SelectNodes("//*/span[@data-test-id='doctor-header-name']");
+                if (nodes != null)
+                {
+                    if (nodes.First().InnerText.Trim().Replace(" ", "-") == SearchPhrase)
+                    {
+                        var doc2 = new HtmlDocument();
+                        doc2.LoadHtml(nodes.First().InnerHtml);
+                        var node = htmlDoc.DocumentNode.SelectSingleNode("//span[@class='rating rating--lg']");
+                        if (node != null)
                         {
-                            var node2 = node.SelectNodes("div//*/a[@class='rating rating--md text-muted']").FirstOrDefault();
-                            Result = string.Format("ZL: {0}/5  {1} opinii", node2.Attributes["data-score"].Value, node2.Attributes["data-total-count"].Value);
+                            try
+                            {
+                                var node2 = node.SelectSingleNode("span");
+                                var tmp2 = Regex.Split(node2.InnerText, " ");
+                                Result = string.Format("ZL: {0}/5  {1} opinii", node.Attributes["data-score"].Value, tmp2[0]);
+                            }
+                            catch
+                            {
+                                Result = "Brak opinii na ZnanyLekarz";
+                            }
                         }
-                        catch
+                        else
                         {
                             Result = "Brak opinii na ZnanyLekarz";
                         }
@@ -416,7 +431,7 @@ namespace meditool
             }
             return Result;
         }
-        
+
         public static string GetDoctorsDataMedicover(string DoctorsName)
         {
             DoctorsName = DoctorsName.Replace(" - ", "_");
@@ -433,7 +448,7 @@ namespace meditool
             SearchPhrase2 = SearchPhrase2.Replace("-", " ");
             SearchPhrase2 = SearchPhrase2.Replace("_", " - ");
             var doc = Doctors.Where(d => d.DoctorName.ToUpper() == SearchPhrase2.ToUpper());
-            
+
             string Score = "";
             if (doc.Count() == 1)
             {
@@ -458,7 +473,7 @@ namespace meditool
             {
                 Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"));
             }
-            //string aa = GetDataFromZnanyLekarz("lastname firstname");
+            string aa = GetDataFromZnanyLekarz("Śliwiński Marek");
             //string bb = GetDoctorsDataMedicoverOnline("lastname firstname");
             do
             {
