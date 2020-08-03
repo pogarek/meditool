@@ -447,7 +447,7 @@ namespace meditool
             string SearchPhrase2 = SearchPhrase.Trim().RemoveDiacritics();
             SearchPhrase2 = SearchPhrase2.Replace("-", " ");
             SearchPhrase2 = SearchPhrase2.Replace("_", " - ");
-            var doc = Doctors.Where(d => d.DoctorName.ToUpper() == SearchPhrase2.ToUpper());
+            var doc = Doctors.Where(d => d.DoctorName.ToUpper().RemoveDiacritics() == SearchPhrase2.ToUpper());
 
             string Score = "";
             if (doc.Count() == 1)
@@ -474,7 +474,7 @@ namespace meditool
                 Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"));
             }
             //string aa = GetDataFromZnanyLekarz("Śliwiński Marek");
-            //string bb = GetDoctorsDataMedicoverOnline("lastname firstname");
+            string bb = GetDoctorsDataMedicover("Bielec - Leskiewicz Anna");
             do
             {
                 config = new Config();
