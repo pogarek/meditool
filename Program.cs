@@ -329,7 +329,7 @@ namespace meditool
                     {
                         var doc2 = new HtmlDocument();
                         doc2.LoadHtml(nodes.First().InnerHtml);
-                        var node = htmlDoc.DocumentNode.SelectSingleNode("//span[@class='rating rating--lg']");
+                        var node = htmlDoc.DocumentNode.SelectSingleNode("//u[@class='rating rating--lg']");
                         if (node != null)
                         {
                             try
