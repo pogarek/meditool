@@ -273,7 +273,7 @@ namespace meditool
                 SearchPhrase += a + "-";
             }
             var tmp4 = Regex.Split(tmp[1],"_").ToList();
-            var SearchPhraseOrig = String.Format("{0}-{1}",tmp[0],String.Join("_",tmp4));
+            var SearchPhraseOrig = String.Format("{0}-{1}",tmp[0],String.Join("_",tmp4)).Trim().RemoveDiacritics();
             tmp4.Reverse();
             var tmp3 = String.Join("_",tmp4);
             //SearchPhrase = SearchPhrase.Remove(SearchPhrase.Length - 1);
@@ -330,7 +330,7 @@ namespace meditool
                 var nodes = htmlDoc.DocumentNode.SelectNodes("//*/span[@data-test-id='doctor-header-name']");
                 if (nodes != null)
                 {
-                    if (nodes.First().InnerText.Trim().Replace("-","_").Replace(" ", "-") == SearchPhraseOrig )
+                    if (nodes.First().InnerText.Trim().Replace("-","_").Replace(" ", "-").Trim().RemoveDiacritics() == SearchPhraseOrig )
                     {
                         var doc2 = new HtmlDocument();
                         doc2.LoadHtml(nodes.First().InnerHtml);
