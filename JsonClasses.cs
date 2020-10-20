@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 namespace meditool
 {
 
@@ -60,11 +61,21 @@ namespace meditool
     }
     public class ConsultationFound
     {
-        public string id;
-        public DateTime appointmentDate;
-        public string specializationName;
-        public string doctorName;
-        public string clinicName;
+        public string id { get; set; } 
+        public DateTime appointmentDate { get; set; } 
+        public int serviceId { get; set; } 
+        public string specializationName { get; set; } 
+        public string doctorName { get; set; } 
+        public int doctorId { get; set; } 
+        public int doctorScheduleId { get; set; } 
+        public int specialtyId { get; set; } 
+        public int sysVisitTypeId { get; set; } 
+        public string vendorTypeId { get; set; } 
+        public List<object> doctorLanguages { get; set; } 
+        public int clinicId { get; set; } 
+        public string clinicName { get; set; } 
+        public bool isPhoneConsultation { get; set; } 
+        public bool isBloodCollectionPointConsultation { get; set; } 
     }
     public class PfmSession
     {

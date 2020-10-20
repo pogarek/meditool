@@ -38,8 +38,15 @@ namespace meditool
                 c = s.SendRequest(String.Format("https://mol.medicover.pl/api/MyVisits/SearchFreeSlotsToBook/GetFiltersData?regionIds={0}&serviceTypeId={1}&serviceIds={2}&&&&searchSince={3}&startTime={4}&endTime={5}&selectedSpecialties=null", JClass.regionIds[0], JClass.serviceTypeId, JClass.serviceIds[0], JClass.searchSince, config.AfterHour.ToString() + ":00", "23:59"), "https://mol.medicover.pl", HttpMethod.Get);
             }
             string b = s.SendRequestJson(jsonoutput, "https://mol.medicover.pl/api/MyVisits/SearchFreeSlotsToBook?language=pl-PL", referer);
+            //File.WriteAllText("result.json", b);
             ConsultationsFound test = (JsonConvert.DeserializeObject<ConsultationsFound>(b));
-            return test;
+            ConsultationsFound test2 = new ConsultationsFound();
+            foreach (var t in test.items) {
+                if (t.serviceId == JClass.serviceIds[0]) {
+                         test.items.Add(t);
+                }
+            }
+            return test2;
 
         }
         static ConsultationsFound SearchForExamination(SearchVisit_Badanie JClass)
