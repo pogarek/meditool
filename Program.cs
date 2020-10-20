@@ -43,7 +43,7 @@ namespace meditool
             ConsultationsFound test2 = new ConsultationsFound();
             foreach (var t in test.items) {
                 if (t.serviceId == JClass.serviceIds[0]) {
-                         test.items.Add(t);
+                         test2.items.Add(t);
                 }
             }
             return test2;
