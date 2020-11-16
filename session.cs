@@ -84,6 +84,7 @@ namespace meditool
             //zaczynamy .
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, "https://mol.medicover.pl/Users/Account/LogOn?ReturnUrl=%2F");
             request = AddHeadersLogin(request);
+            request.Headers.Add("Referer", "https://mol.medicover.pl/Users/Account/AccessDenied?ReturnUrl=%2F");
             HttpResponseMessage response = h.SendAsync(request).Result;
             string result = response.Content.ReadAsStringAsync().Result;
             string[] tmp = Regex.Split(result,@"url =");
@@ -102,7 +103,7 @@ namespace meditool
             string ReturnUrl = request.RequestUri.Query.Replace("?ReturnUrl=","");
             
             request = new HttpRequestMessage(HttpMethod.Post, request.RequestUri.AbsoluteUri);
-            string RequestBody = String.Format(@"__RequestVerificationToken={0}&UserName={1}&Password={2}&ReturnUrl={3}", RequestValidationToken, username, password,ReturnUrl);
+            string RequestBody = String.Format(@"__RequestVerificationToken={0}&UserName={1}&Password={2}&ReturnUrl={3}", RequestValidationToken, username, System.Web.HttpUtility.UrlEncode(password),ReturnUrl);
             request = AddHeadersLogin(request);
             request.Content = new StringContent(RequestBody);
             var MediaType = new MediaTypeHeaderValue("application/x-www-form-urlencoded");
