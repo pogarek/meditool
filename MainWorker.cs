@@ -19,6 +19,8 @@ namespace meditool
         static Config config = new Config();
         static ConsultationFound LastResult = new ConsultationFound();
         public static List<DoctorInfo> Doctors = new List<DoctorInfo>();
+        public static List<KeyValuePair<string, ConsultationFound>> Lista = new List<KeyValuePair<string, ConsultationFound>>();
+
         static ConsultationsFound SearchForConsultation(SearchVisit_Konsultacja JClass)
         {
             if (JClass.searchSince < DateTime.Now)
@@ -458,7 +460,10 @@ namespace meditool
             var FI = new FileInfo(FilePath);
             string FileName = FI.Name;
             string DirectoryPath = FI.Directory.FullName.ToString();
-
+            var ListaItem = Lista.Where(l => l.Key == FileName).FirstOrDefault();
+            if (ListaItem.Key != null) {
+                LastResult = ListaItem.Value;
+            }
             if (System.IO.File.Exists(CurrentDir + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"))
             {
                 Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(CurrentDir + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"));
@@ -480,6 +485,15 @@ namespace meditool
                     }
                     Console.WriteLine(String.Format("{0}: Wystapil blad pobierania danych", DateTime.Now.ToShortTimeString()));
                 }
+            }
+            ListaItem = Lista.Where(l => l.Key == FileName).FirstOrDefault();
+            if (ListaItem.Key == null)
+            {
+                Lista.Add(new KeyValuePair<string, ConsultationFound>(FileName, LastResult));
+            }
+            else
+            {
+                ListaItem = new KeyValuePair<string, ConsultationFound>(FI.Name, LastResult);
             }
         }
     }
