@@ -21,6 +21,10 @@ namespace meditool
         public static List<DoctorInfo> Doctors = new List<DoctorInfo>();
         static ConsultationsFound SearchForConsultation(SearchVisit_Konsultacja JClass)
         {
+            if (JClass.searchSince < DateTime.Now)
+            {
+                JClass.searchSince = DateTime.Now.AddMinutes(5);
+            }
             string jsonoutput = JsonConvert.SerializeObject(JClass, Formatting.Indented,
                                     new JsonSerializerSettings
                                     {
@@ -49,6 +53,10 @@ namespace meditool
         }
         static ConsultationsFound SearchForExamination(SearchVisit_Badanie JClass)
         {
+            if (JClass.searchSince < DateTime.Now)
+            {
+                JClass.searchSince = DateTime.Now.AddMinutes(5);
+            }
             string jsonoutput = JsonConvert.SerializeObject(JClass, Formatting.Indented,
                                     new JsonSerializerSettings
                                     {
@@ -68,6 +76,10 @@ namespace meditool
             //string surveyName = "vaccinations";
             //string surveyresponse = @"[""pyt44odp1.2""]";
             //string MeetingString = "INTERNIST_COLD_WITHOUT_SURVEY";
+            if (JClass.date < DateTime.Now)
+            {
+                JClass.date = DateTime.Now.AddMinutes(5);
+            }
             string c = s.SendRequest(String.Format("https://mol.medicover.pl/pfm/pfm4s2/api/case/create?s2ctx={0}", JClass.MeetingString), "https://mol.medicover.pl", HttpMethod.Post);
             PfmSession pfmSession = JsonConvert.DeserializeObject<PfmSession>(c);
             if (JClass.surveyName != null)
