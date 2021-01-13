@@ -438,16 +438,16 @@ namespace meditool
             }
             return Score;
         }
-        public static void Execute(string FileName)
+        public static void Execute(string FileName, string RootDir)
         {
-            if (System.IO.File.Exists(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"))
+            if (System.IO.File.Exists(RootDir + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"))
             {
-                Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"));
+                Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(RootDir + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"));
             }
             //string aa = GetDataFromZnanyLekarz("Śliwiński Marek");
-            string bb = GetDoctorsDataMedicover("Bielec - Leskiewicz Anna");
+            //string bb = GetDoctorsDataMedicover("Bielec - Leskiewicz Anna");
             config = new Config();
-            config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + FileName));
+            config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(RootDir + Path.DirectorySeparatorChar.ToString() + FileName));
             try
             {
                 Run(FileName);
