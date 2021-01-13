@@ -441,15 +441,15 @@ namespace meditool
             }
             return Score;
         }
-        public static void Execute(string FilePath)
+        public static void Execute(string FilePath, string CurrentDir)
         {
             var FI = new FileInfo(FilePath);
             string FileName = FI.Name;
             string DirectoryPath = FI.Directory.FullName.ToString();
 
-            if (System.IO.File.Exists(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"))
+            if (System.IO.File.Exists(CurrentDir + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"))
             {
-                Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"));
+                Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(CurrentDir + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"));
             }
             //string aa = GetDataFromZnanyLekarz("Śliwiński Marek");
             //string bb = GetDoctorsDataMedicover("Bielec - Leskiewicz Anna");
