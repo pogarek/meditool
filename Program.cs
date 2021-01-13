@@ -21,7 +21,7 @@ namespace meditool
             config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + args[0]));
             do
             {
-                Worker.Execute(args[0],Directory.GetCurrentDirectory());
+                Worker.Execute(args[0]);
                 System.Threading.Thread.Sleep(config.CheckIntervalMinutes * 60 * 1000);
             }
             while (1 == 1);

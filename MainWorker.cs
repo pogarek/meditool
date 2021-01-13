@@ -152,8 +152,11 @@ namespace meditool
             csf.items = csf.items.OrderBy(w => w.appointmentDate).ToList();
             return csf;
         }
-        private static void Run(string FileName)
+        private static void Run(string FilePath)
         {
+            var FI = new FileInfo(FilePath);
+            string FileName = FI.Name;
+            string DirectoryPath = FI.Directory.FullName.ToString();
             s = new meditool.MySession();
             string OutText = "";
             s.Login(config.UserName, config.Password);
@@ -438,19 +441,23 @@ namespace meditool
             }
             return Score;
         }
-        public static void Execute(string FileName, string RootDir)
+        public static void Execute(string FilePath)
         {
-            if (System.IO.File.Exists(RootDir + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"))
+            var FI = new FileInfo(FilePath);
+            string FileName = FI.Name;
+            string DirectoryPath = FI.Directory.FullName.ToString();
+
+            if (System.IO.File.Exists(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"))
             {
-                Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(RootDir + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"));
+                Doctors = JsonConvert.DeserializeObject<List<DoctorInfo>>(File.ReadAllText(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar.ToString() + "doctors.json.db"));
             }
             //string aa = GetDataFromZnanyLekarz("Śliwiński Marek");
             //string bb = GetDoctorsDataMedicover("Bielec - Leskiewicz Anna");
             config = new Config();
-            config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(RootDir + Path.DirectorySeparatorChar.ToString() + FileName));
+            config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(DirectoryPath + Path.DirectorySeparatorChar.ToString() + FileName));
             try
             {
-                Run(FileName);
+                Run(FI.FullName);
             }
             catch
             {
