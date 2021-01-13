@@ -28,7 +28,7 @@ namespace meditool
         public string[] selectedSpecialties = {};
         public int[] clinicIds = {};
         public int[] doctorLanguagesIds = {};
-        public int[] doctorIds = {};
+        public string[] doctorIds = {};
         public int serviceTypeId = 2;
         public DateTime searchSince = DateTime.Now.Date.AddDays(1);
         //public string searchForNextSince = null;
