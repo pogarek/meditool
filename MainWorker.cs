@@ -486,14 +486,14 @@ namespace meditool
                     Console.WriteLine(String.Format("{0}: Wystapil blad pobierania danych", DateTime.Now.ToShortTimeString()));
                 }
             }
-            ListaItem = Lista.Where(l => l.Key == FileName).FirstOrDefault();
-            if (ListaItem.Key == null)
+            int Index =  Lista.FindIndex(l => l.Key == FileName);
+            if (Index == -1)
             {
                 Lista.Add(new KeyValuePair<string, ConsultationFound>(FileName, LastResult));
             }
             else
             {
-                ListaItem = new KeyValuePair<string, ConsultationFound>(FI.Name, LastResult);
+                Lista[Index] = new KeyValuePair<string, ConsultationFound>(FileName, LastResult);
             }
         }
     }
